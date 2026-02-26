@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-gold: #C99A22;
+  --color-lightning: #F9BF26;
+  --color-black: #000000;
+  --color-dark: #121212;
+  --color-light: #ECECEC;
+  --color-red: #A90707;
+  --color-white: #FFFFFF;
+
+  /* 8-step spacing scale (levels 20-80) */
+  --spacing-20: 0.44rem;
+  --spacing-30: 0.67rem;
+  --spacing-40: 1rem;
+  --spacing-50: 1.5rem;
+  --spacing-60: 2.25rem;
+  --spacing-70: 3.38rem;
+  --spacing-80: 5.06rem;
+
+  /* Typography sizes */
+  --font-size-hero: 3.0625rem;
+  --font-size-h2: 2.625rem;
+  --font-size-h3: 2.25rem;
+  --font-size-medium: 1.25rem;
+  --font-size-label: 0.6875rem;
+
+  /* Shadow presets */
+  --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins), system-ui, sans-serif;
+  color: var(--color-black);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-weight: 400;
+}
