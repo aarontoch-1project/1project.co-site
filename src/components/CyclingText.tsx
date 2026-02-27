@@ -25,10 +25,10 @@ export function CyclingText({ words, interval = 3000, className = "" }: CyclingT
 
   return (
     <span
-      className={`inline-block transition-all duration-400 text-gold italic ${className} ${
+      className={`inline-block transition-all duration-400 text-gold ${className} ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
       }`}
-      style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+      style={{ fontFamily: "var(--font-montserrat), system-ui, sans-serif" }}
     >
       {words[index]}
     </span>

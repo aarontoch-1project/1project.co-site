@@ -13,23 +13,14 @@
   --color-muted: #888888;
   --color-rule: #444444;
 
-  /* 8-step spacing scale */
-  --spacing-20: 0.44rem;
-  --spacing-30: 0.67rem;
-  --spacing-40: 1rem;
-  --spacing-50: 1.5rem;
-  --spacing-60: 2.25rem;
-  --spacing-70: 3.38rem;
-  --spacing-80: 5.06rem;
-
-  /* Typography sizes */
-  --font-size-hero: clamp(3rem, 5vw, 4.5rem);
-  --font-size-cycling: clamp(4.5rem, 7vw, 6.25rem);
-  --font-size-h2: clamp(2.25rem, 3.5vw, 3rem);
-  --font-size-h3: clamp(1.5rem, 2vw, 2rem);
-  --font-size-medium: 1.25rem;
-  --font-size-label: 0.75rem;
-  --font-size-outline-nav: clamp(3rem, 5vw, 4.5rem);
+  /* Typography sizes — static values (responsive via breakpoints) */
+  --text-hero: 2.5rem;
+  --text-cycling: 5.3125rem;
+  --text-h2: 3rem;
+  --text-h3: 1.75rem;
+  --text-medium: 1.25rem;
+  --text-label: 0.75rem;
+  --text-outline-nav: 4.5rem;
 
   /* Shadow presets */
   --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.4);
@@ -67,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-gold);
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: var(--font-size-label);
+  font-size: var(--text-label);
   font-weight: 500;
 }
 

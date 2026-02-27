@@ -13,7 +13,7 @@ export function GoldFrame({
     <div className={`relative ${className}`}>
       {/* Gold border frame offset behind the content */}
       <div
-        className="absolute border-[3px] border-gold z-0"
+        className="absolute bg-gold z-0"
         style={
           direction === "right"
             ? { top: 20, left: 20, right: -20, bottom: -20 }

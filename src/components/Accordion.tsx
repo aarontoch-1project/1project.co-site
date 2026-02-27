@@ -22,7 +22,7 @@ export function Accordion({ items }: AccordionProps) {
             className="w-full flex items-center justify-between py-5 text-left group"
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
           >
-            <span className="text-medium font-medium text-white group-hover:text-gold transition-colors">
+            <span className="text-medium font-semibold text-white group-hover:text-gold transition-colors">
               {item.title}
             </span>
             <svg

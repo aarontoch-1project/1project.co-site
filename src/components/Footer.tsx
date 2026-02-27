@@ -18,12 +18,12 @@ export function Footer() {
     <footer className="bg-dark pt-20 pb-8">
       {/* Large outline-font navigation */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col items-center gap-2">
           {outlineLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="outline-text text-outline-nav font-bold leading-tight hover:text-white transition-all duration-400"
+              className="outline-text text-outline-nav font-bold leading-tight hover:text-white transition-all duration-400 text-center"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               {link.label}

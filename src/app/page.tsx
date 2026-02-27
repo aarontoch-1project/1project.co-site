@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 };
 
 const clientLogos = [
-  { src: "/images/logos/uberlogo.png", alt: "Uber client logo", w: 100, h: 37 },
-  { src: "/images/logos/amazon-logo-1-768x286.png", alt: "Amazon client logo", w: 100, h: 37 },
-  { src: "/images/logos/BMOlogo-768x286.png", alt: "BMO client logo", w: 100, h: 37 },
-  { src: "/images/logos/tatalogo-768x286.png", alt: "Tata Consumer client logo", w: 100, h: 37 },
-  { src: "/images/logos/Pentair_logo_RGB-1-768x286.png", alt: "Pentair client logo", w: 100, h: 37 },
+  { src: "/images/logos/uberlogo.png", alt: "Uber client logo", w: 150, h: 56 },
+  { src: "/images/logos/amazon-logo-1-768x286.png", alt: "Amazon client logo", w: 150, h: 56 },
+  { src: "/images/logos/BMOlogo-768x286.png", alt: "BMO client logo", w: 150, h: 56 },
+  { src: "/images/logos/tatalogo-768x286.png", alt: "Tata Consumer client logo", w: 150, h: 56 },
+  { src: "/images/logos/Pentair_logo_RGB-1-768x286.png", alt: "Pentair client logo", w: 150, h: 56 },
 ];
 
 const accordionItems = [
@@ -331,8 +331,9 @@ export default function HomePage() {
                 Great brands need{" "}
                 <span className="gold-highlight">amazing</span> content.
                 1Project supports teams with the right talent and production
-                strategy to add depth, consistency and authenticity to every
-                campaign.
+                strategy to add{" "}
+                <span className="gold-highlight">depth, consistency, and authenticity</span>{" "}
+                to every campaign.
               </p>
             </div>
 
