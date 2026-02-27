@@ -5,12 +5,15 @@
   --color-gold: #C99A22;
   --color-lightning: #F9BF26;
   --color-black: #000000;
-  --color-dark: #121212;
+  --color-dark: #1a1a1a;
+  --color-dark-deep: #111111;
   --color-light: #ECECEC;
   --color-red: #A90707;
   --color-white: #FFFFFF;
+  --color-muted: #888888;
+  --color-rule: #444444;
 
-  /* 8-step spacing scale (levels 20-80) */
+  /* 8-step spacing scale */
   --spacing-20: 0.44rem;
   --spacing-30: 0.67rem;
   --spacing-40: 1rem;
@@ -20,30 +23,90 @@
   --spacing-80: 5.06rem;
 
   /* Typography sizes */
-  --font-size-hero: 3.0625rem;
-  --font-size-h2: 2.625rem;
-  --font-size-h3: 2.25rem;
+  --font-size-hero: clamp(3rem, 5vw, 4.5rem);
+  --font-size-cycling: clamp(4.5rem, 7vw, 6.25rem);
+  --font-size-h2: clamp(2.25rem, 3.5vw, 3rem);
+  --font-size-h3: clamp(1.5rem, 2vw, 2rem);
   --font-size-medium: 1.25rem;
-  --font-size-label: 0.6875rem;
+  --font-size-label: 0.75rem;
+  --font-size-outline-nav: clamp(3rem, 5vw, 4.5rem);
 
   /* Shadow presets */
-  --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+  --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.4);
 }
 
-/* Base styles */
+/* Base styles — dark cinematic theme */
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-poppins), system-ui, sans-serif;
-  color: var(--color-black);
-  background: var(--color-white);
+  color: var(--color-white);
+  background: var(--color-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-montserrat), system-ui, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Gold highlight text — for key phrases in body copy */
+.gold-highlight {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Section label style — gold uppercase tracking */
+.section-label {
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: var(--font-size-label);
+  font-weight: 500;
+}
+
+/* Outline font nav links — footer large navigation */
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.7);
+  transition: all 0.4s ease;
+}
+.outline-text:hover {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Spinning animation for See More Work circle */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Marquee animation for logos */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade in for carousel transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
