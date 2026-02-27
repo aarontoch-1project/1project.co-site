@@ -12,13 +12,9 @@ export default function NADCaseStudy() {
     <CaseStudyLayout
       title="NAD ELECTRONICS"
       subtitle="Helping a passionate team of music-lovers tell their biggest story"
+      category="Feature Documentary"
       heroImage="/images/case-studies/nad/NAD-banner-1-1.png"
       heroAlt="NAD Electronics hero banner"
-      stats={[
-        { value: "50 yr", label: "Anniversary" },
-        { value: "43 min", label: "Feature Documentary" },
-        { value: "10", label: "Product Vignettes" },
-      ]}
       sections={[
         {
           heading: "Turning Up the Volume",

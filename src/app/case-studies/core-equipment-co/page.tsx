@@ -11,14 +11,10 @@ export default function CoreCaseStudy() {
   return (
     <CaseStudyLayout
       title="CORE"
-      subtitle="Go take a hike — and bring a camera"
+      subtitle="Go take a hike &mdash; and bring a camera"
+      category="Lifestyle Content"
       heroImage="/images/case-studies/core/Banner-Image-1-1.png"
       heroAlt="Core Equipment hero banner"
-      stats={[
-        { value: "25", label: "Photos per Shoot" },
-        { value: "40+", label: "Clip Library" },
-        { value: "3-4 wk", label: "Turnaround" },
-      ]}
       sections={[
         {
           heading: "Go Take A Hike",

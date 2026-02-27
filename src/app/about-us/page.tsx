@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Button } from "@/components/Button";
+import Link from "next/link";
+import { CyclingText } from "@/components/CyclingText";
+import { FadeIn } from "@/components/FadeIn";
+import { SectionDivider } from "@/components/SectionDivider";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -44,15 +47,23 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 lg:px-8">
+      <section className="pt-40 pb-20 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h1 className="text-hero leading-tight mb-6">
-                Changing How Brands{" "}
-                <span className="text-gold">Create</span>
+              <h1 className="text-hero leading-tight mb-2">
+                Changing How Brands
               </h1>
-              <p className="text-medium text-dark/70">
+              <CyclingText
+                words={[
+                  "Make Amazing Content",
+                  "Plan for Success",
+                  "Tell Stories",
+                  "Drive Their Creative",
+                ]}
+                className="text-cycling"
+              />
+              <p className="text-lg text-white/60 mt-6">
                 Empowering great brands to take back the reins on their Content
                 Creation
               </p>
@@ -63,7 +74,7 @@ export default function AboutPage() {
                 alt="About section hero image"
                 width={550}
                 height={477}
-                className="rounded-2xl w-full h-auto"
+                className="w-full h-auto"
               />
             </div>
           </div>
@@ -71,73 +82,92 @@ export default function AboutPage() {
       </section>
 
       {/* Mission */}
-      <section className="py-24 px-6 lg:px-8 bg-light">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-h2 mb-8">Our Mission</h2>
-          <p className="text-base text-dark/70 leading-relaxed">
-            We&apos;re seasoned ex-agency media producers who have seen the best
-            and the worst of the creative production industry: inflated budgets,
-            hype-sellers, &apos;many-hats&apos; vendors, and worn-out big agency
-            processes. By acting as way finders in freelance commercial
-            production — our mission is to help teams own their content creation
-            from end-to-end, become more agile, and develop a robust media
-            pipeline that builds on their own unique strengths.
-          </p>
-        </div>
-      </section>
+      <FadeIn>
+        <section className="py-24 px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <SectionDivider className="mb-12">
+              <h2 className="text-h2">Our Mission</h2>
+            </SectionDivider>
+            <p className="text-base text-white/70 leading-relaxed">
+              We&apos;re seasoned ex-agency media producers who have seen the
+              best and the worst of the creative production industry: inflated
+              budgets, hype-sellers, &apos;many-hats&apos; vendors, and worn-out
+              big agency processes. By acting as way finders in freelance
+              commercial production &mdash; our mission is to help teams own
+              their content creation from end-to-end, become more agile, and
+              develop a robust media pipeline that builds on their own unique
+              strengths.
+            </p>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* Key Values */}
-      <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-h2 text-center mb-16">Our Key Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {values.map((v) => (
-              <div key={v.title} className="text-center">
-                <Image
-                  src={v.icon}
-                  alt={v.alt}
-                  width={80}
-                  height={80}
-                  className="mx-auto mb-6"
-                />
-                <h3 className="text-medium font-medium mb-4">{v.title}</h3>
-                <p className="text-sm text-dark/70 leading-relaxed">
-                  {v.description}
-                </p>
-              </div>
-            ))}
+      <FadeIn>
+        <section className="py-24 px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <SectionDivider className="mb-16">
+              <h2 className="text-h2 text-center">Our Key Values</h2>
+            </SectionDivider>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+              {values.map((v) => (
+                <div key={v.title}>
+                  <Image
+                    src={v.icon}
+                    alt={v.alt}
+                    width={80}
+                    height={80}
+                    className="mx-auto mb-6 invert opacity-80"
+                  />
+                  <h3 className="text-medium font-semibold mb-4">{v.title}</h3>
+                  <p className="text-sm text-white/60 leading-relaxed">
+                    {v.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </FadeIn>
 
       {/* Partners */}
-      <section className="py-24 px-6 lg:px-8 bg-light">
-        <div className="mx-auto max-w-7xl text-center">
-          <h2 className="text-h2 mb-12">Our Partners</h2>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
-            {partnerLogos.map((logo) => (
-              <Image
-                key={logo.src}
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.w}
-                height={logo.h}
-                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            ))}
+      <FadeIn>
+        <section className="py-24 px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl text-center">
+            <h2 className="text-h2 mb-12">Our Partners</h2>
+            <div className="flex flex-wrap justify-center items-center gap-12 opacity-50">
+              {partnerLogos.map((logo) => (
+                <Image
+                  key={logo.src}
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.w}
+                  height={logo.h}
+                  className="object-contain invert hover:opacity-80 transition-opacity duration-300"
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </FadeIn>
 
       {/* CTA */}
       <section className="py-24 px-6 lg:px-8 text-center">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-h2 mb-10">Let&apos;s Work Together</h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button href="/contact-us">Let&apos;s Talk</Button>
-            <Button href="/case-studies" variant="outline">
+            <Link
+              href="/contact-us"
+              className="inline-block bg-gold text-dark text-sm font-medium px-8 py-3 rounded-md hover:bg-lightning transition-colors"
+            >
+              Let&apos;s Talk
+            </Link>
+            <Link
+              href="/case-studies"
+              className="inline-block border border-white/30 text-white text-sm font-medium px-8 py-3 rounded-md hover:border-white/60 transition-colors"
+            >
               Case Studies
-            </Button>
+            </Link>
           </div>
         </div>
       </section>

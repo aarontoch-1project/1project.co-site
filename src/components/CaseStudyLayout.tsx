@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-
-interface Stat {
-  value: string;
-  label: string;
-}
+import { SectionDivider } from "./SectionDivider";
+import { FadeIn } from "./FadeIn";
 
 interface Detail {
   title: string;
@@ -14,12 +11,13 @@ interface Detail {
 interface CaseStudyLayoutProps {
   title: string;
   subtitle: string;
+  category?: string;
   heroImage: string;
   heroAlt: string;
   sections: { heading: string; body: string }[];
   outputs?: string;
+  outputsLabel?: string;
   details: Detail[];
-  stats: Stat[];
   images?: { src: string; alt: string; w: number; h: number }[];
   nextStudy: { title: string; href: string };
 }
@@ -27,19 +25,20 @@ interface CaseStudyLayoutProps {
 export function CaseStudyLayout({
   title,
   subtitle,
+  category,
   heroImage,
   heroAlt,
   sections,
   outputs,
+  outputsLabel,
   details,
-  stats,
   images,
   nextStudy,
 }: CaseStudyLayoutProps) {
   return (
     <>
-      {/* Hero banner */}
-      <section className="relative h-[60vh] min-h-[400px]">
+      {/* ── Hero ── */}
+      <section className="relative h-screen min-h-[500px]">
         <Image
           src={heroImage}
           alt={heroAlt}
@@ -47,103 +46,116 @@ export function CaseStudyLayout({
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-16">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
+        <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <h1 className="text-hero text-white mb-4">{title}</h1>
-            <p className="text-medium text-white/80 max-w-2xl">{subtitle}</p>
+            {category && (
+              <span className="section-label block mb-3">{category}</span>
+            )}
+            <h1 className="text-hero leading-tight mb-4">{title}</h1>
+            <p className="text-lg text-white/70 max-w-2xl">{subtitle}</p>
           </div>
         </div>
       </section>
 
-      {/* Stats bar */}
-      <section className="bg-dark text-white py-8 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl flex flex-wrap justify-center gap-12">
-          {stats.map((s) => (
-            <div key={s.label} className="text-center">
-              <span className="block text-h3 text-gold">{s.value}</span>
-              <span className="text-label uppercase tracking-widest text-white/50">
-                {s.label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Content sections */}
+      {/* ── Content Sections (alternating layout) ── */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl space-y-16">
-          {sections.map((sec) => (
-            <div key={sec.heading}>
-              <h2 className="text-h2 mb-6">{sec.heading}</h2>
-              <p className="text-base text-dark/70 leading-relaxed whitespace-pre-line">
-                {sec.body}
-              </p>
-            </div>
+        <div className="mx-auto max-w-4xl space-y-20">
+          {sections.map((sec, i) => (
+            <FadeIn key={sec.heading}>
+              <div
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ${
+                  i % 2 === 1 ? "lg:direction-rtl" : ""
+                }`}
+              >
+                <div>
+                  <h2 className="text-h2 mb-6">{sec.heading}</h2>
+                </div>
+                <div>
+                  <p className="text-base text-white/70 leading-relaxed">
+                    {sec.body}
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
           ))}
 
           {outputs && (
-            <div className="bg-light rounded-2xl p-8">
-              <h3 className="text-medium font-medium mb-3">Outputs</h3>
-              <p className="text-sm text-dark/70 leading-relaxed">{outputs}</p>
-            </div>
+            <FadeIn>
+              <div className="border-t border-rule pt-8">
+                <span className="section-label block mb-3">
+                  {outputsLabel || "Outputs"}
+                </span>
+                <p className="text-base text-white/60 leading-relaxed">
+                  {outputs}
+                </p>
+              </div>
+            </FadeIn>
           )}
         </div>
       </section>
 
-      {/* Image gallery */}
+      {/* ── Image Gallery ── */}
       {images && images.length > 0 && (
-        <section className="py-16 px-6 lg:px-8 bg-light">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {images.map((img) => (
-              <div
-                key={img.src}
-                className="relative aspect-video rounded-xl overflow-hidden"
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover"
-                />
+        <FadeIn>
+          <section className="px-6 lg:px-8 pb-24">
+            <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
+              {images.map((img) => (
+                <div
+                  key={img.src}
+                  className="relative aspect-video overflow-hidden"
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        </FadeIn>
+      )}
+
+      {/* ── Details / Results ── */}
+      <FadeIn>
+        <section className="py-24 px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl space-y-10">
+            {details.map((d) => (
+              <div key={d.title} className="border-b border-rule pb-8">
+                <h3 className="text-h3 mb-3">{d.title}</h3>
+                <p className="text-base text-white/60 leading-relaxed">
+                  {d.description}
+                </p>
               </div>
             ))}
           </div>
         </section>
-      )}
+      </FadeIn>
 
-      {/* Details grid */}
+      {/* ── Navigation ── */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
-          {details.map((d) => (
-            <div
-              key={d.title}
-              className="border border-dark/10 rounded-2xl p-8 hover:border-gold/40 transition-colors"
+        <div className="mx-auto max-w-7xl">
+          <SectionDivider className="mb-12">
+            <h2 className="text-h2 text-center whitespace-nowrap">
+              Check Out More Case Studies
+            </h2>
+          </SectionDivider>
+          <div className="flex justify-center gap-8 text-sm">
+            <Link
+              href={nextStudy.href}
+              className="text-gold hover:text-lightning transition-colors"
             >
-              <h3 className="text-medium font-medium mb-4">{d.title}</h3>
-              <p className="text-sm text-dark/70 leading-relaxed">
-                {d.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Navigation */}
-      <section className="py-16 px-6 lg:px-8 bg-light">
-        <div className="mx-auto max-w-7xl flex flex-wrap justify-center gap-4">
-          <Link
-            href={nextStudy.href}
-            className="inline-block bg-gold text-white text-sm font-medium px-14 py-4 rounded-full hover:bg-lightning hover:shadow-natural transition-all duration-300"
-          >
-            Next: {nextStudy.title}
-          </Link>
-          <Link
-            href="/case-studies"
-            className="inline-block border-2 border-dark text-dark text-sm font-medium px-8 py-3.5 rounded-full hover:bg-dark hover:text-white transition-all duration-300"
-          >
-            All Case Studies
-          </Link>
+              {nextStudy.title} &rarr;
+            </Link>
+            <Link
+              href="/case-studies"
+              className="text-white/50 hover:text-white transition-colors"
+            >
+              All Case Studies
+            </Link>
+          </div>
         </div>
       </section>
     </>

@@ -12,13 +12,9 @@ export default function BMOCaseStudy() {
     <CaseStudyLayout
       title="BMO"
       subtitle="Simplifying a docu-style process to empower the agency's vision"
+      category="Cross-Channel Media"
       heroImage="/images/case-studies/bmo/Banner-bmo-1.png"
       heroAlt="BMO case study hero banner"
-      stats={[
-        { value: "12", label: "Final OTT Videos" },
-        { value: "25", label: "Edited Stills" },
-        { value: "ENG/FR", label: "Bilingual" },
-      ]}
       sections={[
         {
           heading: "On-Demand Support",
@@ -29,7 +25,8 @@ export default function BMOCaseStudy() {
           body: "Getting agency partners to embrace a more fast-and-loose production style means getting broad coverage and building trust in the editing process. We spent time optimizing non-negotiables against spontaneity to make everyone comfortable we\u2019d hit the creative goals while being as fast as possible.",
         },
       ]}
-      outputs="12 final OTT videos — each with ENG/FR, 15s and 6s, upper and lower funnel focus, and audio-only variants. 25 edited stills — in-branch print, ATM screens, digital banner, paid social, and in-app promo."
+      outputsLabel="Speed and Confidence"
+      outputs="12 final OTT videos \u2014 each with ENG/FR, 15s and 6s, upper and lower funnel focus, and audio-only variants. 25 edited stills \u2014 in-branch print, ATM screens, digital banner, paid social, and in-app promo."
       details={[
         {
           title: "Fly on the Wall",

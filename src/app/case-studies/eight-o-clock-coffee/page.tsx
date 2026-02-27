@@ -12,13 +12,9 @@ export default function TataConsumerCaseStudy() {
     <CaseStudyLayout
       title="TATA CONSUMER"
       subtitle="Enabling brand leads to finish a job their agency started"
+      category="Brand Video"
       heroImage="/images/case-studies/eight-o-clock-coffee/Banner-Image-1-1024x576.png"
       heroAlt="Eight O'Clock Coffee hero banner"
-      stats={[
-        { value: "144", label: "Unique OTT Assets" },
-        { value: "4", label: "SKU Narratives" },
-        { value: "<4 wk", label: "Concept to Go-Live" },
-      ]}
       sections={[
         {
           heading: "Left Empty-Handed",
@@ -26,13 +22,14 @@ export default function TataConsumerCaseStudy() {
         },
         {
           heading: "Time To Get Creative",
-          body: "After adapting their ex-agency\u2019s initial creative — we restructured the main video content into a modular format allowing multiple SKUs to get unique deliverables under the same script. We then optimized the small budget by moving production to a lower-cost area, leveraging existing design assets more, using remote art directors for pre-pro, and providing on-set AD and line-producing.",
+          body: "After adapting their ex-agency\u2019s initial creative \u2014 we restructured the main video content into a modular format allowing multiple SKUs to get unique deliverables under the same script. We then optimized the small budget by moving production to a lower-cost area, leveraging existing design assets more, using remote art directors for pre-pro, and providing on-set AD and line-producing.",
         },
         {
           heading: "Making the Most",
           body: "A huge takeaway for the brand team was seeing just how drastically strong production design can drive a project. An asset-first perspective like \u2018modular video\u2019 can enable a smaller team to confidently take on projects internally where hundreds of unique deliverables are required.",
         },
       ]}
+      outputsLabel="Wake Up and Smell the Coffee"
       outputs="144 unique OTT video assets: 4 different SKU hero narratives with 30s, 15s, and 6s versions, each with 12 regional vendor variants + stills and raw footage."
       details={[
         {

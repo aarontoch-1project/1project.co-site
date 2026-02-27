@@ -11,14 +11,10 @@ export default function PentairCaseStudy() {
   return (
     <CaseStudyLayout
       title="PENTAIR"
-      subtitle="Not exactly our wheelhouse — but that's kind of our thing"
+      subtitle="Not exactly our wheelhouse \u2014 but that's kind of our thing"
+      category="Asset Library"
       heroImage="/images/case-studies/manitowoc/Banner-1-1.png"
       heroAlt="Manitowoc Ice hero banner"
-      stats={[
-        { value: "12", label: "Products per Shoot" },
-        { value: "200+", label: "Photos per Shoot" },
-        { value: "100+", label: "Video Clips" },
-      ]}
       sections={[
         {
           heading: "Not Exactly Our Wheelhouse",
