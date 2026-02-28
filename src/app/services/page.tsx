@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CyclingText } from "@/components/CyclingText";
-import { VideoPlaceholder } from "@/components/VideoPlaceholder";
+import { VimeoEmbed } from "@/components/VimeoEmbed";
 import { GoldFrame } from "@/components/GoldFrame";
 import { Accordion } from "@/components/Accordion";
 import { SectionDivider } from "@/components/SectionDivider";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
-import { FadeIn } from "@/components/FadeIn";
+import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -55,6 +56,33 @@ const comparisonData = {
         "Rigid workflows, driven by \u2018best-practices\u2019 and layers of approvals.",
         "Workflows designed around their strengths, not yours.",
         "Must onboard new vendors every time.",
+      ],
+    },
+    {
+      category: "Cost",
+      cells: [
+        "Flexible project-based pricing with transparent breakdowns.",
+        "High overhead built into pricing — you pay for the brand name.",
+        "Fixed rate cards with limited room for negotiation.",
+        "Salary + benefits overhead regardless of project volume.",
+      ],
+    },
+    {
+      category: "Scalability",
+      cells: [
+        "Scale up or down with zero long-term commitments.",
+        "Scaling requires new SOWs and negotiations.",
+        "Limited by in-house capacity and specialization.",
+        "Limited by headcount approvals and hiring timelines.",
+      ],
+    },
+    {
+      category: "Brand Consistency",
+      cells: [
+        "Dedicated producers who learn your brand deeply.",
+        "Rotating account teams lose institutional knowledge.",
+        "Focus on their craft, not your brand guidelines.",
+        "Strong brand knowledge but limited creative range.",
       ],
     },
   ],
@@ -115,10 +143,15 @@ export default function ServicesPage() {
     <>
       {/* ── 1. Hero: Video + Cycling Text ── */}
       <section className="relative">
-        <VideoPlaceholder
-          label="Services showreel / interior design video — autoplay, loop, muted"
-          aspect="hero"
-        />
+        <div className="relative min-h-screen bg-dark-deep overflow-hidden">
+          <Image
+            src="/images/case-studies/amazon/Amazon_block1_still.jpg"
+            alt="Services showcase"
+            fill
+            className="object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
+        </div>
         <div className="absolute inset-0 flex items-end">
           <div className="mx-auto max-w-7xl w-full px-6 lg:px-8 pb-24">
             <h1 className="text-hero leading-tight mb-4">
@@ -191,10 +224,7 @@ export default function ServicesPage() {
               </p>
             </div>
             <GoldFrame direction="right">
-              <VideoPlaceholder
-                label="Brand narrative showreel — autoplay, loop, muted"
-                aspect="video"
-              />
+              <VimeoEmbed videoId="1168992274" hash="3d5c427af7" />
             </GoldFrame>
           </div>
         </section>
@@ -205,10 +235,7 @@ export default function ServicesPage() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame direction="left">
-              <VideoPlaceholder
-                label="Lifestyle photography / behind-the-scenes — autoplay, loop, muted"
-                aspect="video"
-              />
+              <VimeoEmbed videoId="1168992239" hash="97957d8a05" />
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Authentic Lifestyle Imagery</h2>
@@ -243,10 +270,7 @@ export default function ServicesPage() {
               </p>
             </div>
             <GoldFrame direction="right">
-              <VideoPlaceholder
-                label="Drone footage / niche production reel — autoplay, loop, muted"
-                aspect="video"
-              />
+              <VimeoEmbed videoId="1168992294" hash="5a86503968" />
             </GoldFrame>
           </div>
         </section>
@@ -257,10 +281,14 @@ export default function ServicesPage() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame direction="left">
-              <VideoPlaceholder
-                label="Documentary-style storytelling footage — autoplay, loop, muted"
-                aspect="video"
-              />
+              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+                <Image
+                  src="/images/case-studies/bmo/1Project_Day1_MB_055-1.jpg"
+                  alt="Documentary-style storytelling"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Engaging Docu-style Storytelling</h2>
@@ -386,15 +414,17 @@ export default function ServicesPage() {
 
       {/* ── 9. "Who Uses Us?" ── */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+      <section className="py-24 px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <FadeIn>
             <SectionDivider className="mb-16">
               <h2 className="text-h2 text-center">Who Uses Us?</h2>
             </SectionDivider>
+          </FadeIn>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
               {/* Forward-Thinking Marketing Leaders */}
-              <div>
+              <StaggerItem>
                 <svg
                   className="w-12 h-12 text-gold mx-auto mb-6"
                   fill="none"
@@ -417,10 +447,10 @@ export default function ServicesPage() {
                   ability to quickly make their departments more agile,
                   self-sufficient, and capable of larger internal projects.
                 </p>
-              </div>
+              </StaggerItem>
 
               {/* Ambitious Brand Teams */}
-              <div>
+              <StaggerItem>
                 <svg
                   className="w-12 h-12 text-gold mx-auto mb-6"
                   fill="none"
@@ -444,10 +474,10 @@ export default function ServicesPage() {
                   reshoot-insurance opens the door for more experimentation with
                   less risk.
                 </p>
-              </div>
+              </StaggerItem>
 
               {/* Resourceful In-House Producers */}
-              <div>
+              <StaggerItem>
                 <svg
                   className="w-12 h-12 text-gold mx-auto mb-6"
                   fill="none"
@@ -470,8 +500,8 @@ export default function ServicesPage() {
                   involvement model means producers can get support on their most
                   complex projects or pull specific resources in only as-needed.
                 </p>
-              </div>
-            </div>
+              </StaggerItem>
+            </StaggerContainer>
           </div>
         </section>
       </FadeIn>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const outlineLinks = [
   { href: "/contact-us", label: "Let\u2019s talk" },
@@ -16,6 +17,17 @@ export function Footer() {
 
   return (
     <footer className="bg-dark pt-20 pb-8">
+      {/* Logo */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-12 flex justify-center">
+        <Image
+          src="/images/logos/Logo transparency.png"
+          alt="1Project"
+          width={180}
+          height={45}
+          className="h-11 w-auto opacity-80"
+        />
+      </div>
+
       {/* Large outline-font navigation */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">
         <div className="flex flex-col items-center gap-2">

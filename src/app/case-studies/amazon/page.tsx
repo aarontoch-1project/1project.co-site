@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { VideoPlaceholder } from "@/components/VideoPlaceholder";
+import Image from "next/image";
+import { VimeoEmbed } from "@/components/VimeoEmbed";
+import { GoldFrame } from "@/components/GoldFrame";
 import { SectionDivider } from "@/components/SectionDivider";
 import { FadeIn } from "@/components/FadeIn";
+import { Accordion } from "@/components/Accordion";
 
 export const metadata: Metadata = {
   title: "AMAZON",
@@ -38,10 +41,15 @@ export default function AmazonCaseStudy() {
     <>
       {/* ── 1. Full-Viewport Hero ── */}
       <section className="relative">
-        <VideoPlaceholder
-          label="Amazon case study hero \u2014 OTT ad production footage, autoplay, loop, muted"
-          aspect="hero"
-        />
+        <div className="relative min-h-screen bg-dark-deep">
+          <Image
+            src="/images/case-studies/amazon/pavoi-banner.png"
+            alt="Amazon case study hero"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
@@ -84,10 +92,9 @@ export default function AmazonCaseStudy() {
                 add key SKUs, brand messaging, and a preferred target audience.
               </p>
             </div>
-            <VideoPlaceholder
-              label="Amazon OTT production behind-the-scenes"
-              aspect="video"
-            />
+            <GoldFrame direction="right">
+              <VimeoEmbed videoId="1168992208" hash="410dd21dda" />
+            </GoldFrame>
           </div>
         </section>
       </FadeIn>
@@ -96,10 +103,9 @@ export default function AmazonCaseStudy() {
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <VideoPlaceholder
-              label="Amazon brand video production footage"
-              aspect="video"
-            />
+            <GoldFrame direction="left">
+              <VimeoEmbed videoId="1168992196" hash="7132d3dfbc" />
+            </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Customizable Creative</h2>
               <p className="text-base text-white/70 leading-relaxed mb-6">
@@ -140,45 +146,38 @@ export default function AmazonCaseStudy() {
       {/* ── 6. Image Gallery / Mosaic ── */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-2">
+          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
             <div className="lg:col-span-2 lg:row-span-2">
-              <VideoPlaceholder
-                label="Fitness / running campaign footage"
-                className="h-full"
-              />
+              <VimeoEmbed videoId="1168992268" hash="b2c64a1226" className="h-full" />
             </div>
-            <VideoPlaceholder
-              label="Product supplement shoot"
-              aspect="square"
-            />
-            <VideoPlaceholder
-              label="Lifestyle / fashion shoot"
-              aspect="square"
-            />
-            <VideoPlaceholder
-              label="Marina / harbor scene"
-              aspect="square"
-            />
-            <VideoPlaceholder
-              label="Studio product photography"
-              aspect="square"
-            />
+            <VimeoEmbed videoId="1168992256" hash="eb1e586800" aspect="square" />
+            <VimeoEmbed videoId="1168992252" hash="5f4137f983" aspect="square" />
+            <VimeoEmbed videoId="1169003121" hash="c22aa25d26" aspect="square" />
+            <VimeoEmbed videoId="1169004076" hash="b24488a984" aspect="square" />
+            <div className="relative aspect-square overflow-hidden">
+              <Image src="/images/case-studies/amazon/pavoi.png" alt="Amazon product" fill className="object-cover" />
+            </div>
+            <div className="relative aspect-square overflow-hidden">
+              <Image src="/images/case-studies/amazon/Amazon_block1_still.jpg" alt="Amazon production still" fill className="object-cover" />
+            </div>
+            <div className="relative aspect-square overflow-hidden">
+              <Image src="/images/case-studies/amazon/Main-Banner-e1714164961359.png" alt="Amazon banner" fill className="object-cover" />
+            </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* ── 7. Results ── */}
+      {/* ── 7. Results (Accordion) ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl space-y-12">
-            {results.map((r) => (
-              <div key={r.title} className="border-b border-rule pb-8">
-                <h3 className="text-h3 mb-3">{r.title}</h3>
-                <p className="text-base text-white/60 leading-relaxed">
-                  {r.description}
-                </p>
-              </div>
-            ))}
+          <div className="mx-auto max-w-4xl">
+            <Accordion
+              items={results.map((r) => ({
+                title: r.title,
+                content: r.description,
+              }))}
+              defaultOpen={0}
+            />
           </div>
         </section>
       </FadeIn>

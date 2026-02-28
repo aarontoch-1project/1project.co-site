@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SectionDivider } from "./SectionDivider";
 import { FadeIn } from "./FadeIn";
+import { Accordion } from "./Accordion";
 
 interface Detail {
   title: string;
@@ -118,18 +119,17 @@ export function CaseStudyLayout({
         </FadeIn>
       )}
 
-      {/* ── Details / Results ── */}
+      {/* ── Details / Results (Accordion) ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl space-y-10">
-            {details.map((d) => (
-              <div key={d.title} className="border-b border-rule pb-8">
-                <h3 className="text-h3 mb-3">{d.title}</h3>
-                <p className="text-base text-white/60 leading-relaxed">
-                  {d.description}
-                </p>
-              </div>
-            ))}
+          <div className="mx-auto max-w-4xl">
+            <Accordion
+              items={details.map((d) => ({
+                title: d.title,
+                content: d.description,
+              }))}
+              defaultOpen={0}
+            />
           </div>
         </section>
       </FadeIn>

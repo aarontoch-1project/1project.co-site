@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CyclingText } from "@/components/CyclingText";
-import { VideoPlaceholder } from "@/components/VideoPlaceholder";
+import { VimeoEmbed } from "@/components/VimeoEmbed";
 import { GoldFrame } from "@/components/GoldFrame";
 import { SpinningCircle } from "@/components/SpinningCircle";
 import { Accordion } from "@/components/Accordion";
@@ -97,23 +97,28 @@ export default function HomePage() {
     <>
       {/* ===== 1. HERO — full viewport with video bg ===== */}
       <section className="relative min-h-screen flex items-end pb-24 px-6 lg:px-8">
-        {/* VIDEO PLACEHOLDER: Hero background reel — branded montage, drone footage, 3D renders. Autoplay, loop, muted */}
-        <div className="absolute inset-0 bg-dark-deep z-0">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-sm text-muted">Video Coming Soon</span>
-          </div>
+        {/* Hero background Vimeo video */}
+        <div className="absolute inset-0 bg-dark-deep z-0 overflow-hidden">
+          <iframe
+            src="https://player.vimeo.com/video/930727789?h=f691cb6fb4&background=1&autoplay=1&loop=1&muted=1&quality=1080p"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            loading="lazy"
+            className="absolute top-1/2 left-1/2 w-[110%] h-[110%] -translate-x-1/2 -translate-y-1/2 object-cover"
+            title="1Project hero reel"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl w-full">
           <div className="max-w-[60%]">
-            <h1 className="text-hero text-white font-normal mb-2">
+            <h2 className="text-hero text-white font-semibold mb-2">
               Content That
-            </h1>
+            </h2>
             <div className="mb-6">
               <CyclingText
                 words={["Engages", "Converts", "Performs", "Adapts", "Responds", "Is Authentic"]}
-                className="text-cycling font-bold"
+                className="text-cycling font-normal"
               />
             </div>
             <p className="text-lg text-white/70 max-w-lg">
@@ -191,8 +196,7 @@ export default function HomePage() {
               </p>
             </div>
             <GoldFrame direction="right">
-              {/* VIDEO PLACEHOLDER: Close-up product/beverage pour video. Autoplay, loop, muted */}
-              <VideoPlaceholder label="Video Coming Soon" />
+              <VimeoEmbed videoId="939689395" hash="3a7a906c4e" />
             </GoldFrame>
           </div>
         </section>
@@ -203,8 +207,7 @@ export default function HomePage() {
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame direction="left" className="order-2 lg:order-1">
-              {/* VIDEO PLACEHOLDER: Behind-the-scenes production footage. Autoplay, loop, muted */}
-              <VideoPlaceholder label="Video Coming Soon" />
+              <VimeoEmbed videoId="1168992231" hash="ef53c80ff9" />
             </GoldFrame>
             <div className="order-1 lg:order-2">
               <h2 className="text-h2 leading-tight mb-6">
@@ -233,13 +236,12 @@ export default function HomePage() {
               href="/case-studies/amazon"
               className="group relative overflow-hidden block aspect-[21/9]"
             >
-              {/* VIDEO PLACEHOLDER: Amazon project reel. Autoplay, loop, muted */}
               <div className="absolute inset-0 bg-dark-deep">
                 <Image
-                  src="/images/homepage/Main-Banner-e1714164961359.png"
+                  src="/images/case-studies/amazon/Amazon_block1_still.jpg"
                   alt="Amazon case study banner"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-60"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-70"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />

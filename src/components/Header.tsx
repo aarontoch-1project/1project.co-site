@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const navLinks = [
@@ -29,13 +30,15 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 border-2 border-gold flex items-center justify-center">
-              <span className="text-white text-sm font-bold">1</span>
-            </div>
-            <span className="text-white font-bold text-sm tracking-wider" style={{ fontFamily: "var(--font-montserrat)" }}>
-              PROJECT
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logos/Logo transparency.png"
+              alt="1Project"
+              width={160}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
