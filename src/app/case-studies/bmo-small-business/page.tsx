@@ -17,22 +17,22 @@ const details = [
   {
     title: "Fly on the Wall",
     description:
-      "Our documentary approach captured genuine moments of small business owners in their element — no scripts, no staging, just authentic storytelling that resonated with audiences.",
+      "For stills, we brought on a photographer who specialized in event film photography and photojournalism. This allowed them to capture authentic and stylized shots around video-capture without needing dedicated production time.",
   },
   {
     title: "Take Your Pick",
     description:
-      "Each business story was crafted into multiple formats — long-form documentary, social cuts, testimonial clips, and behind-the-scenes content — maximizing every production day.",
+      "Building asset curation sessions into the pre-edit stage allowed for the agency team to massage ideas internally and minimize drafting.",
   },
   {
     title: "Keep it Real",
     description:
-      "Maintaining authenticity while meeting brand standards required careful pre-production planning and on-set direction that guided without controlling the narrative.",
+      "We built production around a subject's busy mid-week schedule to guarantee authentic slices of life, and deter opportunities to over-produce a scene.",
   },
   {
     title: "Just Here to Help",
     description:
-      "Our producers acted as an extension of BMO's marketing team, handling all logistics, talent coordination, and post-production so their team could focus on strategy.",
+      "Our role was to support the agency team with a lean production, not overshadow their concept, or influence client preferences. We were able to do both by providing clear breakpoints for client comms, and defining roles and structure early.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function BMOCaseStudy() {
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Cross-Channel Media</Link>
             <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">BMO</h1>
             <p className="text-lg text-white max-w-2xl text-left">
-              Simplifying a docu-style process for a cross-channel media campaign
+              Simplifying a docu-style process to empower the agency&apos;s vision
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function BMOCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">On-Demand Support</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                BMO needed a production partner who could move fast and adapt to the unpredictable nature of documentary-style content. We provided a dedicated team ready to deploy across multiple markets.
+                When BMO&apos;s agency partner ran into internal delays and a tightening budget for an upcoming activation featuring real entrepreneurs, they needed an agile partner to expedite the docu-style media project without compromising the agency&apos;s vision, processes and quality.
               </p>
             </div>
             <GoldFrame direction="right">
@@ -87,7 +87,7 @@ export default function BMOCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">We&rsquo;ll Do It Live</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                Real stories from real small business owners meant capturing authentic moments as they happened. Our crews embedded with each business to document their journey with BMO.
+                To keep things lean and nimble, we would need to adapt how agency and client creative inputs traditionally work. That meant choices like using a photojournalism shooting approach, minimizing req. brand shots, and designing feedback around curation by: Removing stills approvals on-set, Using a subject&apos;s real day-of schedule, Doing req. soundbite VO&apos;s off camera
               </p>
             </div>
           </div>
@@ -129,9 +129,17 @@ export default function BMOCaseStudy() {
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
+                <span className="text-sm font-bold text-white block mb-4">SPEED AND CONFIDENCE</span>
                 <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
                   Do it Once And Do It Right
                 </h2>
+                <p className="text-lg text-white/90 leading-[27px] mt-6">
+                  Getting agency partners to embrace a more fast-and-loose production style means getting broad coverage and building trust in the editing process. We spent time optimizing non-negotiables against spontaneity to make everyone comfortable we&apos;d hit the creative goals while being as fast as possible.
+                </p>
+                <p className="text-lg text-white/90 leading-[27px] mt-4">
+                  <strong className="font-bold">Outputs:</strong>{" "}
+                  12 final OTT videos - each with ENG/FR, 15s and 6s, upper and lower funnel focus, and audio-only variants. 25 edited stills - in-branch print, ATM screens, digital banner, paid social, and in-app promo.
+                </p>
               </div>
               {/* RIGHT column — accordion */}
               <div className="lg:w-[60%]">

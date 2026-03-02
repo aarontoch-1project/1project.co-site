@@ -16,22 +16,22 @@ const details = [
   {
     title: "Creative Formulas",
     description:
-      "We developed repeatable creative frameworks for outdoor product photography that maintained brand consistency across diverse locations and conditions.",
+      "We streamlined all creative inputs down to SKU + WHO + WHERE to let the team to brief rapidly alongside a standard brand shot list and flexible scenario templates guided by locale/demo.",
   },
   {
     title: "Removing Risk",
     description:
-      "Weather contingencies, location permits, and safety protocols were all managed by our production team, removing logistical risk from Core's marketing calendar.",
+      "A lot can happen in the woods. Remote locations are unpredictable, weather can change fast, and we know sometimes freelancers can just miss the mark! Core was able to ensure every shoot netted outputs they could use with free reshoot insurance against every production.",
   },
   {
     title: "New Rules",
     description:
-      "Traditional product photography rules don't apply in the wild. We developed new approaches to showcase gear in authentic use scenarios.",
+      "Experienced outdoors enthusiasts know that every trip is a learning experience. With our iterative briefing framework, we were able to add brand-specific production tricks and tips into subsequent projects and refine Core's shoots.",
   },
   {
     title: "What A Trip",
     description:
-      "Each production trip yielded content for multiple campaigns — product shots, lifestyle imagery, social content, and behind-the-scenes material.",
+      "Structured to be 'send-away' assignments, our photoshoots were actual camping adventures - allowing for sunrise to sunset coverage of stunning wilderness and unique moments that just can't be captured during an office-hours photoshoot.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function CoreCaseStudy() {
           <div className="mx-auto max-w-7xl">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Lifestyle Content</Link>
             <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">CORE</h1>
-            <p className="text-lg text-white max-w-2xl text-left">Go take a hike — and bring a camera</p>
+            <p className="text-lg text-white max-w-2xl text-left">Giving an outdoors company access to authentic remote locations</p>
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function CoreCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">Go Take A Hike</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                Core Equipment Co. needed content that captured the spirit of outdoor adventure. We assembled crews who live and breathe the outdoors to create imagery that felt authentic, not staged.
+                As Core Equipment Co's product line expanded, so did a need for authentic lifestyle content of their outdoors gear in action. But with narrowing target demos and internal production based in city centers, it was becoming hard to hit all the geographically distinct locales their customers frequented.
               </p>
             </div>
             <GoldFrame direction="right">
@@ -82,7 +82,7 @@ export default function CoreCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">Friends In Wild Places</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                Our network of outdoor-lifestyle photographers and videographers spanned multiple regions, giving Core access to diverse landscapes and genuine outdoor enthusiasts as talent.
+                After a brief aesthetic calibration we quickly assembled Core their own network of on-demand outdoor lifestyle freelancers from across North America. Combined with a selection of flat-rated video and photo project formats the team could now: Add localized content to activations, Shoot in iconic national parks, Increase output volume, Get unique shots of remote spaces
               </p>
             </div>
           </div>
@@ -99,13 +99,8 @@ export default function CoreCaseStudy() {
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-24-scaled.jpg" alt="Core product" fill className="object-cover" /></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-3-scaled.jpg" alt="Core wilderness" fill className="object-cover" /></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/JB2_2190-scaled.jpg" alt="Core equipment" fill className="object-cover" /></div>
-            {/* [MEDIA-014] 2 additional images needed to reach 8 total */}
-            <div className="flex items-center justify-center aspect-[4/3] rounded-lg" style={{ background: '#2a2a2a', border: '2px dashed #666' }}>
-              <span style={{ color: '#999', fontSize: '16px' }}>[MEDIA-014] Image Placeholder</span>
-            </div>
-            <div className="flex items-center justify-center aspect-[4/3] rounded-lg" style={{ background: '#2a2a2a', border: '2px dashed #666' }}>
-              <span style={{ color: '#999', fontSize: '16px' }}>[MEDIA-014] Image Placeholder</span>
-            </div>
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/JB2_2394-Edit-scaled.jpg" alt="Core hiking" fill className="object-cover" /></div>
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/block2-core-scaled.jpg" alt="Core gear" fill className="object-cover" /></div>
           </div>
         </section>
       </FadeIn>
@@ -117,11 +112,16 @@ export default function CoreCaseStudy() {
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
+                <span className="text-sm font-bold text-white block mb-4">PACKED AND READY</span>
                 <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
                   Specific, Sporadic, &amp; Spontaneous
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
-                  From alpine trails to desert canyons, our mobile production teams were equipped to shoot in remote locations with minimal footprint and maximum creative output.
+                  The key to building Core something they could fully take advantage of was making sure that the production matched the flexibility and freedom of real camping. Designing around scenarios rather than shot-lists, leaving room for creative interpretation across talent and activities, the inability to fully scout a location until you are on-site - all things that keep each shoot creatively straightforward, quick to execute, and naturally authentic.
+                </p>
+                <p className="text-lg text-white/90 leading-[27px] mt-4">
+                  <strong className="font-bold">Avg. Scope and Outputs (per shoot):</strong>{" "}
+                  25 photos / 40+ clip library / 30s edited final
                 </p>
               </div>
               {/* RIGHT column — accordion */}

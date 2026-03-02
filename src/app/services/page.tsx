@@ -18,22 +18,22 @@ const processItems = [
   {
     title: "Getting To Know You",
     content:
-      "First — we dive into who you are and what you do best. This initial interview helps us get a nuanced and detailed outline of your content needs, team structure, internal resources, brand goals, current workflows, and how you like to work.",
+      "First - we dive into who you are and what you do best.\n\nThis initial interview helps us get a nuanced and detailed outline of your content needs, team structure, internal resources, brand goals, current workflows, and how you like to work.",
   },
   {
     title: "Creative Calibration",
     content:
-      "Next — we zero-in on your brand\u2019s visual identity with our Creative Calibration. In a guided session we take you through various creative references, discuss tone and voice, and examine your existing brand aesthetic through the lens of production services.",
+      "Next - we zero-in on your brands visual identity with our Creative Calibration.\n\nIn a guided session we take you through various creative references, discuss tone and voice, and examine your existing brand aesthetic through the lens of production services.",
   },
   {
     title: "A Framework for Success",
     content:
-      "Your feedback is distilled into 3 tools: a Brand Master Brief with technical needs and visual references, a Production Menu with ready-to-launch productions and transparent pricing, and a Network Sampler with curated portfolios matched to your projects.",
+      "Your feedback is distilled into 3 tools: Brand Master Brief - your reusable briefing format complete with technical needs, visual references, and brand guidelines. Production Menu - a list of ready-to-launch productions built for your workflow and current needs - with detailed scopes, transparent pricing, variable turn-arounds, and flexible deliverables. Network Sampler - a selection of portfolios curated against your projects, aesthetic needs, and vertical - to lock in alignment for your network.",
   },
   {
     title: "Let\u2019s Get To Work",
     content:
-      "Now we can get started — in whatever way makes sense to you. Our flexible model means you can launch projects as you need them, set-up long-term recurrent shoots, request something new, or have us consult and tag-in on an upcoming need.",
+      "Now we can get started - in whatever way makes sense to you.\n\nOur flexible model means you can launch projects as you need them, set-up long-term recurrent shoots, request something new, or have us consult and tag-in on an upcoming need.",
   },
 ];
 
@@ -188,7 +188,7 @@ export default function ServicesPage() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-h2 mb-6">Stunning Brand Narratives</h2>
+              <h2 className="text-[27px] font-semibold mb-6">Stunning Brand Narratives</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Short-form, long-form or free-form — there is no wrong way to
                 show off your brand as the main character. Expand on the type of
@@ -215,7 +215,7 @@ export default function ServicesPage() {
               <VimeoEmbed videoId="1168992239" hash="97957d8a05" />
             </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">Authentic Lifestyle Imagery</h2>
+              <h2 className="text-[27px] font-semibold mb-6">Authentic Lifestyle Imagery</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Crafting true-to-life content is one of our key specialties.
                 Hone-in on a unique and effortless lifestyle aesthetic for your
@@ -236,7 +236,7 @@ export default function ServicesPage() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-h2 mb-6">Specialty and Niche Production</h2>
+              <h2 className="text-[27px] font-semibold mb-6">Specialty and Niche Production</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Make your campaigns stand out visually with{" "}
                 <span className="gold-highlight">
@@ -268,7 +268,7 @@ export default function ServicesPage() {
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">Engaging Docu-style Storytelling</h2>
+              <h2 className="text-[27px] font-semibold mb-6">Engaging Docu-style Storytelling</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 We have a rich history of helping brands use real stories to
                 drive consistent and powerful engagement. Master your

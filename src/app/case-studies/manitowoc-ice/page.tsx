@@ -9,29 +9,29 @@ import { Accordion } from "@/components/Accordion";
 export const metadata: Metadata = {
   title: "PENTAIR",
   description:
-    "Not exactly our wheelhouse — but that's kind of our thing. See how 1Project helped Pentair build a scalable asset library.",
+    "Supercharging a technical media library with lifestyle assets. See how 1Project helped Pentair build a scalable content production system.",
 };
 
 const details = [
   {
     title: "Streamlining Creative",
     description:
-      "A standardized creative brief and shot list template meant every product received the same level of attention and brand consistency.",
+      "Lifestyle scenes boiled down to SKU + ACTION for the team while we filled in the other creative details",
   },
   {
     title: "Locked Production Scope",
     description:
-      "Fixed-scope production packages gave Pentair predictable costs and timelines, eliminating budget surprises and scope creep.",
+      "Regardless of the scenes, the creative could be executed in 1 or 2 days on-set.",
   },
   {
     title: "Maximizing Outputs",
     description:
-      "Each production day was engineered to capture maximum content — product shots, lifestyle imagery, and video — from a single setup.",
+      "The production was structured to work for both video and stills simultaneously to get the most assets from every set-up.",
   },
   {
     title: "Full Enterprise Integration",
     description:
-      "All assets were delivered in formats compatible with Pentair's DAM system, tagged with metadata for easy discovery and deployment.",
+      "Content was edited and uploaded ready-to-use directly to their backend complete with meta-data.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function PentairCaseStudy() {
           <div className="mx-auto max-w-7xl">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Asset Library</Link>
             <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">PENTAIR</h1>
-            <p className="text-lg text-white max-w-2xl text-left">Not exactly our wheelhouse — but that&rsquo;s kind of our thing</p>
+            <p className="text-lg text-white max-w-2xl text-left">Supercharging a technical media library with lifestyle assets</p>
           </div>
         </div>
       </section>
@@ -56,9 +56,9 @@ export default function PentairCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-h2 mb-6">Not Exactly Our Wheelhouse</h2>
+              <h2 className="text-h2 mb-6">Not Exactly our Wheelhouse</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                When Pentair approached us about producing content for commercial ice machines, it wasn&rsquo;t our typical brief. But adaptability is what sets 1Project apart — we dove deep into the product category and found compelling visual stories.
+                Manitowoc Ice relies on long-term relationships with key distributors in the hospitality supply industry. They wanted to provide their partners with a large bank of approved lifestyle photography for localized campaigns - but as a team built around strong technical writing, creating a bank of authentic lifestyle photography was a much more challenging task.
               </p>
             </div>
             <GoldFrame direction="right">
@@ -82,7 +82,7 @@ export default function PentairCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">Simple, Repeatable, and Scalable</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                We developed a production framework that could be repeated across Pentair&rsquo;s entire product line, creating consistent brand imagery that scaled with their catalog.
+                Using their product release schedule and tradeshow availability as milestones, we found the perfect size high-volume shoot to quickly add evergreen lifestyle content and cover new feature SKUS and targeted use cases.
               </p>
             </div>
           </div>
@@ -99,7 +99,6 @@ export default function PentairCaseStudy() {
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-B2083-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-Studio14524-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/manitowoc_dec220180-2-1.png" alt="Pentair" fill className="object-cover" /></div>
-            {/* [MEDIA-012] Video placeholder — currently shows "Coming Soon" */}
           </div>
         </section>
       </FadeIn>
@@ -112,13 +111,17 @@ export default function PentairCaseStudy() {
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
                 <span className="text-sm font-bold text-white block mb-4">
-                  Staying Creative at a Glacial Pace
+                  CHILL OUT
                 </span>
                 <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
-                  Chill Out
+                  Staying Creative at a Glacial Pace
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
-                  The final asset library gave Pentair&rsquo;s marketing team everything they needed — product photography, lifestyle imagery, and video content — all organized and ready to deploy.
+                  Through finding workflows and engagement timelines that sync with slower moving industrial sales cycles and offering &apos;as-you-need-it&apos; production - we made it easy for Manitowoc&apos;s team to pick back up any content plans that got put on ice during tradeshow season and top off evergreen content in short bursts of high-volume work without needing to redesign creative from the ground up.
+                </p>
+                <p className="text-lg text-white/90 leading-[27px] mt-4">
+                  <strong className="font-bold">Outputs (per shoot):</strong>{" "}
+                  12 products featured across 200+ photos and 100+ video clips + Raw content
                 </p>
               </div>
               {/* RIGHT column — accordion */}

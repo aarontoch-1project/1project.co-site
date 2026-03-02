@@ -10,29 +10,29 @@ import { Accordion } from "@/components/Accordion";
 export const metadata: Metadata = {
   title: "TATA CONSUMER",
   description:
-    "Enabling brand leads to finish a job — when their agency couldn't. See how 1Project helped Tata Consumer produce compelling brand video content.",
+    "Enabling brand leads to finish a job their agency started. See how 1Project helped Tata Consumer produce compelling brand video content.",
 };
 
 const details = [
   {
     title: "ASAP Approvals",
     description:
-      "Streamlined approval workflows meant faster turnaround without sacrificing quality control or brand consistency.",
+      "With delivery being time-sensitive, we integrated remote on-set approval for key shots to eliminate assembly drafts, and reduce back-and-forth in post-production.",
   },
   {
     title: "Easy Extras",
     description:
-      "Our production methodology naturally generates bonus assets — behind-the-scenes content, social cuts, and still photography — at no additional cost.",
+      "Each of the 4 SKUs had a unique flavour and signature preparation the team was planning to promote in the future. We added each preparation into the video structure so assets and b-roll could be reused across future recipe content.",
   },
   {
     title: "Ready To Ship",
     description:
-      "All deliverables were formatted, color-graded, and packaged for immediate deployment across digital, social, and retail channels.",
+      "Assets were delivered with custom meta-data to allow direct upload from our editors to digital distributors' DAM platforms.",
   },
   {
     title: "Under The Clock",
     description:
-      "The entire production — from brief to final delivery — was completed in under 3 weeks, meeting the campaign launch deadline with days to spare.",
+      "Concept to go-live timeline was under 4 weeks, despite international placements, remote production, revising pre-approved creative, and multiple distribution partners.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function TataConsumerCaseStudy() {
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Brand Video</Link>
             <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">TATA CONSUMER</h1>
             <p className="text-lg text-white max-w-2xl text-left">
-              Enabling brand leads to finish a job — when their agency couldn&rsquo;t
+              Enabling brand leads to finish a job their agency started
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function TataConsumerCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">Left Empty-Handed</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                When Tata Consumer&rsquo;s agency partner fell short on delivering planned video content for their Eight O&rsquo;Clock Coffee brand, the team was left without key assets for an upcoming campaign launch.
+                The brand team for Tata Consumer&apos;s legacy brand Eight-O-Clock Coffee was in a tricky spot. Having made the decision to drop their current AOR, they we&apos;re left to fill dozens of already-purchased media buys on their own with only a minimal flex-budget remaining in the campaign&apos;s coffers.
               </p>
             </div>
             <GoldFrame direction="right">
@@ -86,11 +86,8 @@ export default function TataConsumerCaseStudy() {
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Time To Get Creative</h2>
-              <p className="text-lg text-white/90 leading-[27px] mb-6">
-                1Project stepped in with a rapid-response production framework, assembling a specialized crew and developing a creative brief that captured the brand&rsquo;s warmth and authenticity in record time.
-              </p>
               <p className="text-lg text-white/90 leading-[27px]">
-                By maximizing every shoot day and leveraging our network of versatile creators, we delivered a full suite of video and photo assets that exceeded the original scope — all within the compressed timeline.
+                After adapting their ex-agency&apos;s initial creative - we restructured the main video content into a modular format, allowing multiple SKUs to have unique deliverables under the same script. We then optimized the limited budget by: Moving production to a lower-cost locale, Leveraging existing design assets more, Using remote art directors for pre-pro, Providing on-set AD and line-producing.
               </p>
             </div>
           </div>
@@ -135,9 +132,17 @@ export default function TataConsumerCaseStudy() {
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
+                <span className="text-sm font-bold text-white block mb-4">MAKING THE MOST</span>
                 <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
                   Wake Up and Smell the Coffee
                 </h2>
+                <p className="text-lg text-white/90 leading-[27px] mt-6">
+                  A huge takeaway for the brand team was seeing just how drastically strong production design can drive a project. An asset-first perspective like &apos;modular video&apos; can enable a smaller team to confidently take on projects internally where hundreds of unique deliverables are required.
+                </p>
+                <p className="text-lg text-white/90 leading-[27px] mt-4">
+                  <strong className="font-bold">Output:</strong>{" "}
+                  144 unique OTT video assets: 4 different SKU hero narratives with 30s, 15s, and 6s versions, each with 12 regional vendor variants + stills and raw footage.
+                </p>
               </div>
               {/* RIGHT column — accordion */}
               <div className="lg:w-[60%]">

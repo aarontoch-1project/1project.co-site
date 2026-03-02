@@ -17,22 +17,22 @@ const results = [
   {
     title: "Streamlining Choice",
     description:
-      "Every video was pitched under a fixed-bidding system \u2014 letting clients choose from multiple teams based on creative alone.",
+      "Every video was pitched under a fixed-bidding system - letting clients choose from multiple teams based on creative alone.",
   },
   {
-    title: "Staying on Track",
+    title: "Staying on track",
     description:
-      "Despite sometimes being vastly different types of shoots \u2014 turnaround remained consistent at 3 weeks from briefings.",
+      "Despite sometimes being vastly different types of shoots - turnaround remained consistent at 3 weeks from briefings.",
   },
   {
     title: "Unlimited Revisions",
     description:
-      "For consistency, all post-production was centralized by 1Project\u2019s in-house editors \u2014 making draft revisions faster and removing any concerns of scope-creep on freelancers.",
+      "For consistency, all post-production was centralized by 1Projects in-house editors - making draft revisions faster and removing any concerns of scope-creep on freelancers.",
   },
   {
     title: "No Cost Extras",
     description:
-      "Every video\u2019s shooting-methodology incorporated ample B-roll with unlimited usage. This way stores got matching, on-brand assets they could use outside the scope of the program\u2019s OTT campaigns.",
+      "Every videos shooting-methodology incorporated ample B-roll with unlimited usage. This way stores got matching, on-brand assets they could use outside the scope of the programs OTT campaigns.",
   },
 ];
 
@@ -62,21 +62,6 @@ export default function AmazonCaseStudy() {
         </div>
       </section>
 
-      {/* ── 2. Intro Context ── */}
-      <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="text-lg text-white leading-[27px] text-left">
-              Amazon was running a program that provided high-performing stores
-              with funding to create and place OTT video campaigns. They wanted
-              every video to be something that was unique to each brand&rsquo;s
-              look and feel &mdash; but also needed every production to have
-              matching scopes, budgets, and timelines that met the
-              program&rsquo;s standards.
-            </p>
-          </div>
-        </section>
-      </FadeIn>
 
       {/* ── 3. "To Each Their Own" (text LEFT, video RIGHT) ── */}
       <FadeIn>
@@ -85,11 +70,12 @@ export default function AmazonCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">To Each Their Own</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                Supporting an Amazon agency partner, we developed a repeatable
-                creative video framework and workflow to give each store a simple
-                briefing process, 3 creative pitches from different teams, the
-                ability to shoot globally and remotely, and a plug-in format to
-                add key SKUs, brand messaging, and a preferred target audience.
+                Amazon was running a program that provided high-performing stores
+                with funding to create and place OTT video campaigns. They wanted
+                every video to be something that was unique to each brand&apos;s
+                look and feel - but also needed every production to have
+                matching scopes, budgets, and timelines that met the
+                program&apos;s standards.
               </p>
             </div>
             <GoldFrame direction="right">
@@ -108,17 +94,13 @@ export default function AmazonCaseStudy() {
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Customizable Creative</h2>
-              <p className="text-lg text-white/90 leading-[27px] mb-6">
-                Through centralizing all production and freelancers through
-                1Project, Amazon was able to offer each brand participant a
-                unique video for their brand, while keeping scopes and budgets
-                consistent across the entire campaign.
-              </p>
               <p className="text-lg text-white/90 leading-[27px]">
-                <strong className="font-bold">Outputs (per brand)</strong>{" "}
-                30s OTT ad w/ VO+motion, hi-res stills, b-roll clip library,
-                all raw footage, global usage, and cropped cut-downs of final
-                for social.
+                Supporting an Amazon agency partner, we developed a repeatable
+                creative video framework and workflow to give each store: A
+                simple briefing process, 3 creative pitches from different
+                teams, Ability to shoot globally and remotely, A plug-in format
+                to add key SKUs, brand messaging, and a preferred target
+                audience.
               </p>
             </div>
           </div>
@@ -162,6 +144,18 @@ export default function AmazonCaseStudy() {
                 <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
                   Different Brands Different Needs Same Outputs
                 </h2>
+                <p className="text-lg text-white/90 leading-[27px] mt-6">
+                  Through centralizing all production and freelancers through
+                  1Project, Amazon was able to offer each brand participant a
+                  unique video for their brand, while keeping scopes and budgets
+                  consistent across the entire campaign.
+                </p>
+                <p className="text-lg text-white/90 leading-[27px] mt-4">
+                  <strong className="font-bold">Outputs (per brand):</strong>{" "}
+                  30s OTT ad w/ VO+motion, hi-res stills, b-roll clip library,
+                  all raw footage, global usage, and cropped cut-downs of final
+                  for social.
+                </p>
               </div>
               {/* RIGHT column — accordion */}
               <div className="lg:w-[60%]">

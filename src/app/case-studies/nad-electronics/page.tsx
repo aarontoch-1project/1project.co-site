@@ -16,22 +16,22 @@ const details = [
   {
     title: "Organizing History",
     description:
-      "Decades of product innovation, engineering breakthroughs, and brand evolution were researched, catalogued, and woven into a compelling narrative arc.",
+      "By breaking post-production of the documentary into distinct eras the team could run technical or storyline QA segment by segment and do draft approvals on different sections simultaneously.",
   },
   {
     title: "Archivists",
     description:
-      "Our team digitized and restored archival footage, photography, and documents to bring NAD's history to life with authentic visual storytelling.",
+      "With the large volume of physical media digitized for the film, NAD was left with a searchable historical brand content archive for future use.",
   },
   {
     title: "Fan Service Success",
     description:
-      "The documentary resonated deeply with NAD's audiophile community, generating significant engagement and reinforcing brand loyalty among their most passionate customers.",
+      "Striking a balance between technical concepts and historical content made the documentary an educational stand-out in a space known for its sometimes promo-heavy brand pieces.",
   },
   {
     title: "Centerpiece Content",
     description:
-      "The feature documentary became the centerpiece of NAD's content strategy, with derivative cuts and clips fueling social media, trade shows, and retailer presentations.",
+      "The documentary and its various educational vignettes, archival content, stylized era sets, and product features provided the bulk of the content for NAD's matching 50 Years micro-site.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function NADCaseStudy() {
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Feature Documentary</Link>
             <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">NAD ELECTRONICS</h1>
             <p className="text-lg text-white max-w-2xl text-left">
-              Helping a passionate team of music-lovers tell an epic story about sound
+              Helping a passionate team of music-lovers tell their biggest story
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function NADCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">Turning Up the Volume</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                NAD Electronics had decades of audio innovation history but no cohesive narrative to share it. We partnered with their team to craft a feature-length documentary that celebrated their legacy and vision.
+                When Lenbrook International&rsquo;s world-renowned audiophile brand NAD came up on its 50 Years Anniversary - they wanted to celebrate their story with an inspiring brand documentary. But with an internal agency built to create technical and niche audiophile content - they would need some help giving NAD&rsquo;s history the Hollywood treatment it deserved.
               </p>
             </div>
             <GoldFrame direction="right">
@@ -93,7 +93,7 @@ export default function NADCaseStudy() {
             <div>
               <h2 className="text-h2 mb-6">Amplifying Everyone</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                From engineers to executives, every voice at NAD had a story worth telling. Our documentary approach ensured each perspective was captured authentically, creating a rich tapestry of the brand&rsquo;s culture.
+                A big internal challenge was agreeing on the priority of telling NAD&rsquo;s personality-rich brand story VS detailing their key technical innovations. By collaborating with marketing and engineering teams on two distinct scripts - one focused on company history, and one outlining cornerstone technologies - we helped blend both sides into a storyline that spoke to both industry and audiophile audiences.
               </p>
             </div>
           </div>
@@ -129,8 +129,15 @@ export default function NADCaseStudy() {
             <div className="w-[90%] ml-auto relative aspect-[16/7] overflow-hidden">
               <Image src="/images/case-studies/nad/NAD_still-5-e1713856264496.png" alt="NAD sound innovation" fill className="object-cover" />
             </div>
-            {/* [MEDIA-010] Gallery needs full-bleed masonry restoration (1135px+ images) */}
-            {/* [MEDIA-011] Missing 1 video */}
+            {/* Row 6 — two images side by side */}
+            <div className="grid grid-cols-2 gap-4 px-6 lg:px-8">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image src="/images/case-studies/nad/mod.png" alt="NAD mod" fill className="object-cover" />
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image src="/images/case-studies/nad/nasds.png" alt="NAD product" fill className="object-cover" />
+              </div>
+            </div>
           </div>
         </section>
       </FadeIn>
@@ -142,11 +149,16 @@ export default function NADCaseStudy() {
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
+                <span className="text-sm font-bold text-white block mb-4">LOUD AND CLEAR</span>
                 <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
                   An Honest Sounding Board
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
-                  The final documentary served as both an internal rallying cry and an external brand statement, showcasing NAD&rsquo;s commitment to audio excellence across multiple distribution channels.
+                  When creative has unlimited depth - having a North Star to guide everyone is indispensable. Funneling a passionate team through the right narrative production framework can allow authentic and engaging stories to reveal themselves regardless of how niche or nuanced the subject matter.
+                </p>
+                <p className="text-lg text-white/90 leading-[27px] mt-4">
+                  <strong className="font-bold">Outputs:</strong>{" "}
+                  43min feature documentary, teaser trailer w/ social cuts, 10x 2-3min Product vignettes, product beauty clips, digitized historical archives, custom score, 10 page microsite
                 </p>
               </div>
               {/* RIGHT column — accordion */}

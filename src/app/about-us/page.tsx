@@ -20,7 +20,7 @@ const values = [
     alt: "Diverse Freelance Network icon",
   },
   {
-    title: "Creative Infrastructure",
+    title: "Creative Infastructure",
     description:
       "Tools and processes teams can build upon and use beyond a single shoot, campaign, or platform.",
     icon: "/images/about/team-management-2.png",
@@ -42,60 +42,84 @@ const partnerLogos = [
   { src: "/images/logos/BMOlogo-768x286.png", alt: "BMO", w: 184, h: 84 },
   { src: "/images/logos/tatalogo-768x286.png", alt: "Tata Consumer", w: 184, h: 84 },
   { src: "/images/logos/Pentair_logo_RGB-1-768x286.png", alt: "Pentair", w: 184, h: 84 },
-  // Row 2 — [MEDIA-016] 5 missing partner logos
-  { src: "", alt: "Partner Logo 6", w: 184, h: 84, placeholder: true },
-  { src: "", alt: "Partner Logo 7", w: 184, h: 84, placeholder: true },
-  { src: "", alt: "Partner Logo 8", w: 184, h: 84, placeholder: true },
-  { src: "", alt: "Partner Logo 9", w: 184, h: 84, placeholder: true },
-  { src: "", alt: "Partner Logo 10", w: 184, h: 84, placeholder: true },
-] as const;
+  // Row 2 — additional partner logos from logo transparency files
+  { src: "/images/logos/Logo transparency.png", alt: "Partner", w: 184, h: 84 },
+  { src: "/images/logos/Logo transparency 2.png", alt: "Partner", w: 184, h: 84 },
+  { src: "/images/logos/Logo transparency 3.png", alt: "Partner", w: 184, h: 84 },
+  { src: "/images/logos/Logo transparency 4.png", alt: "Partner", w: 184, h: 84 },
+  { src: "/images/logos/Logo transparency 5.png", alt: "Partner", w: 184, h: 84 },
+];
+
+const galleryImages = [
+  { src: "/images/case-studies/bmo/1Project_Day1_MB_055-1.jpg", alt: "Team on set" },
+  { src: "/images/case-studies/bmo/1Project_Day1_MB_1501-1.jpg", alt: "Production crew" },
+  { src: "/images/case-studies/bmo/1Project_Day1_MB_334-1.jpg", alt: "Behind the scenes" },
+  { src: "/images/case-studies/bmo/1Project_Day2_MB_124-1.jpg", alt: "Team on location" },
+  { src: "/images/case-studies/bmo/1Project_Day2_MB_562-2-1.jpg", alt: "Production day" },
+  { src: "/images/case-studies/bmo/1Project_Day2_MB_761-2-1.jpg", alt: "Crew at work" },
+  { src: "/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg", alt: "Outdoor shoot" },
+  { src: "/images/case-studies/core/Core-6p-0522-Edited-24-scaled.jpg", alt: "Core production" },
+  { src: "/images/case-studies/nad/nadblock1.png", alt: "NAD production" },
+  { src: "/images/case-studies/core/JB2_2394-Edit-scaled.jpg", alt: "Adventure shoot" },
+  { src: "/images/case-studies/nad/nadblock2.png", alt: "Documentary filming" },
+];
 
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-40 pb-20 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h1 className="text-hero leading-tight mb-2">
-                Changing How Brands
-              </h1>
-              <CyclingText
-                words={[
-                  "Make Amazing Content",
-                  "Plan for Success",
-                  "Tell Stories",
-                  "Drive Their Creative",
-                ]}
-                className="text-cycling"
-              />
-              <p className="text-lg text-white/90 mt-6">
-                Empowering great brands to take back the reins on their Content
-                Creation
-              </p>
-            </div>
-            <div>
-              <Image
-                src="/images/about/about-img-section-1.jpg"
-                alt="About section hero image"
-                width={550}
-                height={477}
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
+      {/* Hero — Full-bleed background image with text overlay */}
+      <section className="relative min-h-screen flex items-end pb-24 px-6 lg:px-8">
+        <div className="absolute inset-0 bg-dark-deep z-0 overflow-hidden">
+          <Image
+            src="/images/case-studies/amazon/Amazon_block1_still.jpg"
+            alt="About us hero background"
+            fill
+            className="object-cover opacity-50"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl w-full">
+          <h1 className="text-hero text-gold font-semibold mb-2 text-left">
+            Changing How Brands
+          </h1>
+          <CyclingText
+            words={[
+              "Make Amazing Content",
+              "Plan for Success",
+              "Tell Stories",
+              "Drive Their Creative",
+            ]}
+            className="text-cycling"
+          />
         </div>
       </section>
+
+      {/* Mission Statement — Animated Headline style */}
+      <FadeIn>
+        <section className="py-24 lg:py-32 px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-[46px] font-bold leading-[55.2px] text-white">
+              Empowering great brands to take back the reins on their{" "}
+              <span className="text-gold italic">Content Creation</span>
+            </h2>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* Mission — Two-Column: image LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[34%_50%] gap-16 items-center">
               {/* LEFT — Mission Image */}
-              <div className="flex items-center justify-center rounded-lg" style={{ background: '#2a2a2a', border: '2px dashed #666', aspectRatio: '544/472' }}>
-                <span style={{ color: '#999', fontSize: '16px' }}>[MEDIA-015] Our Mission Image (544x472)</span>
+              <div className="relative" style={{ aspectRatio: '544/472' }}>
+                <Image
+                  src="/images/about/about-img-section-1.jpg"
+                  alt="Our Mission"
+                  fill
+                  className="object-cover"
+                />
               </div>
               {/* RIGHT — Mission Text */}
               <div>
@@ -162,69 +186,45 @@ export default function AboutPage() {
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
-            <h2 className="text-h2 mb-12">Our Partners</h2>
+            <SectionDivider className="mb-12">
+              <h2 className="text-h2">Our Partners</h2>
+            </SectionDivider>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-8 justify-items-center opacity-50">
               {partnerLogos.map((logo, i) => (
-                'placeholder' in logo && logo.placeholder ? (
-                  <div key={i} className="flex items-center justify-center rounded" style={{ width: 184, height: 84, background: '#2a2a2a', border: '2px dashed #666' }}>
-                    <span style={{ color: '#999', fontSize: '12px' }}>[MEDIA-016]</span>
-                  </div>
-                ) : (
-                  <Image
-                    key={logo.src}
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={logo.w}
-                    height={logo.h}
-                    className="object-contain invert hover:opacity-80 transition-opacity duration-300"
-                  />
-                )
+                <Image
+                  key={i}
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.w}
+                  height={logo.h}
+                  className="object-contain invert hover:opacity-80 transition-opacity duration-300"
+                />
               ))}
             </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* Our Teams at Work — dense multi-column masonry gallery */}
+      {/* Our Teams at Work — horizontal scrolling carousel (11 images) */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionDivider className="mb-16">
               <h2 className="text-h2 text-center">Our Teams at Work</h2>
             </SectionDivider>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
-              {/* Existing images */}
-              <div className="relative aspect-square overflow-hidden">
-                <Image src="/images/case-studies/bmo/1Project_Day1_MB_055-1.jpg" alt="Team on set" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+            <div className="overflow-x-auto pb-4 -mx-6 px-6">
+              <div className="flex gap-3" style={{ width: 'max-content' }}>
+                {galleryImages.map((img, i) => (
+                  <div key={i} className="relative w-[300px] h-[220px] flex-shrink-0 overflow-hidden">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                ))}
               </div>
-              <div className="relative aspect-square overflow-hidden">
-                <Image src="/images/case-studies/bmo/1Project_Day1_MB_1501-1.jpg" alt="Production crew" fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="relative aspect-square overflow-hidden">
-                <Image src="/images/case-studies/bmo/1Project_Day1_MB_334-1.jpg" alt="Behind the scenes" fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="relative aspect-square overflow-hidden">
-                <Image src="/images/case-studies/bmo/1Project_Day2_MB_124-1.jpg" alt="Team on location" fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="relative aspect-square overflow-hidden">
-                <Image src="/images/case-studies/bmo/1Project_Day2_MB_562-2-1.jpg" alt="Production day" fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="relative aspect-square overflow-hidden">
-                <Image src="/images/case-studies/bmo/1Project_Day2_MB_761-2-1.jpg" alt="Crew at work" fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              {/* Reuse some images in different positions for visual density */}
-              <div className="relative aspect-square overflow-hidden col-span-2 row-span-2">
-                <Image src="/images/case-studies/bmo/1Project_Day1_MB_055-1.jpg" alt="Team on set" fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="relative aspect-square overflow-hidden">
-                <Image src="/images/case-studies/bmo/1Project_Day1_MB_334-1.jpg" alt="Behind the scenes" fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-              {/* [MEDIA-002] About Us gallery — needs ~28 more images to reach ~37 total */}
-              {Array.from({ length: 28 }, (_, i) => (
-                <div key={`placeholder-${i}`} className="flex items-center justify-center aspect-square rounded" style={{ background: '#2a2a2a', border: '1px dashed #444' }}>
-                  <span style={{ color: '#666', fontSize: '10px' }}>[MEDIA-002]</span>
-                </div>
-              ))}
             </div>
           </div>
         </section>

@@ -42,7 +42,7 @@ const accordionItems = [
   {
     title: "Work in Your Own Way",
     content:
-      "Our production workflows are designed around your team\u2019s existing structure, chain of approvals, budgets, and internal resources. We follow your lead on what works best for you.",
+      "Our production workflows are designed around your teams existing structure, chain of approvals, budgets, and internal resources. We follow your lead on what works best for you.",
   },
 ];
 
