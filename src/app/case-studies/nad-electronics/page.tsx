@@ -158,7 +158,7 @@ export default function NADCaseStudy() {
                 </p>
                 <p className="text-lg text-white/90 leading-[27px] mt-4">
                   <strong className="font-bold">Outputs:</strong>{" "}
-                  43min feature documentary, teaser trailer w/ social cuts, 10x 2-3min Product vignettes, product beauty clips, digitized historical archives, custom score, 10 page microsite
+                  43min feature documentary, teaser trailer w/ social cuts, 10x 2-3min Product vignettes, product beauty clips, digitized historical archives, custom score, 10 page microsite + raw footage, 8+ hours of additional technical interviews, stills, and clip library
                 </p>
               </div>
               {/* RIGHT column — accordion */}

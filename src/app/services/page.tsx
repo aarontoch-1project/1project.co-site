@@ -165,7 +165,7 @@ export default function ServicesPage() {
                 "Transparent",
                 "Global",
               ]}
-              className="text-cycling"
+              className="text-cycling font-bold leading-tight"
             />
           </div>
         </div>

@@ -89,10 +89,11 @@ export default function CoreCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* Image Gallery — 8 lifestyle images in 4-column grid */}
+      {/* Image Gallery — 9 lifestyle images in 4-column grid */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
           <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-2">
+            <div className="relative aspect-[4/3] overflow-hidden bg-dark-deep flex items-center justify-center"><span className="text-white/30 text-sm">[MEDIA-003]</span></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg" alt="Core outdoor" fill className="object-cover" /></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-2-1-scaled.jpg" alt="Core lifestyle" fill className="object-cover" /></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-21-scaled.jpg" alt="Core adventure" fill className="object-cover" /></div>

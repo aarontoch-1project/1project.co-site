@@ -94,11 +94,13 @@ export default function PentairCaseStudy() {
         <section className="px-6 lg:px-8 pb-24">
           <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/1V0A0355-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
+            <div className="relative aspect-video overflow-hidden bg-dark-deep flex items-center justify-center"><span className="text-white/30 text-sm">[MEDIA-001]</span></div>
+            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/manitowoc_dec220180-2-1.png" alt="Pentair" fill className="object-cover" /></div>
+            <div className="relative aspect-video overflow-hidden bg-dark-deep flex items-center justify-center"><span className="text-white/30 text-sm">[MEDIA-002]</span></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-A1833-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-B1933-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-B2083-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-Studio14524-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/manitowoc_dec220180-2-1.png" alt="Pentair" fill className="object-cover" /></div>
           </div>
         </section>
       </FadeIn>

@@ -118,7 +118,7 @@ export default function HomePage() {
             <div className="mb-6">
               <CyclingText
                 words={["Engages", "Converts", "Performs", "Adapts", "Responds", "Is Authentic"]}
-                className="text-cycling font-normal leading-[50.4px]"
+                className="text-cycling font-bold leading-tight"
               />
             </div>
             <p className="text-lg text-white/90 max-w-lg">
@@ -182,7 +182,7 @@ export default function HomePage() {
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-h2 leading-tight mb-6">
+              <h2 className="text-[27px] font-semibold leading-tight mb-6">
                 Reliable Access to the{" "}
                 <em className="not-italic italic">Right</em> Freelancers
               </h2>
@@ -210,7 +210,7 @@ export default function HomePage() {
               <VimeoEmbed videoId="1168992231" hash="ef53c80ff9" />
             </GoldFrame>
             <div className="order-1 lg:order-2">
-              <h2 className="text-h2 leading-tight mb-6">
+              <h2 className="text-[27px] font-semibold leading-tight mb-6">
                 Winning Strategies We&apos;ve{" "}
                 <em className="not-italic italic">Perfected</em>
               </h2>
@@ -334,7 +334,7 @@ export default function HomePage() {
                 <span className="gold-highlight">amazing</span> content.
                 1Project supports teams with the right talent and production
                 strategy to add{" "}
-                <span className="gold-highlight">depth, consistency, and authenticity</span>{" "}
+                <span className="gold-highlight">depth, consistency and authenticity</span>{" "}
                 to every campaign.
               </p>
             </div>

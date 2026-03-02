@@ -90,7 +90,7 @@ export default function AboutPage() {
               "Tell Stories",
               "Drive Their Creative",
             ]}
-            className="text-cycling"
+            className="text-cycling font-bold leading-tight"
           />
         </div>
       </section>
