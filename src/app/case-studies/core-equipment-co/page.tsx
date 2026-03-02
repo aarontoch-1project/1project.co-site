@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { GoldFrame } from "@/components/GoldFrame";
 import { SectionDivider } from "@/components/SectionDivider";
 import { FadeIn } from "@/components/FadeIn";
 import { Accordion } from "@/components/Accordion";
@@ -54,9 +55,9 @@ export default function CoreCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <span className="section-label block mb-3">Lifestyle Content</span>
-            <h1 className="text-hero leading-tight mb-4">CORE</h1>
-            <p className="text-lg text-white/70 max-w-2xl">Go take a hike — and bring a camera</p>
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Lifestyle Content</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">CORE</h1>
+            <p className="text-lg text-white max-w-2xl text-left">Go take a hike — and bring a camera</p>
           </div>
         </div>
       </section>
@@ -68,19 +69,27 @@ export default function CoreCaseStudy() {
             <FadeIn key={sec.heading}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 <div><h2 className="text-h2 mb-6">{sec.heading}</h2></div>
-                <div><p className="text-base text-white/70 leading-relaxed">{sec.body}</p></div>
+                <div><p className="text-lg text-white/90 leading-[27px]">{sec.body}</p></div>
               </div>
             </FadeIn>
           ))}
         </div>
       </section>
 
-      {/* Video Placeholder */}
+      {/* Featured Image with Gold Frame */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <div className="aspect-video bg-dark-deep flex items-center justify-center rounded-sm">
-              <span className="text-sm text-muted">Video Coming Soon</span>
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <GoldFrame direction="right">
+              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+                <Image src="/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg" alt="Core Equipment outdoor lifestyle" fill className="object-cover" />
+              </div>
+            </GoldFrame>
+            <div>
+              <h2 className="text-h2 mb-6">Adventure Ready</h2>
+              <p className="text-lg text-white/90 leading-[27px]">
+                Authentic outdoor lifestyle imagery that captures the spirit of adventure — shot on location by photographers who live for the wild.
+              </p>
             </div>
           </div>
         </section>
@@ -115,9 +124,9 @@ export default function CoreCaseStudy() {
           <SectionDivider className="mb-12">
             <h2 className="text-h2 text-center whitespace-nowrap">Check Out More Case Studies</h2>
           </SectionDivider>
-          <div className="flex justify-center gap-8 text-sm">
-            <Link href="/case-studies/amazon" className="text-gold hover:text-lightning transition-colors">Amazon &rarr;</Link>
-            <Link href="/case-studies" className="text-white/50 hover:text-white transition-colors">All Case Studies</Link>
+          <div className="flex justify-center gap-4">
+            <Link href="/case-studies/amazon" className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors">Amazon &rarr;</Link>
+            <Link href="/case-studies" className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors">All Case Studies</Link>
           </div>
         </div>
       </section>

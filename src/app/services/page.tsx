@@ -181,7 +181,7 @@ export default function ServicesPage() {
               <span className="gold-highlight">get you the most</span> out of
               every project.
             </p>
-            <p className="text-lg text-white/60">
+            <p className="text-lg text-white/90">
               1Project is built on our <em>versatility</em>. Here are some of
               the ways we help teams{" "}
               <span className="relative inline-block">
@@ -212,7 +212,7 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-h2 mb-6">Stunning Brand Narratives</h2>
-              <p className="text-base text-white/70 leading-relaxed">
+              <p className="text-lg text-white/90 leading-[27px]">
                 Short-form, long-form or free-form — there is no wrong way to
                 show off your brand as the main character. Expand on the type of
                 stories you tell with access to ideation sourced from multiple
@@ -239,7 +239,7 @@ export default function ServicesPage() {
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Authentic Lifestyle Imagery</h2>
-              <p className="text-base text-white/70 leading-relaxed">
+              <p className="text-lg text-white/90 leading-[27px]">
                 Crafting true-to-life content is one of our key specialties.
                 Hone-in on a unique and effortless lifestyle aesthetic for your
                 brand. Easily add more real-people talent, geo-specific locales,
@@ -260,7 +260,7 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-h2 mb-6">Specialty and Niche Production</h2>
-              <p className="text-base text-white/70 leading-relaxed">
+              <p className="text-lg text-white/90 leading-[27px]">
                 Make your campaigns stand out visually with{" "}
                 <span className="gold-highlight">
                   exhilarating first-person drone footage
@@ -292,7 +292,7 @@ export default function ServicesPage() {
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Engaging Docu-style Storytelling</h2>
-              <p className="text-base text-white/70 leading-relaxed">
+              <p className="text-lg text-white/90 leading-[27px]">
                 We have a rich history of helping brands use real stories to
                 drive consistent and powerful engagement. Master your
                 human-centric media by leaning on the{" "}
@@ -315,7 +315,7 @@ export default function ServicesPage() {
               <h2 className="text-h2 mb-6">
                 Nothing Less Than <em>Seamless</em> Integration
               </h2>
-              <p className="text-base text-white/70 leading-relaxed">
+              <p className="text-lg text-white/90 leading-[27px]">
                 Great partnerships are driven by an attention to synergy. Our
                 process is designed to{" "}
                 <strong className="text-white">
@@ -441,7 +441,7 @@ export default function ServicesPage() {
                 <h3 className="text-medium font-semibold mb-3">
                   Forward-Thinking Marketing Leaders
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed">
+                <p className="text-sm text-white/80 leading-relaxed">
                   Good leaders are always looking for ways to stay ahead of the
                   curve. We give CMOs, VP&rsquo;s, and Marketing Directors the
                   ability to quickly make their departments more agile,
@@ -467,7 +467,7 @@ export default function ServicesPage() {
                 <h3 className="text-medium font-semibold mb-3">
                   Ambitious Brand Teams
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed">
+                <p className="text-sm text-white/80 leading-relaxed">
                   Keeping a brand identity both fresh and strong means trying new
                   ideas with consistency. 1Project&rsquo;s producer team adds a
                   valuable extra layer of brand-QA across projects and our
@@ -494,7 +494,7 @@ export default function ServicesPage() {
                 <h3 className="text-medium font-semibold mb-3">
                   Resourceful In-House Producers
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed">
+                <p className="text-sm text-white/80 leading-relaxed">
                   Staying on-top of media needs for multiple channels
                   doesn&rsquo;t always mean wearing more hats. Our flexible
                   involvement model means producers can get support on their most

@@ -53,9 +53,9 @@ export default function AmazonCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <span className="section-label block mb-3">Video Pipeline</span>
-            <h1 className="text-hero leading-tight mb-4">AMAZON</h1>
-            <p className="text-lg text-white/70 max-w-2xl">
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Video Pipeline</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">AMAZON</h1>
+            <p className="text-lg text-white max-w-2xl text-left">
               Building a video production system to bring a program to life
             </p>
           </div>
@@ -65,8 +65,8 @@ export default function AmazonCaseStudy() {
       {/* ── 2. Intro Context ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-lg text-white/70 leading-relaxed">
+          <div className="mx-auto max-w-3xl">
+            <p className="text-lg text-white leading-[27px] text-left">
               Amazon was running a program that provided high-performing stores
               with funding to create and place OTT video campaigns. They wanted
               every video to be something that was unique to each brand&rsquo;s
@@ -84,7 +84,7 @@ export default function AmazonCaseStudy() {
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-h2 mb-6">To Each Their Own</h2>
-              <p className="text-base text-white/70 leading-relaxed">
+              <p className="text-lg text-white/90 leading-[27px]">
                 Supporting an Amazon agency partner, we developed a repeatable
                 creative video framework and workflow to give each store a simple
                 briefing process, 3 creative pitches from different teams, the
@@ -108,22 +108,18 @@ export default function AmazonCaseStudy() {
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Customizable Creative</h2>
-              <p className="text-base text-white/70 leading-relaxed mb-6">
+              <p className="text-lg text-white/90 leading-[27px] mb-6">
                 Through centralizing all production and freelancers through
                 1Project, Amazon was able to offer each brand participant a
                 unique video for their brand, while keeping scopes and budgets
                 consistent across the entire campaign.
               </p>
-              <div className="border-t border-rule pt-6">
-                <span className="section-label block mb-2">
-                  Outputs (per brand)
-                </span>
-                <p className="text-sm text-white/60 leading-relaxed">
-                  30s OTT ad w/ VO+motion, hi-res stills, b-roll clip library,
-                  all raw footage, global usage, and cropped cut-downs of final
-                  for social.
-                </p>
-              </div>
+              <p className="text-lg text-white/90 leading-[27px]">
+                <strong className="font-bold">Outputs (per brand)</strong>{" "}
+                30s OTT ad w/ VO+motion, hi-res stills, b-roll clip library,
+                all raw footage, global usage, and cropped cut-downs of final
+                for social.
+              </p>
             </div>
           </div>
         </section>
@@ -132,11 +128,11 @@ export default function AmazonCaseStudy() {
       {/* ── 5. "CENTRALIZED MANAGEMENT" + Heading ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <span className="section-label block mb-4">
+          <div className="mx-auto max-w-4xl text-left">
+            <span className="text-sm font-bold text-white block mb-4">
               Centralized Management
             </span>
-            <h2 className="text-h2">
+            <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
               Different Brands Different Needs Same Outputs
             </h2>
           </div>
@@ -190,16 +186,16 @@ export default function AmazonCaseStudy() {
               Check Out More Case Studies
             </h2>
           </SectionDivider>
-          <div className="flex justify-center gap-8 text-sm">
+          <div className="flex justify-center gap-4">
             <Link
               href="/case-studies/eight-o-clock-coffee"
-              className="text-gold hover:text-lightning transition-colors"
+              className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors"
             >
               Eight O&rsquo;Clock Coffee &rarr;
             </Link>
             <Link
               href="/case-studies"
-              className="text-white/50 hover:text-white transition-colors"
+              className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors"
             >
               All Case Studies
             </Link>

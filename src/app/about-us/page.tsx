@@ -63,7 +63,7 @@ export default function AboutPage() {
                 ]}
                 className="text-cycling"
               />
-              <p className="text-lg text-white/60 mt-6">
+              <p className="text-lg text-white/90 mt-6">
                 Empowering great brands to take back the reins on their Content
                 Creation
               </p>
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <SectionDivider className="mb-12">
               <h2 className="text-h2">Our Mission</h2>
             </SectionDivider>
-            <p className="text-base text-white/70 leading-relaxed mb-8">
+            <p className="text-lg text-white/90 leading-[27px] mb-8">
               We&apos;re seasoned ex-agency media producers who have seen the
               best and the worst of the creative production industry: inflated
               budgets, hype-sellers, &apos;many-hats&apos; vendors, and worn-out
@@ -157,7 +157,7 @@ export default function AboutPage() {
                   className="mx-auto mb-6 invert opacity-80"
                 />
                 <h3 className="text-medium font-semibold mb-4">{v.title}</h3>
-                <p className="text-sm text-white/60 leading-relaxed">
+                <p className="text-sm text-white/80 leading-relaxed">
                   {v.description}
                 </p>
               </StaggerItem>

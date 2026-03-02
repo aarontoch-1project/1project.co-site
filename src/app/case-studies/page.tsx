@@ -64,13 +64,13 @@ export default function CaseStudiesPage() {
             <FadeIn key={cs.href}>
               <Link
                 href={cs.href}
-                className="group relative block overflow-hidden h-[85vh] min-h-[500px]"
+                className="group relative block overflow-hidden h-[85vh] min-h-[600px]"
               >
                 <Image
                   src={cs.image}
                   alt={cs.alt}
                   fill
-                  className="object-cover transition-all duration-500 group-hover:scale-[1.03] group-hover:brightness-110"
+                  className="object-cover transition-all duration-600 group-hover:scale-105 group-hover:brightness-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8 lg:p-16">

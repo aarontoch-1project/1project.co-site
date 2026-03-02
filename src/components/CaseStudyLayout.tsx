@@ -51,10 +51,10 @@ export function CaseStudyLayout({
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             {category && (
-              <span className="section-label block mb-3">{category}</span>
+              <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">{category}</Link>
             )}
-            <h1 className="text-hero leading-tight mb-4">{title}</h1>
-            <p className="text-lg text-white/70 max-w-2xl">{subtitle}</p>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">{title}</h1>
+            <p className="text-lg text-white max-w-2xl text-left">{subtitle}</p>
           </div>
         </div>
       </section>
@@ -73,7 +73,7 @@ export function CaseStudyLayout({
                   <h2 className="text-h2 mb-6">{sec.heading}</h2>
                 </div>
                 <div>
-                  <p className="text-base text-white/70 leading-relaxed">
+                  <p className="text-lg text-white/90 leading-[27px]">
                     {sec.body}
                   </p>
                 </div>
@@ -87,7 +87,7 @@ export function CaseStudyLayout({
                 <span className="section-label block mb-3">
                   {outputsLabel || "Outputs"}
                 </span>
-                <p className="text-base text-white/60 leading-relaxed">
+                <p className="text-lg text-white/90 leading-[27px]">
                   {outputs}
                 </p>
               </div>
@@ -142,16 +142,16 @@ export function CaseStudyLayout({
               Check Out More Case Studies
             </h2>
           </SectionDivider>
-          <div className="flex justify-center gap-8 text-sm">
+          <div className="flex justify-center gap-4">
             <Link
               href={nextStudy.href}
-              className="text-gold hover:text-lightning transition-colors"
+              className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors"
             >
               {nextStudy.title} &rarr;
             </Link>
             <Link
               href="/case-studies"
-              className="text-white/50 hover:text-white transition-colors"
+              className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors"
             >
               All Case Studies
             </Link>

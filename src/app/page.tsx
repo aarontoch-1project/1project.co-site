@@ -118,10 +118,10 @@ export default function HomePage() {
             <div className="mb-6">
               <CyclingText
                 words={["Engages", "Converts", "Performs", "Adapts", "Responds", "Is Authentic"]}
-                className="text-cycling font-normal"
+                className="text-cycling font-normal leading-[50.4px]"
               />
             </div>
-            <p className="text-lg text-white/70 max-w-lg">
+            <p className="text-lg text-white/90 max-w-lg">
               Supercharging brand teams with{" "}
               <span className="gold-highlight">their own</span> freelance
               creative networks
@@ -151,7 +151,7 @@ export default function HomePage() {
       <FadeIn>
         <section className="py-24 lg:py-32 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="text-h2 lg:text-[2.75rem] leading-snug text-white">
+            <h1 className="text-[46px] font-bold leading-[55.2px] text-white">
               1Project provides managed creative production to help brands become
               content{" "}
               <span className="relative inline-block">
@@ -172,7 +172,7 @@ export default function HomePage() {
                   />
                 </svg>
               </span>
-            </p>
+            </h1>
           </div>
         </section>
       </FadeIn>
@@ -186,7 +186,7 @@ export default function HomePage() {
                 Reliable Access to the{" "}
                 <em className="not-italic italic">Right</em> Freelancers
               </h2>
-              <p className="text-base text-white/60 leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed">
                 Utilize a{" "}
                 <span className="gold-highlight">diverse network</span> of
                 freelance talent without any of the heavy lifting. We own the
@@ -214,7 +214,7 @@ export default function HomePage() {
                 Winning Strategies We&apos;ve{" "}
                 <em className="not-italic italic">Perfected</em>
               </h2>
-              <p className="text-base text-white/60 leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed">
                 Our{" "}
                 <span className="gold-highlight">seasoned producers</span>{" "}
                 consult on, design, and run your projects from idea to delivery
@@ -247,7 +247,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8 lg:p-12">
                 <span className="section-label block mb-2">Video Pipeline</span>
-                <h3 className="text-h3 text-white font-bold">AMAZON</h3>
+                <h3 className="text-[27px] text-white font-bold">AMAZON</h3>
               </div>
             </Link>
           </FadeIn>
@@ -268,7 +268,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8">
                   <span className="section-label block mb-2">Brand Video</span>
-                  <h3 className="text-h3 text-white font-bold">TATA CONSUMER</h3>
+                  <h3 className="text-[27px] text-white font-bold">TATA CONSUMER</h3>
                 </div>
               </Link>
             </FadeIn>
@@ -286,7 +286,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8">
                   <span className="section-label block mb-2">Cross-Channel Media</span>
-                  <h3 className="text-h3 text-white font-bold">BMO</h3>
+                  <h3 className="text-[27px] text-white font-bold">BMO</h3>
                 </div>
               </Link>
             </FadeIn>
@@ -307,7 +307,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8 lg:p-12">
                 <span className="section-label block mb-2">Feature Documentary</span>
-                <h3 className="text-h3 text-white font-bold">NAD ELECTRONICS</h3>
+                <h3 className="text-[27px] text-white font-bold">NAD ELECTRONICS</h3>
               </div>
             </Link>
           </FadeIn>
@@ -329,7 +329,7 @@ export default function HomePage() {
               <h2 className="text-h2 leading-tight mb-6">
                 Maintain an Unmistakable Aesthetic
               </h2>
-              <p className="text-base text-white/60 leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed">
                 Great brands need{" "}
                 <span className="gold-highlight">amazing</span> content.
                 1Project supports teams with the right talent and production

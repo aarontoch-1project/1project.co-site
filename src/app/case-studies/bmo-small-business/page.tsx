@@ -58,9 +58,9 @@ export default function BMOCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <span className="section-label block mb-3">Cross-Channel Media</span>
-            <h1 className="text-hero leading-tight mb-4">BMO</h1>
-            <p className="text-lg text-white/70 max-w-2xl">
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Cross-Channel Media</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">BMO</h1>
+            <p className="text-lg text-white max-w-2xl text-left">
               Simplifying a docu-style process for a cross-channel media campaign
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function BMOCaseStudy() {
                   <h2 className="text-h2 mb-6">{sec.heading}</h2>
                 </div>
                 <div>
-                  <p className="text-base text-white/70 leading-relaxed">{sec.body}</p>
+                  <p className="text-lg text-white/90 leading-[27px]">{sec.body}</p>
                 </div>
               </div>
             </FadeIn>
@@ -104,7 +104,7 @@ export default function BMOCaseStudy() {
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Authentic Stories</h2>
-              <p className="text-base text-white/70 leading-relaxed">
+              <p className="text-lg text-white/90 leading-[27px]">
                 Capturing the heart of small business ownership through documentary-style production that feels genuine and relatable.
               </p>
             </div>
@@ -158,16 +158,16 @@ export default function BMOCaseStudy() {
               Check Out More Case Studies
             </h2>
           </SectionDivider>
-          <div className="flex justify-center gap-8 text-sm">
+          <div className="flex justify-center gap-4">
             <Link
               href="/case-studies/nad-electronics"
-              className="text-gold hover:text-lightning transition-colors"
+              className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors"
             >
               NAD Electronics &rarr;
             </Link>
             <Link
               href="/case-studies"
-              className="text-white/50 hover:text-white transition-colors"
+              className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors"
             >
               All Case Studies
             </Link>

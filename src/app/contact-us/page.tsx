@@ -34,7 +34,7 @@ export default function ContactPage() {
                 <h1 className="text-hero leading-tight mb-6">
                   Start a <span className="text-gold italic">Project</span>
                 </h1>
-                <p className="text-base text-white/60 leading-relaxed mb-8">
+                <p className="text-lg text-white/90 leading-[27px] mb-8">
                   Tell us about how you want to grow your team, a challenging
                   idea in an upcoming campaign, or that one project that&apos;s
                   been slowing you down. We&apos;ll show you how 1Project can
