@@ -73,13 +73,15 @@ export default function CaseStudiesPage() {
                   className="object-cover transition-all duration-600 group-hover:scale-105 group-hover:brightness-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-8 lg:p-16">
-                  <span className="section-label block mb-3">
-                    {cs.category}
-                  </span>
-                  <h2 className="text-h2 lg:text-[3rem] text-white font-bold">
-                    {cs.title}
-                  </h2>
+                <div className="absolute inset-0 flex items-center p-8 lg:p-16">
+                  <div>
+                    <span className="section-label block mb-3">
+                      {cs.category}
+                    </span>
+                    <h2 className="text-h2 lg:text-[3rem] text-white font-bold">
+                      {cs.title}
+                    </h2>
+                  </div>
                 </div>
               </Link>
             </FadeIn>

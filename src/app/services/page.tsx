@@ -171,37 +171,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ── 2. "Get Creative" Intro ── */}
+      {/* ── 2. "Get Creative" Intro Statement ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-h2 lg:text-[2.75rem] leading-snug text-white mb-6">
-              Whether it&rsquo;s stills, video, 3D modeling, or even generative
-              content — we&rsquo;re here to{" "}
-              <span className="gold-highlight">get you the most</span> out of
-              every project.
-            </p>
-            <p className="text-lg text-white/90">
-              1Project is built on our <em>versatility</em>. Here are some of
-              the ways we help teams{" "}
-              <span className="relative inline-block">
-                <span className="text-gold font-bold">Get Creative</span>
-                <svg
-                  className="absolute -bottom-2 left-0 w-full"
-                  viewBox="0 0 200 8"
-                  fill="none"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M2 6 C 40 2, 80 6, 120 3 S 170 5, 198 3"
-                    stroke="#C99A22"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    fill="none"
-                  />
-                </svg>
-              </span>
-            </p>
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-[46px] font-bold leading-[55.2px] text-left">
+              1Project is built on our versatility. Here&rsquo;s some ways we help teams{" "}
+              <span className="text-gold italic">Get Creative</span>
+            </h2>
           </div>
         </section>
       </FadeIn>

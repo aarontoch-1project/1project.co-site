@@ -13,37 +13,26 @@ export const metadata: Metadata = {
     "Enabling brand leads to finish a job — when their agency couldn't. See how 1Project helped Tata Consumer produce compelling brand video content.",
 };
 
-const sections = [
-  {
-    heading: "Left Empty-Handed",
-    body: "When Tata Consumer's agency partner fell short on delivering planned video content for their Eight O'Clock Coffee brand, the team was left without key assets for an upcoming campaign launch.",
-  },
-  {
-    heading: "Time To Get Creative",
-    body: "1Project stepped in with a rapid-response production framework, assembling a specialized crew and developing a creative brief that captured the brand's warmth and authenticity in record time.",
-  },
-  {
-    heading: "Making the Most",
-    body: "By maximizing every shoot day and leveraging our network of versatile creators, we delivered a full suite of video and photo assets that exceeded the original scope — all within the compressed timeline.",
-  },
-];
-
 const details = [
   {
     title: "ASAP Approvals",
-    description: "Streamlined approval workflows meant faster turnaround without sacrificing quality control or brand consistency.",
+    description:
+      "Streamlined approval workflows meant faster turnaround without sacrificing quality control or brand consistency.",
   },
   {
     title: "Easy Extras",
-    description: "Our production methodology naturally generates bonus assets — behind-the-scenes content, social cuts, and still photography — at no additional cost.",
+    description:
+      "Our production methodology naturally generates bonus assets — behind-the-scenes content, social cuts, and still photography — at no additional cost.",
   },
   {
     title: "Ready To Ship",
-    description: "All deliverables were formatted, color-graded, and packaged for immediate deployment across digital, social, and retail channels.",
+    description:
+      "All deliverables were formatted, color-graded, and packaged for immediate deployment across digital, social, and retail channels.",
   },
   {
     title: "Under The Clock",
-    description: "The entire production — from brief to final delivery — was completed in under 3 weeks, meeting the campaign launch deadline with days to spare.",
+    description:
+      "The entire production — from brief to final delivery — was completed in under 3 weeks, meeting the campaign launch deadline with days to spare.",
   },
 ];
 
@@ -71,54 +60,47 @@ export default function TataConsumerCaseStudy() {
         </div>
       </section>
 
-      {/* Content Sections */}
-      <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl space-y-20">
-          {sections.map((sec, i) => (
-            <FadeIn key={sec.heading}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div>
-                  <h2 className="text-h2 mb-6">{sec.heading}</h2>
-                </div>
-                <div>
-                  <p className="text-lg text-white/90 leading-[27px]">{sec.body}</p>
-                </div>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </section>
+      {/* "Left Empty-Handed" — text LEFT, media RIGHT */}
+      <FadeIn>
+        <section className="py-20 px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-h2 mb-6">Left Empty-Handed</h2>
+              <p className="text-lg text-white/90 leading-[27px]">
+                When Tata Consumer&rsquo;s agency partner fell short on delivering planned video content for their Eight O&rsquo;Clock Coffee brand, the team was left without key assets for an upcoming campaign launch.
+              </p>
+            </div>
+            <GoldFrame direction="right">
+              <VimeoEmbed videoId="1169007416" hash="89394d9ba4" />
+            </GoldFrame>
+          </div>
+        </section>
+      </FadeIn>
 
-      {/* Video Section - left side gold frame */}
+      {/* "Time To Get Creative" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame direction="left">
-              <VimeoEmbed videoId="1169007416" hash="89394d9ba4" />
+              <VimeoEmbed videoId="1169007589" hash="b83e4e49fb" />
             </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">Bringing the Brand to Life</h2>
+              <h2 className="text-h2 mb-6">Time To Get Creative</h2>
+              <p className="text-lg text-white/90 leading-[27px] mb-6">
+                1Project stepped in with a rapid-response production framework, assembling a specialized crew and developing a creative brief that captured the brand&rsquo;s warmth and authenticity in record time.
+              </p>
               <p className="text-lg text-white/90 leading-[27px]">
-                Our team captured the essence of Eight O&rsquo;Clock Coffee through authentic lifestyle imagery and compelling brand storytelling.
+                By maximizing every shoot day and leveraging our network of versatile creators, we delivered a full suite of video and photo assets that exceeded the original scope — all within the compressed timeline.
               </p>
             </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* Centered Video Montage */}
-      <FadeIn>
-        <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <VimeoEmbed videoId="1169007589" hash="b83e4e49fb" mode="player" />
-          </div>
-        </section>
-      </FadeIn>
-
-      {/* Gallery */}
+      {/* Gallery — 2-column layout with larger images */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-2">
             <VimeoEmbed videoId="1169006117" hash="c94742c46f" aspect="square" />
             <VimeoEmbed videoId="1169006143" hash="5402a81852" aspect="square" />
             <VimeoEmbed videoId="1169006107" hash="9daa9999ff" aspect="square" />
@@ -140,18 +122,31 @@ export default function TataConsumerCaseStudy() {
             <div className="relative aspect-square overflow-hidden">
               <Image src="/images/case-studies/eight-o-clock-coffee/Sequence 01.00_00_32_17.Still003.png" alt="Eight O'Clock Coffee production still" fill className="object-cover" />
             </div>
+            {/* [MEDIA-006] Additional gallery images needed for larger layout */}
+            {/* [MEDIA-007] ~10 missing videos (original has 17, build has 7) */}
           </div>
         </section>
       </FadeIn>
 
-      {/* Details Accordion */}
+      {/* Statement + Accordion (Two-Column) */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <Accordion
-              items={details.map((d) => ({ title: d.title, content: d.description }))}
-              defaultOpen={0}
-            />
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+              {/* LEFT column — statement */}
+              <div className="lg:w-[35%]">
+                <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
+                  Wake Up and Smell the Coffee
+                </h2>
+              </div>
+              {/* RIGHT column — accordion */}
+              <div className="lg:w-[60%]">
+                <Accordion
+                  items={details.map((d) => ({ title: d.title, content: d.description }))}
+                  defaultOpen={0}
+                />
+              </div>
+            </div>
           </div>
         </section>
       </FadeIn>

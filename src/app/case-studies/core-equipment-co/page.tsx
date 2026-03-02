@@ -12,37 +12,26 @@ export const metadata: Metadata = {
     "Go take a hike — and bring a camera. See how 1Project helped Core Equipment Co. create authentic outdoor lifestyle content.",
 };
 
-const sections = [
-  {
-    heading: "Go Take A Hike",
-    body: "Core Equipment Co. needed content that captured the spirit of outdoor adventure. We assembled crews who live and breathe the outdoors to create imagery that felt authentic, not staged.",
-  },
-  {
-    heading: "Friends In Wild Places",
-    body: "Our network of outdoor-lifestyle photographers and videographers spanned multiple regions, giving Core access to diverse landscapes and genuine outdoor enthusiasts as talent.",
-  },
-  {
-    heading: "Packed and Ready",
-    body: "From alpine trails to desert canyons, our mobile production teams were equipped to shoot in remote locations with minimal footprint and maximum creative output.",
-  },
-];
-
 const details = [
   {
     title: "Creative Formulas",
-    description: "We developed repeatable creative frameworks for outdoor product photography that maintained brand consistency across diverse locations and conditions.",
+    description:
+      "We developed repeatable creative frameworks for outdoor product photography that maintained brand consistency across diverse locations and conditions.",
   },
   {
     title: "Removing Risk",
-    description: "Weather contingencies, location permits, and safety protocols were all managed by our production team, removing logistical risk from Core's marketing calendar.",
+    description:
+      "Weather contingencies, location permits, and safety protocols were all managed by our production team, removing logistical risk from Core's marketing calendar.",
   },
   {
     title: "New Rules",
-    description: "Traditional product photography rules don't apply in the wild. We developed new approaches to showcase gear in authentic use scenarios.",
+    description:
+      "Traditional product photography rules don't apply in the wild. We developed new approaches to showcase gear in authentic use scenarios.",
   },
   {
     title: "What A Trip",
-    description: "Each production trip yielded content for multiple campaigns — product shots, lifestyle imagery, social content, and behind-the-scenes material.",
+    description:
+      "Each production trip yielded content for multiple campaigns — product shots, lifestyle imagery, social content, and behind-the-scenes material.",
   },
 ];
 
@@ -62,58 +51,87 @@ export default function CoreCaseStudy() {
         </div>
       </section>
 
-      {/* Content Sections */}
-      <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl space-y-20">
-          {sections.map((sec) => (
-            <FadeIn key={sec.heading}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div><h2 className="text-h2 mb-6">{sec.heading}</h2></div>
-                <div><p className="text-lg text-white/90 leading-[27px]">{sec.body}</p></div>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </section>
-
-      {/* Featured Image with Gold Frame */}
+      {/* "Go Take A Hike" — text LEFT, media RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-h2 mb-6">Go Take A Hike</h2>
+              <p className="text-lg text-white/90 leading-[27px]">
+                Core Equipment Co. needed content that captured the spirit of outdoor adventure. We assembled crews who live and breathe the outdoors to create imagery that felt authentic, not staged.
+              </p>
+            </div>
             <GoldFrame direction="right">
               <div className="aspect-video bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg" alt="Core Equipment outdoor lifestyle" fill className="object-cover" />
               </div>
             </GoldFrame>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* "Friends In Wild Places" — media LEFT, text RIGHT */}
+      <FadeIn>
+        <section className="py-20 px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <GoldFrame direction="left">
+              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+                <Image src="/images/case-studies/core/Core-6p-0522-Edited-2-1-scaled.jpg" alt="Core Equipment outdoor production" fill className="object-cover" />
+              </div>
+            </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">Adventure Ready</h2>
+              <h2 className="text-h2 mb-6">Friends In Wild Places</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                Authentic outdoor lifestyle imagery that captures the spirit of adventure — shot on location by photographers who live for the wild.
+                Our network of outdoor-lifestyle photographers and videographers spanned multiple regions, giving Core access to diverse landscapes and genuine outdoor enthusiasts as talent.
               </p>
             </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* Image Gallery */}
+      {/* Image Gallery — 8 lifestyle images in 4-column grid */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg" alt="Core" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-2-1-scaled.jpg" alt="Core" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-21-scaled.jpg" alt="Core" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-24-scaled.jpg" alt="Core" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-3-scaled.jpg" alt="Core" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/core/JB2_2190-scaled.jpg" alt="Core" fill className="object-cover" /></div>
+          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-2">
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg" alt="Core outdoor" fill className="object-cover" /></div>
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-2-1-scaled.jpg" alt="Core lifestyle" fill className="object-cover" /></div>
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-21-scaled.jpg" alt="Core adventure" fill className="object-cover" /></div>
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-24-scaled.jpg" alt="Core product" fill className="object-cover" /></div>
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-3-scaled.jpg" alt="Core wilderness" fill className="object-cover" /></div>
+            <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/JB2_2190-scaled.jpg" alt="Core equipment" fill className="object-cover" /></div>
+            {/* [MEDIA-014] 2 additional images needed to reach 8 total */}
+            <div className="flex items-center justify-center aspect-[4/3] rounded-lg" style={{ background: '#2a2a2a', border: '2px dashed #666' }}>
+              <span style={{ color: '#999', fontSize: '16px' }}>[MEDIA-014] Image Placeholder</span>
+            </div>
+            <div className="flex items-center justify-center aspect-[4/3] rounded-lg" style={{ background: '#2a2a2a', border: '2px dashed #666' }}>
+              <span style={{ color: '#999', fontSize: '16px' }}>[MEDIA-014] Image Placeholder</span>
+            </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* Details Accordion */}
+      {/* Statement + Accordion (Two-Column) */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <Accordion items={details.map((d) => ({ title: d.title, content: d.description }))} defaultOpen={0} />
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+              {/* LEFT column — statement */}
+              <div className="lg:w-[35%]">
+                <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
+                  Specific, Sporadic, &amp; Spontaneous
+                </h2>
+                <p className="text-lg text-white/90 leading-[27px] mt-6">
+                  From alpine trails to desert canyons, our mobile production teams were equipped to shoot in remote locations with minimal footprint and maximum creative output.
+                </p>
+              </div>
+              {/* RIGHT column — accordion */}
+              <div className="lg:w-[60%]">
+                <Accordion
+                  items={details.map((d) => ({ title: d.title, content: d.description }))}
+                  defaultOpen={0}
+                />
+              </div>
+            </div>
           </div>
         </section>
       </FadeIn>

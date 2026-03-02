@@ -78,7 +78,7 @@ export default function AmazonCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* ── 3. "To Each Their Own" (text L, placeholder R) ── */}
+      {/* ── 3. "To Each Their Own" (text LEFT, video RIGHT) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -99,7 +99,7 @@ export default function AmazonCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* ── 4. "Customizable Creative" (placeholder L, text R) ── */}
+      {/* ── 4. "Customizable Creative" (video LEFT, text RIGHT) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -125,21 +125,7 @@ export default function AmazonCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* ── 5. "CENTRALIZED MANAGEMENT" + Heading ── */}
-      <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-left">
-            <span className="text-sm font-bold text-white block mb-4">
-              Centralized Management
-            </span>
-            <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
-              Different Brands Different Needs Same Outputs
-            </h2>
-          </div>
-        </section>
-      </FadeIn>
-
-      {/* ── 6. Image Gallery / Mosaic ── */}
+      {/* ── 5. Image Gallery / Mosaic ── */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
           <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
@@ -163,22 +149,36 @@ export default function AmazonCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* ── 7. Results (Accordion) ── */}
+      {/* ── 6. Statement + Accordion (Two-Column) ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <Accordion
-              items={results.map((r) => ({
-                title: r.title,
-                content: r.description,
-              }))}
-              defaultOpen={0}
-            />
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+              {/* LEFT column — statement */}
+              <div className="lg:w-[35%]">
+                <span className="text-sm font-bold text-white block mb-4">
+                  Centralized Management
+                </span>
+                <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
+                  Different Brands Different Needs Same Outputs
+                </h2>
+              </div>
+              {/* RIGHT column — accordion */}
+              <div className="lg:w-[60%]">
+                <Accordion
+                  items={results.map((r) => ({
+                    title: r.title,
+                    content: r.description,
+                  }))}
+                  defaultOpen={0}
+                />
+              </div>
+            </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* ── 8. "Check Out More Case Studies" ── */}
+      {/* ── 7. "Check Out More Case Studies" ── */}
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">

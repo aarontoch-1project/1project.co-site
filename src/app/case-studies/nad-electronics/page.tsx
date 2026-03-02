@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { VimeoEmbed } from "@/components/VimeoEmbed";
 import { GoldFrame } from "@/components/GoldFrame";
 import { SectionDivider } from "@/components/SectionDivider";
 import { FadeIn } from "@/components/FadeIn";
@@ -13,37 +12,26 @@ export const metadata: Metadata = {
     "Helping a passionate team of music-lovers tell an epic story about sound. See how 1Project helped NAD Electronics create a feature documentary.",
 };
 
-const sections = [
-  {
-    heading: "Turning Up the Volume",
-    body: "NAD Electronics had decades of audio innovation history but no cohesive narrative to share it. We partnered with their team to craft a feature-length documentary that celebrated their legacy and vision.",
-  },
-  {
-    heading: "Amplifying Everyone",
-    body: "From engineers to executives, every voice at NAD had a story worth telling. Our documentary approach ensured each perspective was captured authentically, creating a rich tapestry of the brand's culture.",
-  },
-  {
-    heading: "Loud and Clear",
-    body: "The final documentary served as both an internal rallying cry and an external brand statement, showcasing NAD's commitment to audio excellence across multiple distribution channels.",
-  },
-];
-
 const details = [
   {
     title: "Organizing History",
-    description: "Decades of product innovation, engineering breakthroughs, and brand evolution were researched, catalogued, and woven into a compelling narrative arc.",
+    description:
+      "Decades of product innovation, engineering breakthroughs, and brand evolution were researched, catalogued, and woven into a compelling narrative arc.",
   },
   {
     title: "Archivists",
-    description: "Our team digitized and restored archival footage, photography, and documents to bring NAD's history to life with authentic visual storytelling.",
+    description:
+      "Our team digitized and restored archival footage, photography, and documents to bring NAD's history to life with authentic visual storytelling.",
   },
   {
     title: "Fan Service Success",
-    description: "The documentary resonated deeply with NAD's audiophile community, generating significant engagement and reinforcing brand loyalty among their most passionate customers.",
+    description:
+      "The documentary resonated deeply with NAD's audiophile community, generating significant engagement and reinforcing brand loyalty among their most passionate customers.",
   },
   {
     title: "Centerpiece Content",
-    description: "The feature documentary became the centerpiece of NAD's content strategy, with derivative cuts and clips fueling social media, trade shows, and retailer presentations.",
+    description:
+      "The feature documentary became the centerpiece of NAD's content strategy, with derivative cuts and clips fueling social media, trade shows, and retailer presentations.",
   },
 ];
 
@@ -74,58 +62,101 @@ export default function NADCaseStudy() {
         </div>
       </section>
 
-      {/* Content Sections */}
-      <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl space-y-20">
-          {sections.map((sec) => (
-            <FadeIn key={sec.heading}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div><h2 className="text-h2 mb-6">{sec.heading}</h2></div>
-                <div><p className="text-lg text-white/90 leading-[27px]">{sec.body}</p></div>
+      {/* "Turning Up the Volume" — text LEFT, media RIGHT */}
+      <FadeIn>
+        <section className="py-20 px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-h2 mb-6">Turning Up the Volume</h2>
+              <p className="text-lg text-white/90 leading-[27px]">
+                NAD Electronics had decades of audio innovation history but no cohesive narrative to share it. We partnered with their team to craft a feature-length documentary that celebrated their legacy and vision.
+              </p>
+            </div>
+            <GoldFrame direction="right">
+              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+                <Image src="/images/case-studies/nad/nadblock1.png" alt="NAD Electronics documentary" fill className="object-cover" />
               </div>
-            </FadeIn>
-          ))}
-        </div>
-      </section>
+            </GoldFrame>
+          </div>
+        </section>
+      </FadeIn>
 
-      {/* Featured Image with Gold Frame */}
+      {/* "Amplifying Everyone" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame direction="left">
               <div className="aspect-video bg-dark-deep relative overflow-hidden">
-                <Image src="/images/case-studies/nad/nadblock1.png" alt="NAD Electronics documentary" fill className="object-cover" />
+                <Image src="/images/case-studies/nad/nadblock2.png" alt="NAD Electronics production" fill className="object-cover" />
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">The Sound of Innovation</h2>
+              <h2 className="text-h2 mb-6">Amplifying Everyone</h2>
               <p className="text-lg text-white/90 leading-[27px]">
-                Decades of audio engineering excellence captured through cinematic documentary storytelling that honors NAD&rsquo;s legacy and vision.
+                From engineers to executives, every voice at NAD had a story worth telling. Our documentary approach ensured each perspective was captured authentically, creating a rich tapestry of the brand&rsquo;s culture.
               </p>
             </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* Image Gallery */}
+      {/* Full-Bleed Masonry Gallery — signature visual treatment */}
       <FadeIn>
-        <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/nad/nadblock1.png" alt="NAD" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/nad/nadblock2.png" alt="NAD" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/nad/753_.png" alt="NAD 753" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/nad/NAD_still-10-e1713856175293.png" alt="NAD still" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/nad/NAD_still-15.png" alt="NAD still" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/nad/NAD_still-5-e1713856264496.png" alt="NAD still" fill className="object-cover" /></div>
+        <section className="pb-24">
+          <div className="space-y-4">
+            {/* Row 1 — large image, offset left */}
+            <div className="w-[90%] relative aspect-[16/7] overflow-hidden">
+              <Image src="/images/case-studies/nad/nadblock1.png" alt="NAD documentary production" fill className="object-cover" />
+            </div>
+            {/* Row 2 — large image, offset right */}
+            <div className="w-[90%] ml-auto relative aspect-[16/7] overflow-hidden">
+              <Image src="/images/case-studies/nad/nadblock2.png" alt="NAD documentary scene" fill className="object-cover" />
+            </div>
+            {/* Row 3 — two images side by side */}
+            <div className="grid grid-cols-2 gap-4 px-6 lg:px-8">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image src="/images/case-studies/nad/753_.png" alt="NAD 753" fill className="object-cover" />
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image src="/images/case-studies/nad/NAD_still-10-e1713856175293.png" alt="NAD still" fill className="object-cover" />
+              </div>
+            </div>
+            {/* Row 4 — large image, offset left */}
+            <div className="w-[90%] relative aspect-[16/7] overflow-hidden">
+              <Image src="/images/case-studies/nad/NAD_still-15.png" alt="NAD audio engineering" fill className="object-cover" />
+            </div>
+            {/* Row 5 — large image, offset right */}
+            <div className="w-[90%] ml-auto relative aspect-[16/7] overflow-hidden">
+              <Image src="/images/case-studies/nad/NAD_still-5-e1713856264496.png" alt="NAD sound innovation" fill className="object-cover" />
+            </div>
+            {/* [MEDIA-010] Gallery needs full-bleed masonry restoration (1135px+ images) */}
+            {/* [MEDIA-011] Missing 1 video */}
           </div>
         </section>
       </FadeIn>
 
-      {/* Details Accordion */}
+      {/* Statement + Accordion (Two-Column) */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <Accordion items={details.map((d) => ({ title: d.title, content: d.description }))} defaultOpen={0} />
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+              {/* LEFT column — statement */}
+              <div className="lg:w-[35%]">
+                <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
+                  An Honest Sounding Board
+                </h2>
+                <p className="text-lg text-white/90 leading-[27px] mt-6">
+                  The final documentary served as both an internal rallying cry and an external brand statement, showcasing NAD&rsquo;s commitment to audio excellence across multiple distribution channels.
+                </p>
+              </div>
+              {/* RIGHT column — accordion */}
+              <div className="lg:w-[60%]">
+                <Accordion
+                  items={details.map((d) => ({ title: d.title, content: d.description }))}
+                  defaultOpen={0}
+                />
+              </div>
+            </div>
           </div>
         </section>
       </FadeIn>
