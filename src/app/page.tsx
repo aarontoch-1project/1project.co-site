@@ -195,7 +195,7 @@ export default function HomePage() {
                 against their performance.
               </p>
             </div>
-            <GoldFrame direction="right">
+            <GoldFrame direction="left">
               <VimeoEmbed videoId="939689395" hash="3a7a906c4e" />
             </GoldFrame>
           </div>
@@ -245,9 +245,11 @@ export default function HomePage() {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-8 lg:p-12">
-                <span className="section-label block mb-2">Video Pipeline</span>
-                <h3 className="text-[27px] text-white font-bold">AMAZON</h3>
+              <div className="absolute inset-0 flex items-center justify-center text-center">
+                <div>
+                  <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Video Pipeline</span>
+                  <h3 className="text-[27px] text-white font-bold">AMAZON</h3>
+                </div>
               </div>
             </Link>
           </FadeIn>
@@ -266,9 +268,11 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-8">
-                  <span className="section-label block mb-2">Brand Video</span>
-                  <h3 className="text-[27px] text-white font-bold">TATA CONSUMER</h3>
+                <div className="absolute inset-0 flex items-center justify-center text-center">
+                  <div>
+                    <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Brand Video</span>
+                    <h3 className="text-[27px] text-white font-bold">TATA CONSUMER</h3>
+                  </div>
                 </div>
               </Link>
             </FadeIn>
@@ -284,9 +288,11 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-8">
-                  <span className="section-label block mb-2">Cross-Channel Media</span>
-                  <h3 className="text-[27px] text-white font-bold">BMO</h3>
+                <div className="absolute inset-0 flex items-center justify-center text-center">
+                  <div>
+                    <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Cross-Channel Media</span>
+                    <h3 className="text-[27px] text-white font-bold">BMO</h3>
+                  </div>
                 </div>
               </Link>
             </FadeIn>
@@ -305,9 +311,11 @@ export default function HomePage() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-8 lg:p-12">
-                <span className="section-label block mb-2">Feature Documentary</span>
-                <h3 className="text-[27px] text-white font-bold">NAD ELECTRONICS</h3>
+              <div className="absolute inset-0 flex items-center justify-center text-center">
+                <div>
+                  <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Feature Documentary</span>
+                  <h3 className="text-[27px] text-white font-bold">NAD ELECTRONICS</h3>
+                </div>
               </div>
             </Link>
           </FadeIn>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CyclingText } from "@/components/CyclingText";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 import { SectionDivider } from "@/components/SectionDivider";
 
@@ -67,32 +68,33 @@ const galleryImages = [
 export default function AboutPage() {
   return (
     <>
-      {/* Hero — Full-bleed background image with text overlay */}
-      <section className="relative min-h-screen flex items-end pb-24 px-6 lg:px-8">
-        <div className="absolute inset-0 bg-dark-deep z-0 overflow-hidden">
-          <Image
-            src="/images/case-studies/amazon/Amazon_block1_still.jpg"
-            alt="About us hero background"
-            fill
-            className="object-cover opacity-50"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-7xl w-full">
-          <h1 className="text-hero text-gold font-semibold mb-2 text-left">
-            Changing How Brands
-          </h1>
-          <CyclingText
-            words={[
-              "Make Amazing Content",
-              "Plan for Success",
-              "Tell Stories",
-              "Drive Their Creative",
-            ]}
-            className="text-cycling font-bold leading-tight"
-          />
-        </div>
+      {/* Hero — Carousel with text overlay */}
+      <section className="relative">
+        <HeroCarousel
+          slides={[
+            { type: "image", src: "/images/case-studies/amazon/Amazon_block1_still.jpg", alt: "About us hero background" },
+            { type: "placeholder", label: "HERO-CAROUSEL-AB-02" },
+            { type: "placeholder", label: "HERO-CAROUSEL-AB-03" },
+            { type: "placeholder", label: "HERO-CAROUSEL-AB-04" },
+          ]}
+        >
+          <div className="absolute inset-0 flex items-end z-10">
+            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8 pb-24">
+              <h1 className="text-hero text-gold font-semibold mb-2 text-left">
+                Changing How Brands
+              </h1>
+              <CyclingText
+                words={[
+                  "Make Amazing Content",
+                  "Plan for Success",
+                  "Tell Stories",
+                  "Drive Their Creative",
+                ]}
+                className="text-cycling font-bold leading-tight"
+              />
+            </div>
+          </div>
+        </HeroCarousel>
       </section>
 
       {/* Mission Statement — Animated Headline style */}

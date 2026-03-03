@@ -29,6 +29,7 @@
 /* Base styles — dark cinematic theme */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,6 +47,11 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 1);
   font-weight: 600;
   line-height: 1.2;
+}
+
+/* Prevent horizontal overflow from iframes and media */
+iframe, img, video {
+  max-width: 100%;
 }
 
 /* Gold highlight text — for key phrases in body copy */

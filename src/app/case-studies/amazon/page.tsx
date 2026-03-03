@@ -110,8 +110,8 @@ export default function AmazonCaseStudy() {
       {/* ── 5. Image Gallery / Mosaic ── */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
-            <div className="lg:col-span-2 lg:row-span-2">
+          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2 overflow-hidden">
+            <div className="lg:col-span-2 lg:row-span-2 overflow-hidden">
               <VimeoEmbed videoId="1168992268" hash="b2c64a1226" className="h-full" />
             </div>
             <VimeoEmbed videoId="1168992256" hash="eb1e586800" aspect="square" />

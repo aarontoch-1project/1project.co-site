@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { CyclingText } from "@/components/CyclingText";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { VimeoEmbed } from "@/components/VimeoEmbed";
 import { GoldFrame } from "@/components/GoldFrame";
 import { Accordion } from "@/components/Accordion";
@@ -141,32 +142,68 @@ const testimonials = [
 export default function ServicesPage() {
   return (
     <>
-      {/* ── 1. Hero: Video + Cycling Text ── */}
+      {/* ── 1. Hero: Carousel + Cycling Text ── */}
       <section className="relative">
-        <div className="relative min-h-screen bg-dark-deep overflow-hidden">
-          <Image
-            src="/images/case-studies/amazon/Amazon_block1_still.jpg"
-            alt="Services showcase"
-            fill
-            className="object-cover opacity-60"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
-        </div>
-        <div className="absolute inset-0 flex items-end">
-          <div className="mx-auto max-w-7xl w-full px-6 lg:px-8 pb-24">
-            <h1 className="text-hero leading-tight mb-4">
-              Production That&rsquo;s
-            </h1>
-            <CyclingText
-              words={[
-                "Strategic",
-                "Lean",
-                "Scalable",
-                "Transparent",
-                "Global",
-              ]}
-              className="text-cycling font-bold leading-tight"
-            />
+        <HeroCarousel
+          slides={[
+            { type: "image", src: "/images/case-studies/amazon/Amazon_block1_still.jpg", alt: "Services showcase" },
+            { type: "placeholder", label: "HERO-CAROUSEL-SV-02" },
+            { type: "placeholder", label: "HERO-CAROUSEL-SV-03" },
+            { type: "placeholder", label: "HERO-CAROUSEL-SV-04" },
+          ]}
+        >
+          <div className="absolute inset-0 flex items-end z-10">
+            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8 pb-24">
+              <h1 className="text-hero leading-tight mb-4 italic">
+                Production That&rsquo;s
+              </h1>
+              <CyclingText
+                words={[
+                  "Strategic",
+                  "Lean",
+                  "Scalable",
+                  "Transparent",
+                  "Global",
+                ]}
+                className="text-cycling font-bold leading-tight"
+              />
+              <p className="text-lg text-white/90 max-w-2xl mt-6">
+                Whether it&rsquo;s stills, video, 3D modeling, or even generative
+                content &mdash; 1Project is built for content versatility.
+              </p>
+            </div>
+          </div>
+        </HeroCarousel>
+      </section>
+
+      {/* ── 1.5. "SEE OUR LATEST" Section ── */}
+      <section className="py-24 px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl text-center">
+          <div className="flex items-center justify-center gap-6 mb-12">
+            <div className="h-px w-16 bg-gold" />
+            <h2 className="text-[46px] font-bold leading-tight text-white">
+              SEE OUR LATEST.
+            </h2>
+            <div className="h-px w-16 bg-gold" />
+          </div>
+          <div
+            style={{
+              background: "#2a2a2a",
+              border: "2px dashed #666",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              aspectRatio: "16/9",
+              width: "100%",
+              maxWidth: "1000px",
+              margin: "0 auto",
+              borderRadius: "8px",
+            }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <span style={{ color: "#999", fontSize: "24px", display: "block" }}>&#9654;</span>
+              <span style={{ color: "#999", fontSize: "16px" }}>[VIDEO-SEE-OUR-LATEST]</span>
+            </div>
           </div>
         </div>
       </section>

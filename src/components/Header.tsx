@@ -54,7 +54,7 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-gold text-dark text-sm font-medium px-6 py-2.5 rounded-md hover:bg-lightning transition-colors"
+              className="bg-gold text-white text-sm font-medium px-6 py-2.5 rounded-md border border-gold hover:bg-lightning transition-colors"
             >
               Start a Project
             </Link>

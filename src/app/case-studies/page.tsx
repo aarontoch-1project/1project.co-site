@@ -73,7 +73,7 @@ export default function CaseStudiesPage() {
                   className="object-cover transition-all duration-600 group-hover:scale-105 group-hover:brightness-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute inset-0 flex items-center p-8 lg:p-16">
+                <div className="absolute inset-0 flex items-center justify-center text-center p-8 lg:p-16">
                   <div>
                     <span className="block mb-3 text-[20px] text-white font-semibold">
                       {cs.category}
