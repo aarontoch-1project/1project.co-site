@@ -16,8 +16,8 @@ export function GoldFrame({
         className="absolute bg-gold"
         style={{ top: 20, left: 0, right: 20, bottom: 0, zIndex: 0 }}
       />
-      {/* Media container - SQUARE (1:1) */}
-      <div className="relative z-10 aspect-square overflow-hidden">
+      {/* Media container - 4:3 ratio matching original (~575x430) */}
+      <div className="relative z-10 aspect-[4/3] overflow-hidden">
         {children}
       </div>
     </div>

@@ -91,12 +91,12 @@ export default function CaseStudiesPage() {
                   className="object-cover transition-all duration-600 group-hover:scale-105 group-hover:brightness-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-                <div className="absolute inset-0 flex items-center justify-end text-right p-8 lg:p-16">
+                <div className="absolute inset-0 flex items-center justify-center text-center p-8 lg:p-16">
                   <div>
                     <span className="block mb-3 text-[18px] text-white font-normal">
                       {cs.category}
                     </span>
-                    <h2 className="text-h2 lg:text-[3rem] text-white font-bold leading-tight">
+                    <h2 className="text-[27px] text-white font-semibold leading-tight">
                       {cs.title}
                     </h2>
                   </div>

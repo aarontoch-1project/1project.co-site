@@ -57,7 +57,7 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-transparent text-white text-[21px] font-normal border border-white px-6 py-3 rounded-md hover:bg-white/10 transition-colors"
+              className="bg-gold text-white text-[21px] font-normal px-6 py-3 rounded-md hover:bg-lightning transition-colors"
             >
               Start a Project
             </Link>
@@ -104,7 +104,7 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-transparent text-white text-[21px] font-normal border border-white px-6 py-3 rounded-md text-center hover:bg-white/10 transition-colors"
+              className="bg-gold text-white text-[21px] font-normal px-6 py-3 rounded-md text-center hover:bg-lightning transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               Start a Project

@@ -104,7 +104,7 @@ export default function AboutPage() {
       <FadeIn>
         <section className="py-24 lg:py-32 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="text-[40px] font-bold leading-[48px] text-white">
+            <h2 className="text-[46px] font-bold leading-[55.2px] text-white">
               Empowering great brands to take back the reins on their{" "}
               <span className="text-gold italic">Content Creation</span>
             </h2>
@@ -177,7 +177,7 @@ export default function AboutPage() {
                   height={80}
                   className="mx-auto mb-6 invert opacity-80"
                 />
-                <h3 className="text-medium font-semibold mb-4">{v.title}</h3>
+                <h3 className="text-[22px] font-bold mb-4">{v.title}</h3>
                 <p className="text-sm text-white/80 leading-relaxed">
                   {v.description}
                 </p>

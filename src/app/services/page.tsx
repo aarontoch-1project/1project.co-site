@@ -187,7 +187,7 @@ export default function ServicesPage() {
 
       {/* ── 2.5. "SEE OUR LATEST" Section ── */}
       <section className="py-16 bg-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-center gap-6 mb-8">
             <div className="h-px flex-1 max-w-[80px] bg-gold" />
             <h2

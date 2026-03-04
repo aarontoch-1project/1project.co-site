@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 };
 
 const clientLogos = [
-  { src: "/images/logos/uberlogo.png", alt: "Uber client logo", w: 150, h: 56 },
-  { src: "/images/logos/amazon-logo-1-768x286.png", alt: "Amazon client logo", w: 150, h: 56 },
-  { src: "/images/logos/BMOlogo-768x286.png", alt: "BMO client logo", w: 150, h: 56 },
-  { src: "/images/logos/tatalogo-768x286.png", alt: "Tata Consumer client logo", w: 150, h: 56 },
-  { src: "/images/logos/Pentair_logo_RGB-1-768x286.png", alt: "Pentair client logo", w: 150, h: 56 },
+  { src: "/images/logos/uberlogo.png", alt: "Uber client logo", w: 271, h: 101 },
+  { src: "/images/logos/amazon-logo-1-768x286.png", alt: "Amazon client logo", w: 271, h: 101 },
+  { src: "/images/logos/BMOlogo-768x286.png", alt: "BMO client logo", w: 271, h: 101 },
+  { src: "/images/logos/tatalogo-768x286.png", alt: "Tata Consumer client logo", w: 271, h: 101 },
+  { src: "/images/logos/Pentair_logo_RGB-1-768x286.png", alt: "Pentair client logo", w: 271, h: 101 },
 ];
 
 const accordionItems = [
@@ -139,7 +139,7 @@ export default function HomePage() {
                 alt={logo.alt}
                 width={logo.w}
                 height={logo.h}
-                className="h-8 w-auto object-contain brightness-0 invert opacity-70"
+                className="h-[101px] w-auto object-contain brightness-0 invert opacity-70"
               />
             ))}
           </div>
@@ -149,7 +149,7 @@ export default function HomePage() {
       {/* ===== 3. "POWERHOUSES" STATEMENT ===== */}
       <FadeIn>
         <section className="pt-24 lg:pt-28 pb-10 lg:pb-14 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-4xl text-left">
             <h1 className="text-[46px] font-bold leading-[55.2px] text-white" style={{ fontWeight: 700 }}>
               1Project provides managed creative production to help brands become
               content{" "}
@@ -181,7 +181,7 @@ export default function HomePage() {
         <section className="pt-10 lg:pt-14 pb-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[27px] font-semibold leading-tight mb-6">
+              <h2 className="text-[40px] font-semibold leading-tight mb-6">
                 Reliable Access to the{" "}
                 <em>Right</em> Freelancers
               </h2>
@@ -209,7 +209,7 @@ export default function HomePage() {
               <VimeoEmbed videoId="1168992231" hash="ef53c80ff9" aspect="fill" />
             </GoldFrame>
             <div className="order-1 lg:order-2">
-              <h2 className="text-[27px] font-semibold leading-tight mb-6">
+              <h2 className="text-[40px] font-semibold leading-tight mb-6">
                 Winning Strategies We&apos;ve{" "}
                 <em className="not-italic italic">Perfected</em>
               </h2>
@@ -247,7 +247,7 @@ export default function HomePage() {
               <div className="absolute inset-0 flex items-center justify-center text-center">
                 <div>
                   <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Video Pipeline</span>
-                  <h3 className="text-[27px] text-white font-bold">AMAZON</h3>
+                  <h2 className="text-[27px] text-white font-bold">AMAZON</h2>
                 </div>
               </div>
             </Link>
@@ -270,7 +270,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 flex items-center justify-center text-center">
                   <div>
                     <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Brand Video</span>
-                    <h3 className="text-[27px] text-white font-bold">TATA CONSUMER</h3>
+                    <h2 className="text-[27px] text-white font-bold">TATA CONSUMER</h2>
                   </div>
                 </div>
               </Link>
@@ -290,7 +290,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 flex items-center justify-center text-center">
                   <div>
                     <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Cross-Channel Media</span>
-                    <h3 className="text-[27px] text-white font-bold">BMO</h3>
+                    <h2 className="text-[27px] text-white font-bold">BMO</h2>
                   </div>
                 </div>
               </Link>
@@ -313,7 +313,7 @@ export default function HomePage() {
               <div className="absolute inset-0 flex items-center justify-center text-center">
                 <div>
                   <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Feature Documentary</span>
-                  <h3 className="text-[27px] text-white font-bold">NAD ELECTRONICS</h3>
+                  <h2 className="text-[27px] text-white font-bold">NAD ELECTRONICS</h2>
                 </div>
               </div>
             </Link>

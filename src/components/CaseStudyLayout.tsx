@@ -53,7 +53,7 @@ export function CaseStudyLayout({
             {category && (
               <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">{category}</Link>
             )}
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">{title}</h1>
+            <h2 className="text-[46px] font-semibold leading-[55.2px] mb-4">{title}</h2>
             <p className="text-lg text-white max-w-2xl text-left">{subtitle}</p>
           </div>
         </div>
@@ -70,7 +70,7 @@ export function CaseStudyLayout({
                 }`}
               >
                 <div>
-                  <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">{sec.heading}</h2>
+                  <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">{sec.heading}</h2>
                 </div>
                 <div>
                   <p className="text-lg text-white/90 leading-[27px]">
@@ -104,7 +104,8 @@ export function CaseStudyLayout({
               {images.map((img) => (
                 <div
                   key={img.src}
-                  className="relative aspect-video overflow-hidden"
+                  className="relative overflow-hidden"
+                  style={{ aspectRatio: `${img.w}/${img.h}` }}
                 >
                   <Image
                     src={img.src}
@@ -138,7 +139,7 @@ export function CaseStudyLayout({
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">
+            <h2 className="text-[36px] lg:text-[46px] font-semibold leading-[43px] lg:leading-[55.2px] text-center whitespace-nowrap">
               Check Out More Case Studies
             </h2>
           </SectionDivider>
