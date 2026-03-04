@@ -53,9 +53,9 @@ export default function NADCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Feature Documentary</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">NAD ELECTRONICS</h1>
-            <p className="text-lg text-white max-w-2xl text-left">
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Feature Documentary</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">NAD ELECTRONICS</h1>
+            <p className="text-lg text-white/90 max-w-2xl text-left">
               Helping a passionate team of music-lovers tell their biggest story
             </p>
           </div>
@@ -72,8 +72,8 @@ export default function NADCaseStudy() {
                 When Lenbrook International&rsquo;s world-renowned audiophile brand NAD came up on its 50 Years Anniversary - they wanted to celebrate their story with an inspiring brand documentary. But with an internal agency built to create technical and niche audiophile content - they would need some help giving NAD&rsquo;s history the Hollywood treatment it deserved.
               </p>
             </div>
-            <GoldFrame direction="right">
-              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+            <GoldFrame>
+              <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/nad/nadblock1.png" alt="NAD Electronics documentary" fill className="object-cover" />
               </div>
             </GoldFrame>
@@ -81,12 +81,21 @@ export default function NADCaseStudy() {
         </section>
       </FadeIn>
 
+      {/* Centered Video Section */}
+      <section className="py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="relative aspect-video bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded-lg">
+            <span className="text-[#C99A22] text-base">[CENTERED VIDEO PLACEHOLDER]</span>
+          </div>
+        </div>
+      </section>
+
       {/* "Amplifying Everyone" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left">
-              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+            <GoldFrame>
+              <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/nad/nadblock2.png" alt="NAD Electronics production" fill className="object-cover" />
               </div>
             </GoldFrame>
@@ -100,7 +109,16 @@ export default function NADCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* Full-Bleed Masonry Gallery — signature visual treatment */}
+      {/* NAD 50 Anniversary Logo Section */}
+      <section className="py-16 flex justify-center">
+        <div className="text-center">
+          <div className="w-64 h-64 bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center mx-auto rounded-lg">
+            <span className="text-[#C99A22] text-sm">[NAD 50 LOGO PLACEHOLDER]</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Full-Bleed Masonry Gallery */}
       <FadeIn>
         <section className="pb-24">
           <div className="space-y-4">

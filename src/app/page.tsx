@@ -112,10 +112,10 @@ export default function HomePage() {
 
         <div className="relative z-10 mx-auto max-w-7xl w-full">
           <div className="max-w-[60%]">
-            <h2 className="text-hero text-white font-semibold mb-2">
+            <h2 className="text-hero text-white font-semibold mb-1">
               Content That
             </h2>
-            <div className="mb-6">
+            <div className="mb-4">
               <CyclingText
                 words={["Engages", "Converts", "Performs", "Adapts", "Responds", "Is Authentic"]}
                 className="text-cycling font-bold leading-tight"
@@ -195,8 +195,8 @@ export default function HomePage() {
                 against their performance.
               </p>
             </div>
-            <GoldFrame direction="left">
-              <VimeoEmbed videoId="939689395" hash="3a7a906c4e" />
+            <GoldFrame>
+              <VimeoEmbed videoId="939689395" hash="3a7a906c4e" aspect="fill" />
             </GoldFrame>
           </div>
         </section>
@@ -206,8 +206,8 @@ export default function HomePage() {
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left" className="order-2 lg:order-1">
-              <VimeoEmbed videoId="1168992231" hash="ef53c80ff9" />
+            <GoldFrame className="order-2 lg:order-1">
+              <VimeoEmbed videoId="1168992231" hash="ef53c80ff9" aspect="fill" />
             </GoldFrame>
             <div className="order-1 lg:order-2">
               <h2 className="text-[27px] font-semibold leading-tight mb-6">
@@ -241,10 +241,10 @@ export default function HomePage() {
                   src="/images/case-studies/amazon/Amazon_block1_still.jpg"
                   alt="Amazon case study banner"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-70"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               <div className="absolute inset-0 flex items-center justify-center text-center">
                 <div>
                   <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Video Pipeline</span>
@@ -267,7 +267,7 @@ export default function HomePage() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center text-center">
                   <div>
                     <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Brand Video</span>
@@ -287,7 +287,7 @@ export default function HomePage() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center text-center">
                   <div>
                     <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Cross-Channel Media</span>
@@ -310,7 +310,7 @@ export default function HomePage() {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               <div className="absolute inset-0 flex items-center justify-center text-center">
                 <div>
                   <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Feature Documentary</span>

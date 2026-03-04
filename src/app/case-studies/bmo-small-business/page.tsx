@@ -51,9 +51,9 @@ export default function BMOCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Cross-Channel Media</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">BMO</h1>
-            <p className="text-lg text-white max-w-2xl text-left">
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Cross-Channel Media</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">BMO</h1>
+            <p className="text-lg text-white/90 max-w-2xl text-left">
               Simplifying a docu-style process to empower the agency&apos;s vision
             </p>
           </div>
@@ -70,19 +70,28 @@ export default function BMOCaseStudy() {
                 When BMO&apos;s agency partner ran into internal delays and a tightening budget for an upcoming activation featuring real entrepreneurs, they needed an agile partner to expedite the docu-style media project without compromising the agency&apos;s vision, processes and quality.
               </p>
             </div>
-            <GoldFrame direction="right">
-              <VimeoEmbed videoId="1169009698" hash="f6d19acca7" />
+            <GoldFrame>
+              <VimeoEmbed videoId="1169009698" hash="f6d19acca7" aspect="fill" />
             </GoldFrame>
           </div>
         </section>
       </FadeIn>
 
+      {/* Centered Video Section */}
+      <section className="py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="relative aspect-video bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded-lg">
+            <span className="text-[#C99A22] text-base">[CENTERED VIDEO PLACEHOLDER]</span>
+          </div>
+        </div>
+      </section>
+
       {/* "We'll Do It Live" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left">
-              <VimeoEmbed videoId="1169008713" hash="979d396235" />
+            <GoldFrame>
+              <VimeoEmbed videoId="1169008713" hash="979d396235" aspect="fill" />
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">We&rsquo;ll Do It Live</h2>
@@ -116,8 +125,6 @@ export default function BMOCaseStudy() {
             <div className="relative aspect-video overflow-hidden">
               <Image src="/images/case-studies/bmo/1Project_Day2_MB_761-2-1.jpg" alt="BMO day 2" fill className="object-cover" />
             </div>
-            {/* [MEDIA-008] Gallery needs larger images (~753px wide) */}
-            {/* [MEDIA-009] 2 missing videos */}
           </div>
         </section>
       </FadeIn>

@@ -44,9 +44,9 @@ export default function PentairCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Asset Library</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">PENTAIR</h1>
-            <p className="text-lg text-white max-w-2xl text-left">Supercharging a technical media library with lifestyle assets</p>
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Asset Library</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">PENTAIR</h1>
+            <p className="text-lg text-white/90 max-w-2xl text-left">Supercharging a technical media library with lifestyle assets</p>
           </div>
         </div>
       </section>
@@ -61,8 +61,8 @@ export default function PentairCaseStudy() {
                 Manitowoc Ice relies on long-term relationships with key distributors in the hospitality supply industry. They wanted to provide their partners with a large bank of approved lifestyle photography for localized campaigns - but as a team built around strong technical writing, creating a bank of authentic lifestyle photography was a much more challenging task.
               </p>
             </div>
-            <GoldFrame direction="right">
-              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+            <GoldFrame>
+              <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/manitowoc/1V0A0355-edit-1.png" alt="Pentair product photography" fill className="object-cover" />
               </div>
             </GoldFrame>
@@ -70,12 +70,21 @@ export default function PentairCaseStudy() {
         </section>
       </FadeIn>
 
+      {/* Centered Video Section */}
+      <section className="py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="relative aspect-video bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded-lg">
+            <span className="text-[#C99A22] text-base">[CENTERED VIDEO PLACEHOLDER]</span>
+          </div>
+        </div>
+      </section>
+
       {/* "Simple, Repeatable, and Scalable" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left">
-              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+            <GoldFrame>
+              <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/manitowoc/Manitowoc-A1833-edit-1.png" alt="Pentair scalable production" fill className="object-cover" />
               </div>
             </GoldFrame>
@@ -94,9 +103,9 @@ export default function PentairCaseStudy() {
         <section className="px-6 lg:px-8 pb-24">
           <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/1V0A0355-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden" style={{ background: "#2a2a2a", border: "2px dashed #C99A22", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "4px" }}><span style={{ color: "#C99A22", fontSize: "14px", fontWeight: 600 }}>[IMG-PENTAIR-01]</span></div>
+            <div className="relative aspect-video overflow-hidden bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded"><span className="text-[#C99A22] text-sm">[IMAGE PLACEHOLDER]</span></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/manitowoc_dec220180-2-1.png" alt="Pentair" fill className="object-cover" /></div>
-            <div className="relative aspect-video overflow-hidden" style={{ background: "#2a2a2a", border: "2px dashed #C99A22", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "4px" }}><span style={{ color: "#C99A22", fontSize: "14px", fontWeight: 600 }}>[IMG-PENTAIR-02]</span></div>
+            <div className="relative aspect-video overflow-hidden bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded"><span className="text-[#C99A22] text-sm">[IMAGE PLACEHOLDER]</span></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-A1833-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-B1933-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/Manitowoc-B2083-edit-1.png" alt="Pentair" fill className="object-cover" /></div>

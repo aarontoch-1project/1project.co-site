@@ -54,6 +54,24 @@ const caseStudies = [
   },
 ];
 
+const clientLogos: { src?: string; alt: string; placeholder?: boolean }[] = [
+  { src: "/images/logos/uberlogo.png", alt: "Uber" },
+  { src: "/images/logos/amazon-logo-1-768x286.png", alt: "Amazon" },
+  { src: "/images/logos/BMOlogo-768x286.png", alt: "BMO" },
+  { src: "/images/logos/tatalogo-768x286.png", alt: "Tata Consumer" },
+  { src: "/images/logos/Pentair_logo_RGB-1-768x286.png", alt: "Pentair" },
+  { alt: "Elevance Health", placeholder: true },
+  { alt: "Core Equipment", placeholder: true },
+  { alt: "NAD Electronics", placeholder: true },
+  { alt: "Welbilt", placeholder: true },
+  { alt: "Lenbrook", placeholder: true },
+  { alt: "Manitowoc", placeholder: true },
+  { alt: "X2 Performance", placeholder: true },
+  { alt: "PSB Speakers", placeholder: true },
+  { alt: "Partner 14", placeholder: true },
+  { alt: "Partner 15", placeholder: true },
+];
+
 export default function CaseStudiesPage() {
   return (
     <>
@@ -72,7 +90,7 @@ export default function CaseStudiesPage() {
                   fill
                   className="object-cover transition-all duration-600 group-hover:scale-105 group-hover:brightness-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center text-center p-8 lg:p-16">
                   <div>
                     <span className="block mb-3 text-[20px] text-white font-semibold">
@@ -88,6 +106,35 @@ export default function CaseStudiesPage() {
           ))}
         </div>
       </section>
+
+      {/* Client Logo Grid */}
+      <FadeIn>
+        <section className="py-16 bg-dark">
+          <div className="mx-auto max-w-6xl px-4">
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center opacity-50">
+              {clientLogos.map((logo, i) =>
+                logo.placeholder ? (
+                  <div
+                    key={i}
+                    className="w-[120px] h-[48px] bg-[#2a2a2a] border border-dashed border-[#C99A22] flex items-center justify-center rounded"
+                  >
+                    <span className="text-[#C99A22] text-[8px] uppercase tracking-wider">{logo.alt}</span>
+                  </div>
+                ) : (
+                  <Image
+                    key={i}
+                    src={logo.src!}
+                    alt={logo.alt}
+                    width={120}
+                    height={48}
+                    className="h-12 w-auto object-contain invert hover:opacity-80 transition-opacity"
+                  />
+                )
+              )}
+            </div>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* CTA */}
       <FadeIn>

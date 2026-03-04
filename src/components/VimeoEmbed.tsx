@@ -3,7 +3,7 @@ interface VimeoEmbedProps {
   hash?: string;
   /** "background" = autoplay/loop/muted, "player" = with controls */
   mode?: "background" | "player";
-  aspect?: "video" | "square" | "hero" | "wide";
+  aspect?: "video" | "square" | "hero" | "wide" | "fill";
   className?: string;
 }
 
@@ -19,6 +19,7 @@ export function VimeoEmbed({
     square: "aspect-square",
     hero: "min-h-screen",
     wide: "aspect-[21/9]",
+    fill: "w-full h-full",
   }[aspect];
 
   const hashParam = hash ? `h=${hash}&` : "";

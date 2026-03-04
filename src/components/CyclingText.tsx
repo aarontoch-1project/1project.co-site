@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface CyclingTextProps {
   words: string[];
@@ -8,16 +8,22 @@ interface CyclingTextProps {
   className?: string;
 }
 
-export function CyclingText({ words, interval = 3000, className = "" }: CyclingTextProps) {
-  const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
+export function CyclingText({
+  words,
+  interval = 4000,
+  className = "",
+}: CyclingTextProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const containerRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    if (words.length <= 1) return;
     const timer = setInterval(() => {
-      setVisible(false);
+      setIsAnimating(true);
       setTimeout(() => {
-        setIndex((prev) => (prev + 1) % words.length);
-        setVisible(true);
+        setCurrentIndex((prev) => (prev + 1) % words.length);
+        setIsAnimating(false);
       }, 400);
     }, interval);
     return () => clearInterval(timer);
@@ -25,12 +31,27 @@ export function CyclingText({ words, interval = 3000, className = "" }: CyclingT
 
   return (
     <span
-      className={`inline-block transition-all duration-400 text-gold ${className} ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-      }`}
-      style={{ fontFamily: "var(--font-montserrat), system-ui, sans-serif" }}
+      ref={containerRef}
+      className={`inline-block overflow-hidden align-bottom ${className}`}
+      style={{
+        fontFamily: "var(--font-montserrat), system-ui, sans-serif",
+        fontSize: "78px",
+        fontWeight: 700,
+        color: "#C99A22",
+        lineHeight: 1.15,
+        height: "1.15em",
+      }}
     >
-      {words[index]}
+      <span
+        className="inline-block transition-all ease-in-out"
+        style={{
+          transitionDuration: "400ms",
+          transform: isAnimating ? "translateY(-100%)" : "translateY(0)",
+          opacity: isAnimating ? 0 : 1,
+        }}
+      >
+        {words[currentIndex]}
+      </span>
     </span>
   );
 }

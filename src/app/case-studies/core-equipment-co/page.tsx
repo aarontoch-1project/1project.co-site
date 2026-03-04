@@ -44,9 +44,9 @@ export default function CoreCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Lifestyle Content</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">CORE</h1>
-            <p className="text-lg text-white max-w-2xl text-left">Giving an outdoors company access to authentic remote locations</p>
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Lifestyle Content</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">CORE</h1>
+            <p className="text-lg text-white/90 max-w-2xl text-left">Giving an outdoors company access to authentic remote locations</p>
           </div>
         </div>
       </section>
@@ -61,8 +61,8 @@ export default function CoreCaseStudy() {
                 As Core Equipment Co's product line expanded, so did a need for authentic lifestyle content of their outdoors gear in action. But with narrowing target demos and internal production based in city centers, it was becoming hard to hit all the geographically distinct locales their customers frequented.
               </p>
             </div>
-            <GoldFrame direction="right">
-              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+            <GoldFrame>
+              <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg" alt="Core Equipment outdoor lifestyle" fill className="object-cover" />
               </div>
             </GoldFrame>
@@ -70,12 +70,21 @@ export default function CoreCaseStudy() {
         </section>
       </FadeIn>
 
+      {/* Centered Video Section */}
+      <section className="py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="relative aspect-video bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded-lg">
+            <span className="text-[#C99A22] text-base">[CENTERED VIDEO PLACEHOLDER]</span>
+          </div>
+        </div>
+      </section>
+
       {/* "Friends In Wild Places" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left">
-              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+            <GoldFrame>
+              <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/core/Core-6p-0522-Edited-2-1-scaled.jpg" alt="Core Equipment outdoor production" fill className="object-cover" />
               </div>
             </GoldFrame>
@@ -89,11 +98,11 @@ export default function CoreCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* Image Gallery — 9 lifestyle images in 4-column grid */}
+      {/* Image Gallery — 3x3 grid */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-2">
-            <div className="relative aspect-[4/3] overflow-hidden" style={{ background: "#2a2a2a", border: "2px dashed #C99A22", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "4px" }}><span style={{ color: "#C99A22", fontSize: "14px", fontWeight: 600 }}>[IMG-CORE-01]</span></div>
+          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
+            <div className="relative aspect-[4/3] overflow-hidden bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded"><span className="text-[#C99A22] text-sm">[IMAGE PLACEHOLDER]</span></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/CORE_1Project_AUG_12_202232072-Edit-scaled.jpg" alt="Core outdoor" fill className="object-cover" /></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-2-1-scaled.jpg" alt="Core lifestyle" fill className="object-cover" /></div>
             <div className="relative aspect-[4/3] overflow-hidden"><Image src="/images/case-studies/core/Core-6p-0522-Edited-21-scaled.jpg" alt="Core adventure" fill className="object-cover" /></div>

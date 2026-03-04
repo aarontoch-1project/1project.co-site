@@ -146,7 +146,7 @@ export default function ServicesPage() {
       <section className="relative">
         <HeroCarousel
           slides={[
-            { type: "image", src: "/images/case-studies/amazon/Amazon_block1_still.jpg", alt: "Services showcase" },
+            { type: "placeholder", label: "SERVICES HERO — needs services-header-pic.png" },
             { type: "placeholder", label: "HERO-CAROUSEL-SV-02" },
             { type: "placeholder", label: "HERO-CAROUSEL-SV-03" },
             { type: "placeholder", label: "HERO-CAROUSEL-SV-04" },
@@ -177,33 +177,27 @@ export default function ServicesPage() {
       </section>
 
       {/* ── 1.5. "SEE OUR LATEST" Section ── */}
-      <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl text-center">
-          <div className="flex items-center justify-center gap-6 mb-12">
-            <div className="h-px w-16 bg-gold" />
-            <h2 className="text-[46px] font-bold leading-tight text-white">
+      <section className="py-16 bg-[#1a1a1a]">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex items-center justify-center gap-6 mb-8">
+            <div className="h-px flex-1 max-w-[80px] bg-gold" />
+            <h2
+              className="text-center text-white text-2xl font-bold tracking-widest"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
               SEE OUR LATEST.
             </h2>
-            <div className="h-px w-16 bg-gold" />
+            <div className="h-px flex-1 max-w-[80px] bg-gold" />
           </div>
-          <div
-            style={{
-              background: "#2a2a2a",
-              border: "2px dashed #666",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              aspectRatio: "16/9",
-              width: "100%",
-              maxWidth: "1000px",
-              margin: "0 auto",
-              borderRadius: "8px",
-            }}
-          >
-            <div style={{ textAlign: "center" }}>
-              <span style={{ color: "#999", fontSize: "24px", display: "block" }}>&#9654;</span>
-              <span style={{ color: "#999", fontSize: "16px" }}>[VIDEO-SEE-OUR-LATEST]</span>
-            </div>
+          <div className="relative aspect-video">
+            <iframe
+              src="https://player.vimeo.com/video/930713011?title=0&byline=0&portrait=0"
+              className="absolute inset-0 w-full h-full"
+              frameBorder="0"
+              allow="fullscreen; picture-in-picture"
+              allowFullScreen
+              title="1Project Demo Reel"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -225,7 +219,7 @@ export default function ServicesPage() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[27px] font-semibold mb-6">Stunning Brand Narratives</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Stunning Brand Narratives</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Short-form, long-form or free-form — there is no wrong way to
                 show off your brand as the main character. Expand on the type of
@@ -237,8 +231,8 @@ export default function ServicesPage() {
                 , and directors exploring the latest trends in video tech.
               </p>
             </div>
-            <GoldFrame direction="right">
-              <VimeoEmbed videoId="1168992274" hash="3d5c427af7" />
+            <GoldFrame>
+              <VimeoEmbed videoId="1168992274" hash="3d5c427af7" aspect="fill" />
             </GoldFrame>
           </div>
         </section>
@@ -248,11 +242,11 @@ export default function ServicesPage() {
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left">
-              <VimeoEmbed videoId="1168992239" hash="97957d8a05" />
+            <GoldFrame>
+              <VimeoEmbed videoId="1168992239" hash="97957d8a05" aspect="fill" />
             </GoldFrame>
             <div>
-              <h2 className="text-[27px] font-semibold mb-6">Authentic Lifestyle Imagery</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Authentic Lifestyle Imagery</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Crafting true-to-life content is one of our key specialties.
                 Hone-in on a unique and effortless lifestyle aesthetic for your
@@ -273,7 +267,7 @@ export default function ServicesPage() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[27px] font-semibold mb-6">Specialty and Niche Production</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Specialty and Niche Production</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Make your campaigns stand out visually with{" "}
                 <span className="gold-highlight">
@@ -283,8 +277,8 @@ export default function ServicesPage() {
                 with artisan-grade food beauty and stylized product photography.
               </p>
             </div>
-            <GoldFrame direction="right">
-              <VimeoEmbed videoId="1168992294" hash="5a86503968" />
+            <GoldFrame>
+              <VimeoEmbed videoId="1168992294" hash="5a86503968" aspect="fill" />
             </GoldFrame>
           </div>
         </section>
@@ -294,8 +288,8 @@ export default function ServicesPage() {
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left">
-              <div className="aspect-video bg-dark-deep relative overflow-hidden">
+            <GoldFrame>
+              <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image
                   src="/images/case-studies/bmo/1Project_Day1_MB_055-1.jpg"
                   alt="Documentary-style storytelling"
@@ -305,7 +299,7 @@ export default function ServicesPage() {
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-[27px] font-semibold mb-6">Engaging Docu-style Storytelling</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Engaging Docu-style Storytelling</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 We have a rich history of helping brands use real stories to
                 drive consistent and powerful engagement. Master your

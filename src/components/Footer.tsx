@@ -23,7 +23,7 @@ export function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="outline-text text-[2.5rem] lg:text-[3rem] font-bold leading-tight hover:text-white transition-all duration-400 text-center whitespace-nowrap"
+              className="outline-text text-[2.5rem] lg:text-[72px] font-bold leading-tight hover:text-white transition-all duration-400 text-center whitespace-nowrap"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               {link.label}

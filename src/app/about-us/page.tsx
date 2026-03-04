@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { CyclingText } from "@/components/CyclingText";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
@@ -36,19 +35,26 @@ const values = [
   },
 ];
 
-const partnerLogos = [
+/* Client/partner logos only — NO 1PROJECT branded logos */
+const partnerLogos: { src?: string; alt: string; w: number; h: number; placeholder?: boolean }[] = [
   // Row 1
   { src: "/images/logos/uberlogo.png", alt: "Uber", w: 184, h: 84 },
   { src: "/images/logos/amazon-logo-1-768x286.png", alt: "Amazon", w: 184, h: 84 },
   { src: "/images/logos/BMOlogo-768x286.png", alt: "BMO", w: 184, h: 84 },
   { src: "/images/logos/tatalogo-768x286.png", alt: "Tata Consumer", w: 184, h: 84 },
   { src: "/images/logos/Pentair_logo_RGB-1-768x286.png", alt: "Pentair", w: 184, h: 84 },
-  // Row 2 — additional partner logos from logo transparency files
-  { src: "/images/logos/Logo transparency.png", alt: "Partner", w: 184, h: 84 },
-  { src: "/images/logos/Logo transparency 2.png", alt: "Partner", w: 184, h: 84 },
-  { src: "/images/logos/Logo transparency 3.png", alt: "Partner", w: 184, h: 84 },
-  { src: "/images/logos/Logo transparency 4.png", alt: "Partner", w: 184, h: 84 },
-  { src: "/images/logos/Logo transparency 5.png", alt: "Partner", w: 184, h: 84 },
+  // Row 2
+  { alt: "Elevance Health", w: 184, h: 84, placeholder: true },
+  { alt: "Core Equipment", w: 184, h: 84, placeholder: true },
+  { alt: "NAD Electronics", w: 184, h: 84, placeholder: true },
+  { alt: "Welbilt", w: 184, h: 84, placeholder: true },
+  { alt: "Lenbrook", w: 184, h: 84, placeholder: true },
+  // Row 3
+  { alt: "Manitowoc", w: 184, h: 84, placeholder: true },
+  { alt: "X2 Performance", w: 184, h: 84, placeholder: true },
+  { alt: "PSB Speakers", w: 184, h: 84, placeholder: true },
+  { alt: "Partner 14", w: 184, h: 84, placeholder: true },
+  { alt: "Partner 15", w: 184, h: 84, placeholder: true },
 ];
 
 const galleryImages = [
@@ -72,7 +78,7 @@ export default function AboutPage() {
       <section className="relative">
         <HeroCarousel
           slides={[
-            { type: "image", src: "/images/case-studies/amazon/Amazon_block1_still.jpg", alt: "About us hero background" },
+            { type: "placeholder", label: "ABOUT US HERO — needs services-header-pic.png" },
             { type: "placeholder", label: "HERO-CAROUSEL-AB-02" },
             { type: "placeholder", label: "HERO-CAROUSEL-AB-03" },
             { type: "placeholder", label: "HERO-CAROUSEL-AB-04" },
@@ -184,7 +190,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Partners — 2 rows of 5, larger logos */}
+      {/* Partners — 3 rows of 5, client logos only */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
@@ -192,29 +198,38 @@ export default function AboutPage() {
               <h2 className="text-h2">Our Partners</h2>
             </SectionDivider>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-8 justify-items-center opacity-50">
-              {partnerLogos.map((logo, i) => (
-                <Image
-                  key={i}
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={logo.w}
-                  height={logo.h}
-                  className="object-contain invert hover:opacity-80 transition-opacity duration-300"
-                />
-              ))}
+              {partnerLogos.map((logo, i) =>
+                logo.placeholder ? (
+                  <div
+                    key={i}
+                    className="w-[184px] h-[84px] bg-[#2a2a2a] border border-dashed border-[#C99A22] flex items-center justify-center rounded"
+                  >
+                    <span className="text-[#C99A22] text-[10px] uppercase tracking-wider">{logo.alt}</span>
+                  </div>
+                ) : (
+                  <Image
+                    key={i}
+                    src={logo.src!}
+                    alt={logo.alt}
+                    width={logo.w}
+                    height={logo.h}
+                    className="object-contain invert hover:opacity-80 transition-opacity duration-300"
+                  />
+                )
+              )}
             </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* Our Teams at Work — horizontal scrolling carousel (11 images) */}
+      {/* Our Teams at Work — horizontal scrolling carousel */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionDivider className="mb-16">
               <h2 className="text-h2 text-center">Our Teams at Work</h2>
             </SectionDivider>
-            <div className="overflow-x-auto pb-4 -mx-6 px-6">
+            <div className="overflow-x-auto scrollbar-hide pb-4 -mx-6 px-6">
               <div className="flex gap-3" style={{ width: 'max-content' }}>
                 {galleryImages.map((img, i) => (
                   <div key={i} className="relative w-[300px] h-[220px] flex-shrink-0 overflow-hidden">
@@ -232,26 +247,7 @@ export default function AboutPage() {
         </section>
       </FadeIn>
 
-      {/* CTA */}
-      <section className="py-24 px-6 lg:px-8 text-center">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-h2 mb-10">Let&apos;s Work Together</h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/contact-us"
-              className="inline-block bg-gold text-dark text-sm font-medium px-8 py-3 rounded-md hover:bg-lightning transition-colors"
-            >
-              Let&apos;s Talk
-            </Link>
-            <Link
-              href="/case-studies"
-              className="inline-block border border-white/30 text-white text-sm font-medium px-8 py-3 rounded-md hover:border-white/60 transition-colors"
-            >
-              Case Studies
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* NOTE: "Let's Work Together" section REMOVED — original site does not have it */}
     </>
   );
 }

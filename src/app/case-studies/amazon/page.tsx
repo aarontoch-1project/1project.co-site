@@ -53,17 +53,16 @@ export default function AmazonCaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">Video Pipeline</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-4">AMAZON</h1>
-            <p className="text-lg text-white max-w-2xl text-left">
+            <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Video Pipeline</Link>
+            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">AMAZON</h1>
+            <p className="text-lg text-white/90 max-w-2xl text-left">
               Building a video production system to bring a program to life
             </p>
           </div>
         </div>
       </section>
 
-
-      {/* ── 3. "To Each Their Own" (text LEFT, video RIGHT) ── */}
+      {/* ── 2. "To Each Their Own" (text LEFT, video RIGHT) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -78,19 +77,28 @@ export default function AmazonCaseStudy() {
                 program&apos;s standards.
               </p>
             </div>
-            <GoldFrame direction="right">
-              <VimeoEmbed videoId="1168992208" hash="410dd21dda" />
+            <GoldFrame>
+              <VimeoEmbed videoId="1168992208" hash="410dd21dda" aspect="fill" />
             </GoldFrame>
           </div>
         </section>
       </FadeIn>
 
-      {/* ── 4. "Customizable Creative" (video LEFT, text RIGHT) ── */}
+      {/* ── 2.5 Centered Video Section ── */}
+      <section className="py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="relative aspect-video bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded-lg">
+            <span className="text-[#C99A22] text-base">[CENTERED VIDEO PLACEHOLDER]</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 3. "Customizable Creative" (video LEFT, text RIGHT) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <GoldFrame direction="left">
-              <VimeoEmbed videoId="1168992196" hash="7132d3dfbc" />
+            <GoldFrame>
+              <VimeoEmbed videoId="1168992196" hash="7132d3dfbc" aspect="fill" />
             </GoldFrame>
             <div>
               <h2 className="text-h2 mb-6">Customizable Creative</h2>
@@ -107,7 +115,7 @@ export default function AmazonCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* ── 5. Image Gallery / Mosaic ── */}
+      {/* ── 4. Image Gallery / Mosaic ── */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
           <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2 overflow-hidden">
@@ -131,7 +139,7 @@ export default function AmazonCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* ── 6. Statement + Accordion (Two-Column) ── */}
+      {/* ── 5. Statement + Accordion (Two-Column) ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
@@ -172,7 +180,7 @@ export default function AmazonCaseStudy() {
         </section>
       </FadeIn>
 
-      {/* ── 7. "Check Out More Case Studies" ── */}
+      {/* ── 6. "Check Out More Case Studies" ── */}
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">

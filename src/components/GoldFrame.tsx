@@ -10,17 +10,16 @@ export function GoldFrame({
   className = "",
 }: GoldFrameProps) {
   return (
-    <div className={`relative ${className}`}>
-      {/* Gold border frame offset behind the content */}
+    <div className={`relative ${className}`} style={{ paddingLeft: 20, paddingBottom: 20 }}>
+      {/* Gold accent block - BOTTOM LEFT, solid filled rectangle */}
       <div
-        className="absolute bg-gold z-0"
-        style={
-          direction === "right"
-            ? { top: 20, left: 20, right: -20, bottom: -20 }
-            : { top: -20, left: -20, right: 20, bottom: 20 }
-        }
+        className="absolute bg-gold"
+        style={{ top: 20, left: 0, right: 20, bottom: 0, zIndex: 0 }}
       />
-      <div className="relative z-10">{children}</div>
+      {/* Media container - SQUARE (1:1) */}
+      <div className="relative z-10 aspect-square overflow-hidden">
+        {children}
+      </div>
     </div>
   );
 }

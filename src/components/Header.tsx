@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -13,19 +13,32 @@ const navLinks = [
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const prevScrollY = useRef(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    const onScroll = () => {
+      const currentScroll = window.scrollY;
+      setScrolled(currentScroll > 60);
+
+      // Hide on scroll down, show on scroll up
+      if (currentScroll > 80 && currentScroll > prevScrollY.current) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+      prevScrollY.current = currentScroll;
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-dark/95 backdrop-blur-sm" : "bg-transparent"
-      }`}
+      } ${hidden && !mobileOpen ? "-translate-y-full" : "translate-y-0"}`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -54,7 +67,7 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-gold text-white text-sm font-medium px-6 py-2.5 rounded-md border border-gold hover:bg-lightning transition-colors"
+              className="bg-gold text-dark text-sm font-semibold px-6 py-2.5 rounded-md hover:bg-lightning transition-colors"
             >
               Start a Project
             </Link>
@@ -101,7 +114,7 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-gold text-dark text-sm font-medium px-6 py-2.5 rounded-md text-center hover:bg-lightning transition-colors"
+              className="bg-gold text-dark text-sm font-semibold px-6 py-2.5 rounded-md text-center hover:bg-lightning transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               Start a Project
