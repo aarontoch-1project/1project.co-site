@@ -78,14 +78,11 @@ export default function AboutPage() {
       <section className="relative">
         <HeroCarousel
           slides={[
-            { type: "placeholder", label: "ABOUT US HERO — needs services-header-pic.png" },
-            { type: "placeholder", label: "HERO-CAROUSEL-AB-02" },
-            { type: "placeholder", label: "HERO-CAROUSEL-AB-03" },
-            { type: "placeholder", label: "HERO-CAROUSEL-AB-04" },
+            { type: "image", src: "/images/case-studies/bmo/1Project_Day2_MB_124-1.jpg", alt: "Team on location" },
           ]}
         >
-          <div className="absolute inset-0 flex items-end z-10">
-            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8 pb-24">
+          <div className="absolute inset-0 flex items-center z-10">
+            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8">
               <h1 className="text-hero text-gold font-semibold mb-2 text-left">
                 Changing How Brands
               </h1>

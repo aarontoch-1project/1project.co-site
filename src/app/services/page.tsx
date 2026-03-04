@@ -146,14 +146,11 @@ export default function ServicesPage() {
       <section className="relative">
         <HeroCarousel
           slides={[
-            { type: "placeholder", label: "SERVICES HERO — needs services-header-pic.png" },
-            { type: "placeholder", label: "HERO-CAROUSEL-SV-02" },
-            { type: "placeholder", label: "HERO-CAROUSEL-SV-03" },
-            { type: "placeholder", label: "HERO-CAROUSEL-SV-04" },
+            { type: "image", src: "/images/case-studies/bmo/1Project_Day1_MB_055-1.jpg", alt: "Production crew on set" },
           ]}
         >
-          <div className="absolute inset-0 flex items-end z-10">
-            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8 pb-24">
+          <div className="absolute inset-0 flex items-center z-10">
+            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8">
               <h1 className="text-hero leading-tight mb-4 italic">
                 Production That&rsquo;s
               </h1>
@@ -176,7 +173,19 @@ export default function ServicesPage() {
         </HeroCarousel>
       </section>
 
-      {/* ── 1.5. "SEE OUR LATEST" Section ── */}
+      {/* ── 2. "Get Creative" Intro Statement ── */}
+      <FadeIn>
+        <section className="py-24 px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-[46px] font-bold leading-[55.2px] text-left">
+              1Project is built on our versatility. Here&rsquo;s some ways we help teams{" "}
+              <span className="text-gold italic">Get Creative</span>
+            </h2>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* ── 2.5. "SEE OUR LATEST" Section ── */}
       <section className="py-16 bg-[#1a1a1a]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-center gap-6 mb-8">
@@ -201,18 +210,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      {/* ── 2. "Get Creative" Intro Statement ── */}
-      <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="text-[46px] font-bold leading-[55.2px] text-left">
-              1Project is built on our versatility. Here&rsquo;s some ways we help teams{" "}
-              <span className="text-gold italic">Get Creative</span>
-            </h2>
-          </div>
-        </section>
-      </FadeIn>
 
       {/* ── 3. Service Block: Stunning Brand Narratives (text L, image R) ── */}
       <FadeIn>

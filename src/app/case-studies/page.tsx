@@ -82,7 +82,7 @@ export default function CaseStudiesPage() {
             <FadeIn key={cs.href}>
               <Link
                 href={cs.href}
-                className="group relative block overflow-hidden h-[85vh] min-h-[600px]"
+                className="group relative block overflow-hidden h-[65vh] min-h-[450px]"
               >
                 <Image
                   src={cs.image}

@@ -237,7 +237,7 @@ export default function HomePage() {
             >
               <div className="absolute inset-0 bg-dark-deep">
                 <Image
-                  src="/images/case-studies/amazon/Amazon_block1_still.jpg"
+                  src="/images/case-studies/amazon/pavoi-banner.png"
                   alt="Amazon case study banner"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

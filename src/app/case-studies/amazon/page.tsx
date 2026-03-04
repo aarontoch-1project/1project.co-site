@@ -51,8 +51,8 @@ export default function AmazonCaseStudy() {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+        <div className="absolute inset-0 flex items-center px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Video Pipeline</Link>
             <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">AMAZON</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">

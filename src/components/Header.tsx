@@ -12,23 +12,13 @@ const navLinks = [
 ];
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const prevScrollY = useRef(0);
 
   useEffect(() => {
     const onScroll = () => {
-      const currentScroll = window.scrollY;
-      setScrolled(currentScroll > 60);
-
-      // Hide on scroll down, show on scroll up
-      if (currentScroll > 80 && currentScroll > prevScrollY.current) {
-        setHidden(true);
-      } else {
-        setHidden(false);
-      }
-      prevScrollY.current = currentScroll;
+      // Only visible when at the very top of the page
+      setHidden(window.scrollY > 80);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -36,9 +26,9 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-dark/95 backdrop-blur-sm" : "bg-transparent"
-      } ${hidden && !mobileOpen ? "-translate-y-full" : "translate-y-0"}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 bg-transparent ${
+        hidden && !mobileOpen ? "-translate-y-full" : "translate-y-0"
+      }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">

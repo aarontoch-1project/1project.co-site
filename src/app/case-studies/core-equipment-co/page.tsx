@@ -42,8 +42,8 @@ export default function CoreCaseStudy() {
       <section className="relative h-screen min-h-[500px]">
         <Image src="/images/case-studies/core/Banner-Image-1-1.png" alt="Core Equipment case study hero" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
-        <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+        <div className="absolute inset-0 flex items-center px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Lifestyle Content</Link>
             <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">CORE</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">Giving an outdoors company access to authentic remote locations</p>

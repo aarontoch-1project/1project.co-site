@@ -75,11 +75,11 @@ iframe, img, video {
 /* Outline font nav links — footer large navigation */
 .outline-text {
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.7);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
   transition: all 0.4s ease;
 }
 .outline-text:hover {
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 1);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
   color: rgba(255, 255, 255, 1);
 }
 
