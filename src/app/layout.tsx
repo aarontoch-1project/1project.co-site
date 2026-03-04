@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   description:
     "Creative content production made simple. 1Project connects you with top freelance creators and producers to deliver high-quality video, photo, and 3D content, on time, on budget, and without retainers.",
   icons: {
-    icon: "/images/logos/Logo transparency_icon_small.png",
-    apple: "/images/logos/Logo transparency_icon_small.png",
+    icon: "/images/logos/Logo transparency 6-badge.png",
+    apple: "/images/logos/Logo transparency 6-badge.png",
   },
 };
 

@@ -90,15 +90,6 @@ iframe, img, video {
   }
 }
 
-/* Marquee animation for logos */
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 /* Fade in for carousel transitions */
 @keyframes fadeIn {

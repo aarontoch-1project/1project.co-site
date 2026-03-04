@@ -96,7 +96,7 @@ export default function HomePage() {
   return (
     <>
       {/* ===== 1. HERO — full viewport with video bg ===== */}
-      <section className="relative min-h-screen flex items-end pb-24 px-6 lg:px-8">
+      <section className="relative min-h-screen flex items-end px-6 lg:px-8">
         {/* Hero background Vimeo video */}
         <div className="absolute inset-0 bg-dark-deep z-0 overflow-hidden">
           <iframe
@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-7xl w-full">
+        <div className="relative z-10 mx-auto max-w-7xl w-full pb-28">
           <div className="max-w-[60%]">
             <h2 className="text-hero text-white font-semibold mb-1">
               Content That
@@ -128,34 +128,33 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </section>
 
-      {/* ===== 2. CLIENT LOGOS MARQUEE ===== */}
-      <section className="bg-dark py-8 overflow-hidden border-y border-white/5">
-        <div className="flex" style={{ animation: "marquee 30s linear infinite", width: "200%" }}>
-          {[...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos].map((logo, i) => (
-            <div key={i} className="flex-shrink-0 px-10">
+        {/* Client logos — static bar at bottom of hero */}
+        <div className="absolute bottom-0 left-0 right-0 z-10 bg-[#1a1a1a]/80 py-5 border-t border-white/5">
+          <div className="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            {clientLogos.map((logo) => (
               <Image
+                key={logo.alt}
                 src={logo.src}
                 alt={logo.alt}
                 width={logo.w}
                 height={logo.h}
-                className="object-contain brightness-0 invert opacity-70"
+                className="h-8 w-auto object-contain brightness-0 invert opacity-70"
               />
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ===== 3. "POWERHOUSES" STATEMENT ===== */}
       <FadeIn>
-        <section className="py-24 lg:py-32 px-6 lg:px-8">
+        <section className="pt-24 lg:pt-28 pb-10 lg:pb-14 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-[46px] font-bold leading-[55.2px] text-white">
+            <h1 className="text-[46px] font-bold leading-[55.2px] text-white" style={{ fontWeight: 700 }}>
               1Project provides managed creative production to help brands become
               content{" "}
               <span className="relative inline-block">
-                <span className="text-gold italic">Powerhouses</span>
+                <span className="text-gold italic font-extrabold">Powerhouses</span>
                 {/* Hand-drawn squiggle underline */}
                 <svg
                   className="absolute -bottom-3 left-0 w-full"
@@ -179,12 +178,12 @@ export default function HomePage() {
 
       {/* ===== 4. "RELIABLE ACCESS" — text left, video right ===== */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
+        <section className="pt-10 lg:pt-14 pb-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[27px] font-semibold leading-tight mb-6">
                 Reliable Access to the{" "}
-                <em className="not-italic italic">Right</em> Freelancers
+                <em>Right</em> Freelancers
               </h2>
               <p className="text-lg text-white/90 leading-relaxed">
                 Utilize a{" "}

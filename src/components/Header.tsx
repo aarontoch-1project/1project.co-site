@@ -45,11 +45,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logos/Logo transparency.png"
+              src="/images/logos/Logo transparency 2.png"
               alt="1Project"
               width={160}
-              height={40}
-              className="h-10 w-auto"
+              height={36}
+              className="h-[33px] w-auto"
               priority
             />
           </Link>
