@@ -42,7 +42,7 @@ export function TestimonialCarousel({
           key={active}
           className="animate-[fadeIn_0.5s_ease]"
         >
-          <p className="text-lg italic text-white/80 leading-relaxed mb-8">
+          <p className="text-[24px] italic text-white/80 leading-[36px] mb-8">
             &ldquo;{t.quote}&rdquo;
           </p>
           <footer>

@@ -31,15 +31,15 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-[88px]">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logos/Logo transparency 2.png"
               alt="1Project"
-              width={160}
-              height={36}
-              className="h-[33px] w-auto"
+              width={203}
+              height={48}
+              className="h-[48px] w-auto"
               priority
             />
           </Link>
@@ -57,7 +57,7 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-gold text-dark text-sm font-semibold px-6 py-2.5 rounded-md hover:bg-lightning transition-colors"
+              className="bg-transparent text-white text-[21px] font-normal border border-white px-6 py-3 rounded-md hover:bg-white/10 transition-colors"
             >
               Start a Project
             </Link>
@@ -104,7 +104,7 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-gold text-dark text-sm font-semibold px-6 py-2.5 rounded-md text-center hover:bg-lightning transition-colors"
+              className="bg-transparent text-white text-[21px] font-normal border border-white px-6 py-3 rounded-md text-center hover:bg-white/10 transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               Start a Project

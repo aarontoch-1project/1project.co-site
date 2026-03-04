@@ -104,7 +104,7 @@ export default function AboutPage() {
       <FadeIn>
         <section className="py-24 lg:py-32 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="text-[46px] font-bold leading-[55.2px] text-white">
+            <h2 className="text-[40px] font-bold leading-[48px] text-white">
               Empowering great brands to take back the reins on their{" "}
               <span className="text-gold italic">Content Creation</span>
             </h2>
@@ -129,7 +129,7 @@ export default function AboutPage() {
               {/* RIGHT — Mission Text */}
               <div>
                 <SectionDivider className="mb-8">
-                  <h2 className="text-h2">Our Mission</h2>
+                  <h2 className="text-[40px] leading-[48px]">Our Mission</h2>
                 </SectionDivider>
                 <p className="text-lg text-white/90 leading-[27px] mb-8">
                   We&apos;re seasoned ex-agency media producers who have seen the
@@ -164,7 +164,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl">
           <FadeIn>
             <SectionDivider className="mb-16">
-              <h2 className="text-h2 text-center">Our Key Values</h2>
+              <h2 className="text-[40px] leading-[48px] text-center">Our Key Values</h2>
             </SectionDivider>
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
@@ -192,7 +192,7 @@ export default function AboutPage() {
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
             <SectionDivider className="mb-12">
-              <h2 className="text-h2">Our Partners</h2>
+              <h2 className="text-[40px] leading-[48px]">Our Partners</h2>
             </SectionDivider>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-8 justify-items-center opacity-50">
               {partnerLogos.map((logo, i) =>
@@ -224,7 +224,7 @@ export default function AboutPage() {
         <section className="py-24 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionDivider className="mb-16">
-              <h2 className="text-h2 text-center">Our Teams at Work</h2>
+              <h2 className="text-[40px] leading-[48px] text-center">Our Teams at Work</h2>
             </SectionDivider>
             <div className="overflow-x-auto scrollbar-hide pb-4 -mx-6 px-6">
               <div className="flex gap-3" style={{ width: 'max-content' }}>

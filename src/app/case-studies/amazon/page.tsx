@@ -67,7 +67,7 @@ export default function AmazonCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-h2 mb-6">To Each Their Own</h2>
+              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">To Each Their Own</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Amazon was running a program that provided high-performing stores
                 with funding to create and place OTT video campaigns. They wanted
@@ -101,7 +101,7 @@ export default function AmazonCaseStudy() {
               <VimeoEmbed videoId="1168992196" hash="7132d3dfbc" aspect="fill" />
             </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">Customizable Creative</h2>
+              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Customizable Creative</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Supporting an Amazon agency partner, we developed a repeatable
                 creative video framework and workflow to give each store: A
@@ -149,7 +149,7 @@ export default function AmazonCaseStudy() {
                 <span className="text-sm font-bold text-white block mb-4">
                   Centralized Management
                 </span>
-                <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
+                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
                   Different Brands Different Needs Same Outputs
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -184,20 +184,20 @@ export default function AmazonCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-h2 text-center whitespace-nowrap">
+            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">
               Check Out More Case Studies
             </h2>
           </SectionDivider>
           <div className="flex justify-center gap-4">
             <Link
               href="/case-studies/eight-o-clock-coffee"
-              className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors"
+              className="inline-block bg-gold text-dark px-[56px] py-6 rounded-[5px] font-bold border-2 border-gold hover:bg-lightning transition-colors"
             >
               Eight O&rsquo;Clock Coffee &rarr;
             </Link>
             <Link
               href="/case-studies"
-              className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors"
+              className="inline-block border-2 border-gold text-gold px-[56px] py-6 rounded-[5px] bg-transparent font-bold hover:bg-gold/10 transition-colors"
             >
               All Case Studies
             </Link>

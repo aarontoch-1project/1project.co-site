@@ -151,7 +151,7 @@ export default function ServicesPage() {
         >
           <div className="absolute inset-0 flex items-center z-10">
             <div className="mx-auto max-w-7xl w-full px-6 lg:px-8">
-              <h1 className="text-hero leading-tight mb-4 italic">
+              <h1 className="text-hero leading-tight mb-4">
                 Production That&rsquo;s
               </h1>
               <CyclingText
@@ -339,7 +339,7 @@ export default function ServicesPage() {
       {/* ── 8. Comparison Table ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl overflow-x-auto">
+          <div className="mx-auto max-w-[800px] overflow-x-auto">
             <table className="w-full border-collapse text-sm min-w-[700px]">
               <thead>
                 <tr>

@@ -96,7 +96,7 @@ export default function HomePage() {
   return (
     <>
       {/* ===== 1. HERO — full viewport with video bg ===== */}
-      <section className="relative min-h-screen flex items-end px-6 lg:px-8">
+      <section className="relative h-[765px] flex items-end px-6 lg:px-8">
         {/* Hero background Vimeo video */}
         <div className="absolute inset-0 bg-dark-deep z-0 overflow-hidden">
           <iframe
@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-7xl w-full pb-28">
+        <div className="relative z-10 mx-auto max-w-[1200px] w-full pb-28">
           <div className="max-w-[60%]">
             <h2 className="text-hero text-white font-semibold mb-1">
               Content That
@@ -246,7 +246,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               <div className="absolute inset-0 flex items-center justify-center text-center">
                 <div>
-                  <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Video Pipeline</span>
+                  <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Video Pipeline</span>
                   <h3 className="text-[27px] text-white font-bold">AMAZON</h3>
                 </div>
               </div>
@@ -269,7 +269,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center text-center">
                   <div>
-                    <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Brand Video</span>
+                    <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Brand Video</span>
                     <h3 className="text-[27px] text-white font-bold">TATA CONSUMER</h3>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center text-center">
                   <div>
-                    <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Cross-Channel Media</span>
+                    <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Cross-Channel Media</span>
                     <h3 className="text-[27px] text-white font-bold">BMO</h3>
                   </div>
                 </div>
@@ -312,7 +312,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               <div className="absolute inset-0 flex items-center justify-center text-center">
                 <div>
-                  <span className="text-white text-sm uppercase tracking-[3px] font-medium block mb-2">Feature Documentary</span>
+                  <span className="text-white text-[18px] font-normal tracking-normal inline-block mb-2">Feature Documentary</span>
                   <h3 className="text-[27px] text-white font-bold">NAD ELECTRONICS</h3>
                 </div>
               </div>

@@ -70,7 +70,7 @@ export function CaseStudyLayout({
                 }`}
               >
                 <div>
-                  <h2 className="text-h2 mb-6">{sec.heading}</h2>
+                  <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">{sec.heading}</h2>
                 </div>
                 <div>
                   <p className="text-lg text-white/90 leading-[27px]">
@@ -138,20 +138,20 @@ export function CaseStudyLayout({
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-h2 text-center whitespace-nowrap">
+            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">
               Check Out More Case Studies
             </h2>
           </SectionDivider>
           <div className="flex justify-center gap-4">
             <Link
               href={nextStudy.href}
-              className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors"
+              className="inline-block bg-gold text-dark px-[56px] py-6 rounded-[5px] font-bold border-2 border-gold hover:bg-lightning transition-colors"
             >
               {nextStudy.title} &rarr;
             </Link>
             <Link
               href="/case-studies"
-              className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors"
+              className="inline-block border-2 border-gold text-gold px-[56px] py-6 rounded-[5px] bg-transparent font-bold hover:bg-gold/10 transition-colors"
             >
               All Case Studies
             </Link>

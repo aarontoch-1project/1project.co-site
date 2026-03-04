@@ -65,7 +65,7 @@ export default function BMOCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-h2 mb-6">On-Demand Support</h2>
+              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">On-Demand Support</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 When BMO&apos;s agency partner ran into internal delays and a tightening budget for an upcoming activation featuring real entrepreneurs, they needed an agile partner to expedite the docu-style media project without compromising the agency&apos;s vision, processes and quality.
               </p>
@@ -94,7 +94,7 @@ export default function BMOCaseStudy() {
               <VimeoEmbed videoId="1169008713" hash="979d396235" aspect="fill" />
             </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">We&rsquo;ll Do It Live</h2>
+              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">We&rsquo;ll Do It Live</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 To keep things lean and nimble, we would need to adapt how agency and client creative inputs traditionally work. That meant choices like using a photojournalism shooting approach, minimizing req. brand shots, and designing feedback around curation by: Removing stills approvals on-set, Using a subject&apos;s real day-of schedule, Doing req. soundbite VO&apos;s off camera
               </p>
@@ -137,7 +137,7 @@ export default function BMOCaseStudy() {
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
                 <span className="text-sm font-bold text-white block mb-4">SPEED AND CONFIDENCE</span>
-                <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
+                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
                   Do it Once And Do It Right
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -164,20 +164,20 @@ export default function BMOCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-h2 text-center whitespace-nowrap">
+            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">
               Check Out More Case Studies
             </h2>
           </SectionDivider>
           <div className="flex justify-center gap-4">
             <Link
               href="/case-studies/nad-electronics"
-              className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors"
+              className="inline-block bg-gold text-dark px-[56px] py-6 rounded-[5px] font-bold border-2 border-gold hover:bg-lightning transition-colors"
             >
               NAD Electronics &rarr;
             </Link>
             <Link
               href="/case-studies"
-              className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors"
+              className="inline-block border-2 border-gold text-gold px-[56px] py-6 rounded-[5px] bg-transparent font-bold hover:bg-gold/10 transition-colors"
             >
               All Case Studies
             </Link>

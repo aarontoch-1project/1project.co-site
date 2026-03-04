@@ -56,7 +56,7 @@ export default function PentairCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-h2 mb-6">Not Exactly our Wheelhouse</h2>
+              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Not Exactly our Wheelhouse</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Manitowoc Ice relies on long-term relationships with key distributors in the hospitality supply industry. They wanted to provide their partners with a large bank of approved lifestyle photography for localized campaigns - but as a team built around strong technical writing, creating a bank of authentic lifestyle photography was a much more challenging task.
               </p>
@@ -89,7 +89,7 @@ export default function PentairCaseStudy() {
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-h2 mb-6">Simple, Repeatable, and Scalable</h2>
+              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Simple, Repeatable, and Scalable</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Using their product release schedule and tradeshow availability as milestones, we found the perfect size high-volume shoot to quickly add evergreen lifestyle content and cover new feature SKUS and targeted use cases.
               </p>
@@ -124,7 +124,7 @@ export default function PentairCaseStudy() {
                 <span className="text-sm font-bold text-white block mb-4">
                   CHILL OUT
                 </span>
-                <h2 className="text-[46px] font-semibold leading-[55.2px] text-left">
+                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
                   Staying Creative at a Glacial Pace
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -151,11 +151,11 @@ export default function PentairCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-h2 text-center whitespace-nowrap">Check Out More Case Studies</h2>
+            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
           </SectionDivider>
           <div className="flex justify-center gap-4">
-            <Link href="/case-studies/core-equipment-co" className="inline-block bg-gold text-dark px-6 py-3 rounded font-semibold hover:bg-lightning transition-colors">Core Equipment Co. &rarr;</Link>
-            <Link href="/case-studies" className="inline-block border border-gold text-gold px-6 py-3 rounded bg-transparent hover:bg-gold/10 transition-colors">All Case Studies</Link>
+            <Link href="/case-studies/core-equipment-co" className="inline-block bg-gold text-dark px-[56px] py-6 rounded-[5px] font-bold border-2 border-gold hover:bg-lightning transition-colors">Core Equipment Co. &rarr;</Link>
+            <Link href="/case-studies" className="inline-block border-2 border-gold text-gold px-[56px] py-6 rounded-[5px] bg-transparent font-bold hover:bg-gold/10 transition-colors">All Case Studies</Link>
           </div>
         </div>
       </section>
