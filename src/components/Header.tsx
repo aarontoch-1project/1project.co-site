@@ -30,7 +30,7 @@ export function Header() {
         hidden && !mobileOpen ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
         <div className="flex items-center justify-between h-[88px]">
           {/* Logo */}
           <Link href="/" className="flex items-center">

@@ -26,7 +26,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="pt-40 pb-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left — copy */}
             <FadeIn>

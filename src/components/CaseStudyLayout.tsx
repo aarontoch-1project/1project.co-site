@@ -49,7 +49,7 @@ export function CaseStudyLayout({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[1200px]">
             {category && (
               <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">{category}</Link>
             )}
@@ -100,7 +100,7 @@ export function CaseStudyLayout({
       {images && images.length > 0 && (
         <FadeIn>
           <section className="px-6 lg:px-8 pb-24">
-            <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
+            <div className="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-3 gap-2">
               {images.map((img) => (
                 <div
                   key={img.src}
@@ -137,7 +137,7 @@ export function CaseStudyLayout({
 
       {/* ── Navigation ── */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <SectionDivider className="mb-12">
             <h2 className="text-[36px] lg:text-[46px] font-semibold leading-[43px] lg:leading-[55.2px] text-center whitespace-nowrap">
               Check Out More Case Studies

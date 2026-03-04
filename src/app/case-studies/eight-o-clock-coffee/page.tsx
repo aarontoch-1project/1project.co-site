@@ -50,7 +50,7 @@ export default function TataConsumerCaseStudy() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl w-full">
+          <div className="mx-auto max-w-[1200px] w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Brand Video</Link>
             <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">TATA CONSUMER</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">
@@ -63,7 +63,7 @@ export default function TataConsumerCaseStudy() {
       {/* "Left Empty-Handed" — text LEFT, media RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Left Empty-Handed</h2>
               <p className="text-lg text-white/90 leading-[27px]">
@@ -89,7 +89,7 @@ export default function TataConsumerCaseStudy() {
       {/* "Time To Get Creative" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame>
               <VimeoEmbed videoId="1169007589" hash="b83e4e49fb" aspect="fill" />
             </GoldFrame>
@@ -106,7 +106,7 @@ export default function TataConsumerCaseStudy() {
       {/* Gallery — 3-column grid */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-3 gap-2">
             <VimeoEmbed videoId="1169006117" hash="c94742c46f" aspect="square" />
             <VimeoEmbed videoId="1169006143" hash="5402a81852" aspect="square" />
             <VimeoEmbed videoId="1169006107" hash="9daa9999ff" aspect="square" />
@@ -135,7 +135,7 @@ export default function TataConsumerCaseStudy() {
       {/* Statement + Accordion (Two-Column) */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[1200px]">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
@@ -165,7 +165,7 @@ export default function TataConsumerCaseStudy() {
 
       {/* Navigation */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <SectionDivider className="mb-12">
             <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">
               Check Out More Case Studies

@@ -43,7 +43,7 @@ export default function PentairCaseStudy() {
         <Image src="/images/case-studies/manitowoc/Banner-1-1.png" alt="Pentair case study hero" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl w-full">
+          <div className="mx-auto max-w-[1200px] w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Asset Library</Link>
             <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">PENTAIR</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">Supercharging a technical media library with lifestyle assets</p>
@@ -54,7 +54,7 @@ export default function PentairCaseStudy() {
       {/* "Not Exactly Our Wheelhouse" — text LEFT, media RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Not Exactly our Wheelhouse</h2>
               <p className="text-lg text-white/90 leading-[27px]">
@@ -82,7 +82,7 @@ export default function PentairCaseStudy() {
       {/* "Simple, Repeatable, and Scalable" — media LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame>
               <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image src="/images/case-studies/manitowoc/Manitowoc-A1833-edit-1.png" alt="Pentair scalable production" fill className="object-cover" />
@@ -101,7 +101,7 @@ export default function PentairCaseStudy() {
       {/* Image Gallery */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-3 gap-2">
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/1V0A0355-edit-1.png" alt="Pentair" fill className="object-cover" /></div>
             <div className="relative aspect-video overflow-hidden bg-[#2a2a2a] border-2 border-dashed border-[#C99A22] flex items-center justify-center rounded"><span className="text-[#C99A22] text-sm">[IMAGE PLACEHOLDER]</span></div>
             <div className="relative aspect-video overflow-hidden"><Image src="/images/case-studies/manitowoc/manitowoc_dec220180-2-1.png" alt="Pentair" fill className="object-cover" /></div>
@@ -117,7 +117,7 @@ export default function PentairCaseStudy() {
       {/* Statement + Accordion (Two-Column) */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[1200px]">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
@@ -149,7 +149,7 @@ export default function PentairCaseStudy() {
 
       {/* Navigation */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <SectionDivider className="mb-12">
             <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
           </SectionDivider>

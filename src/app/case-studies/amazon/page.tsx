@@ -52,7 +52,7 @@ export default function AmazonCaseStudy() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl w-full">
+          <div className="mx-auto max-w-[1200px] w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Video Pipeline</Link>
             <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">AMAZON</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">
@@ -65,7 +65,7 @@ export default function AmazonCaseStudy() {
       {/* ── 2. "To Each Their Own" (text LEFT, video RIGHT) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">To Each Their Own</h2>
               <p className="text-lg text-white/90 leading-[27px]">
@@ -96,7 +96,7 @@ export default function AmazonCaseStudy() {
       {/* ── 3. "Customizable Creative" (video LEFT, text RIGHT) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame>
               <VimeoEmbed videoId="1168992196" hash="7132d3dfbc" aspect="fill" />
             </GoldFrame>
@@ -118,7 +118,7 @@ export default function AmazonCaseStudy() {
       {/* ── 4. Image Gallery / Mosaic ── */}
       <FadeIn>
         <section className="px-6 lg:px-8 pb-24">
-          <div className="mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-3 gap-2 overflow-hidden">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-3 gap-2 overflow-hidden">
             <div className="lg:col-span-2 lg:row-span-2 overflow-hidden">
               <VimeoEmbed videoId="1168992268" hash="b2c64a1226" className="h-full" />
             </div>
@@ -142,7 +142,7 @@ export default function AmazonCaseStudy() {
       {/* ── 5. Statement + Accordion (Two-Column) ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[1200px]">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
@@ -182,7 +182,7 @@ export default function AmazonCaseStudy() {
 
       {/* ── 6. "Check Out More Case Studies" ── */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <SectionDivider className="mb-12">
             <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">
               Check Out More Case Studies

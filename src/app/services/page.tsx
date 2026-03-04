@@ -150,7 +150,7 @@ export default function ServicesPage() {
           ]}
         >
           <div className="absolute inset-0 flex items-center z-10">
-            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8">
+            <div className="mx-auto max-w-[1200px] w-full px-6 lg:px-8">
               <h1 className="text-hero leading-tight mb-4">
                 Production That&rsquo;s
               </h1>
@@ -187,7 +187,7 @@ export default function ServicesPage() {
 
       {/* ── 2.5. "SEE OUR LATEST" Section ── */}
       <section className="py-16 bg-[#1a1a1a]">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-[1200px] mx-auto px-4">
           <div className="flex items-center justify-center gap-6 mb-8">
             <div className="h-px flex-1 max-w-[80px] bg-gold" />
             <h2
@@ -214,7 +214,7 @@ export default function ServicesPage() {
       {/* ── 3. Service Block: Stunning Brand Narratives (text L, image R) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Stunning Brand Narratives</h2>
               <p className="text-lg text-white/90 leading-[27px]">
@@ -238,7 +238,7 @@ export default function ServicesPage() {
       {/* ── 4. Service Block: Authentic Lifestyle Imagery (image L, text R) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame>
               <VimeoEmbed videoId="1168992239" hash="97957d8a05" aspect="fill" />
             </GoldFrame>
@@ -262,7 +262,7 @@ export default function ServicesPage() {
       {/* ── 5. Service Block: Specialty and Niche Production (text L, image R) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Specialty and Niche Production</h2>
               <p className="text-lg text-white/90 leading-[27px]">
@@ -284,7 +284,7 @@ export default function ServicesPage() {
       {/* ── 6. Service Block: Engaging Docu-style Storytelling (image L, text R) ── */}
       <FadeIn>
         <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame>
               <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image
@@ -313,7 +313,7 @@ export default function ServicesPage() {
       {/* ── 7. "Built to Fit" Accordion Section ── */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left: label + heading + body */}
             <div>
               <span className="section-label block mb-4">Built to Fit</span>
@@ -420,7 +420,7 @@ export default function ServicesPage() {
       {/* ── 9. "Who Uses Us?" ── */}
       <FadeIn>
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <FadeIn>
             <SectionDivider className="mb-16">
               <h2 className="text-h2 text-center">Who Uses Us?</h2>
@@ -513,7 +513,7 @@ export default function ServicesPage() {
 
       {/* ── 10. Testimonials Carousel ── */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <TestimonialCarousel testimonials={testimonials} />
         </div>
       </section>

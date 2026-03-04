@@ -179,7 +179,7 @@ export default function HomePage() {
       {/* ===== 4. "RELIABLE ACCESS" — text left, video right ===== */}
       <FadeIn>
         <section className="pt-10 lg:pt-14 pb-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[40px] font-semibold leading-tight mb-6">
                 Reliable Access to the{" "}
@@ -204,7 +204,7 @@ export default function HomePage() {
       {/* ===== 5. "WINNING STRATEGIES" — video left, text right ===== */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame className="order-2 lg:order-1">
               <VimeoEmbed videoId="1168992231" hash="ef53c80ff9" aspect="fill" />
             </GoldFrame>
@@ -228,7 +228,7 @@ export default function HomePage() {
 
       {/* ===== 6. PORTFOLIO GRID — non-uniform layout ===== */}
       <section className="px-6 lg:px-8 py-16">
-        <div className="mx-auto max-w-7xl flex flex-col gap-1.5">
+        <div className="mx-auto max-w-[1200px] flex flex-col gap-1.5">
           {/* Row 1: Amazon — full width */}
           <FadeIn>
             <Link
@@ -329,7 +329,7 @@ export default function HomePage() {
       {/* ===== 8. "IN-HOUSE ENHANCED" — text left, accordion right ===== */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-16">
+          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-16">
             {/* Left — heading + body */}
             <div>
               <span className="section-label block mb-4">In-House Enhanced</span>
@@ -357,7 +357,7 @@ export default function HomePage() {
       {/* ===== 9. TESTIMONIALS CAROUSEL ===== */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[1200px]">
             <TestimonialCarousel testimonials={testimonials} />
           </div>
         </section>

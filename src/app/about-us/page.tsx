@@ -82,7 +82,7 @@ export default function AboutPage() {
           ]}
         >
           <div className="absolute inset-0 flex items-center z-10">
-            <div className="mx-auto max-w-7xl w-full px-6 lg:px-8">
+            <div className="mx-auto max-w-[1200px] w-full px-6 lg:px-8">
               <h1 className="text-hero text-gold font-semibold mb-2 text-left">
                 Changing How Brands
               </h1>
@@ -115,7 +115,7 @@ export default function AboutPage() {
       {/* Mission — Two-Column: image LEFT, text RIGHT */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[1200px]">
             <div className="grid grid-cols-1 lg:grid-cols-[34%_50%] gap-16 items-center">
               {/* LEFT — Mission Image */}
               <div className="relative" style={{ aspectRatio: '544/472' }}>
@@ -161,7 +161,7 @@ export default function AboutPage() {
 
       {/* Key Values */}
       <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1200px]">
           <FadeIn>
             <SectionDivider className="mb-16">
               <h2 className="text-[40px] leading-[48px] text-center">Our Key Values</h2>
@@ -190,7 +190,7 @@ export default function AboutPage() {
       {/* Partners — 3 rows of 5, client logos only */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl text-center">
+          <div className="mx-auto max-w-[1200px] text-center">
             <SectionDivider className="mb-12">
               <h2 className="text-[40px] leading-[48px]">Our Partners</h2>
             </SectionDivider>
@@ -222,7 +222,7 @@ export default function AboutPage() {
       {/* Our Teams at Work — horizontal scrolling carousel */}
       <FadeIn>
         <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[1200px]">
             <SectionDivider className="mb-16">
               <h2 className="text-[40px] leading-[48px] text-center">Our Teams at Work</h2>
             </SectionDivider>

@@ -33,7 +33,7 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 border-t border-white/10 pt-6">
+      <div className="mx-auto max-w-[1200px] px-6 lg:px-8 border-t border-white/10 pt-6">
         <div className="flex items-center justify-between text-xs text-white/40">
           <button
             onClick={scrollToTop}

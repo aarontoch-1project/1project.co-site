@@ -110,7 +110,7 @@ export default function CaseStudiesPage() {
       {/* Client Logo Grid */}
       <FadeIn>
         <section className="py-16 bg-dark">
-          <div className="mx-auto max-w-6xl px-4">
+          <div className="mx-auto max-w-[1200px] px-4">
             <div className="grid grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center opacity-50">
               {clientLogos.map((logo, i) =>
                 logo.placeholder ? (
