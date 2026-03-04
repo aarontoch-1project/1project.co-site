@@ -54,7 +54,7 @@ export default function AmazonCaseStudy() {
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
           <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Video Pipeline</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">AMAZON</h1>
+            <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">AMAZON</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">
               Building a video production system to bring a program to life
             </p>
@@ -67,7 +67,7 @@ export default function AmazonCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">To Each Their Own</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">To Each Their Own</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Amazon was running a program that provided high-performing stores
                 with funding to create and place OTT video campaigns. They wanted
@@ -101,7 +101,7 @@ export default function AmazonCaseStudy() {
               <VimeoEmbed videoId="1168992196" hash="7132d3dfbc" aspect="fill" />
             </GoldFrame>
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Customizable Creative</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Customizable Creative</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Supporting an Amazon agency partner, we developed a repeatable
                 creative video framework and workflow to give each store: A
@@ -149,7 +149,7 @@ export default function AmazonCaseStudy() {
                 <span className="text-sm font-bold text-white block mb-4">
                   Centralized Management
                 </span>
-                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
+                <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-left">
                   Different Brands Different Needs Same Outputs
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -184,7 +184,7 @@ export default function AmazonCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">
+            <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">
               Check Out More Case Studies
             </h2>
           </SectionDivider>

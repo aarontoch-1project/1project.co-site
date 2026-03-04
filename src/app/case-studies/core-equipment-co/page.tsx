@@ -45,7 +45,7 @@ export default function CoreCaseStudy() {
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
           <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Lifestyle Content</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">CORE</h1>
+            <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">CORE</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">Giving an outdoors company access to authentic remote locations</p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function CoreCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Go Take A Hike</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Go Take A Hike</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 As Core Equipment Co's product line expanded, so did a need for authentic lifestyle content of their outdoors gear in action. But with narrowing target demos and internal production based in city centers, it was becoming hard to hit all the geographically distinct locales their customers frequented.
               </p>
@@ -89,7 +89,7 @@ export default function CoreCaseStudy() {
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Friends In Wild Places</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Friends In Wild Places</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 After a brief aesthetic calibration we quickly assembled Core their own network of on-demand outdoor lifestyle freelancers from across North America. Combined with a selection of flat-rated video and photo project formats the team could now: Add localized content to activations, Shoot in iconic national parks, Increase output volume, Get unique shots of remote spaces
               </p>
@@ -123,7 +123,7 @@ export default function CoreCaseStudy() {
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
                 <span className="text-sm font-bold text-white block mb-4">PACKED AND READY</span>
-                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
+                <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-left">
                   Specific, Sporadic, &amp; Spontaneous
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -150,7 +150,7 @@ export default function CoreCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
+            <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
           </SectionDivider>
           <div className="flex justify-center gap-4">
             <Link href="/case-studies/amazon" className="inline-block bg-gold text-dark px-[56px] py-6 rounded-[5px] font-bold border-2 border-gold hover:bg-lightning transition-colors">Amazon &rarr;</Link>

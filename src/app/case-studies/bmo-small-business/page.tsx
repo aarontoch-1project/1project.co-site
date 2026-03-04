@@ -52,7 +52,7 @@ export default function BMOCaseStudy() {
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
           <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Cross-Channel Media</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">BMO</h1>
+            <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">BMO</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">
               Simplifying a docu-style process to empower the agency&apos;s vision
             </p>
@@ -65,7 +65,7 @@ export default function BMOCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">On-Demand Support</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">On-Demand Support</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 When BMO&apos;s agency partner ran into internal delays and a tightening budget for an upcoming activation featuring real entrepreneurs, they needed an agile partner to expedite the docu-style media project without compromising the agency&apos;s vision, processes and quality.
               </p>
@@ -94,7 +94,7 @@ export default function BMOCaseStudy() {
               <VimeoEmbed videoId="1169008713" hash="979d396235" aspect="fill" />
             </GoldFrame>
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">We&rsquo;ll Do It Live</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">We&rsquo;ll Do It Live</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 To keep things lean and nimble, we would need to adapt how agency and client creative inputs traditionally work. That meant choices like using a photojournalism shooting approach, minimizing req. brand shots, and designing feedback around curation by: Removing stills approvals on-set, Using a subject&apos;s real day-of schedule, Doing req. soundbite VO&apos;s off camera
               </p>
@@ -137,7 +137,7 @@ export default function BMOCaseStudy() {
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
                 <span className="text-sm font-bold text-white block mb-4">SPEED AND CONFIDENCE</span>
-                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
+                <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-left">
                   Do it Once And Do It Right
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -164,7 +164,7 @@ export default function BMOCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">
+            <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">
               Check Out More Case Studies
             </h2>
           </SectionDivider>

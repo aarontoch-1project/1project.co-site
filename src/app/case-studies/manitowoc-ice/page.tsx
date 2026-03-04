@@ -45,7 +45,7 @@ export default function PentairCaseStudy() {
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
           <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Asset Library</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">PENTAIR</h1>
+            <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">PENTAIR</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">Supercharging a technical media library with lifestyle assets</p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function PentairCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Not Exactly our Wheelhouse</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Not Exactly our Wheelhouse</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Manitowoc Ice relies on long-term relationships with key distributors in the hospitality supply industry. They wanted to provide their partners with a large bank of approved lifestyle photography for localized campaigns - but as a team built around strong technical writing, creating a bank of authentic lifestyle photography was a much more challenging task.
               </p>
@@ -89,7 +89,7 @@ export default function PentairCaseStudy() {
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Simple, Repeatable, and Scalable</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Simple, Repeatable, and Scalable</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Using their product release schedule and tradeshow availability as milestones, we found the perfect size high-volume shoot to quickly add evergreen lifestyle content and cover new feature SKUS and targeted use cases.
               </p>
@@ -124,7 +124,7 @@ export default function PentairCaseStudy() {
                 <span className="text-sm font-bold text-white block mb-4">
                   CHILL OUT
                 </span>
-                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
+                <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-left">
                   Staying Creative at a Glacial Pace
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -151,7 +151,7 @@ export default function PentairCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
+            <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
           </SectionDivider>
           <div className="flex justify-center gap-4">
             <Link href="/case-studies/core-equipment-co" className="inline-block bg-gold text-dark px-[56px] py-6 rounded-[5px] font-bold border-2 border-gold hover:bg-lightning transition-colors">Core Equipment Co. &rarr;</Link>

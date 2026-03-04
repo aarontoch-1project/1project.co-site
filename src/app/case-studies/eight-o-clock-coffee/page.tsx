@@ -52,7 +52,7 @@ export default function TataConsumerCaseStudy() {
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
           <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Brand Video</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">TATA CONSUMER</h1>
+            <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">TATA CONSUMER</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">
               Enabling brand leads to finish a job their agency started
             </p>
@@ -65,7 +65,7 @@ export default function TataConsumerCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Left Empty-Handed</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Left Empty-Handed</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 The brand team for Tata Consumer&apos;s legacy brand Eight-O-Clock Coffee was in a tricky spot. Having made the decision to drop their current AOR, they we&apos;re left to fill dozens of already-purchased media buys on their own with only a minimal flex-budget remaining in the campaign&apos;s coffers.
               </p>
@@ -94,7 +94,7 @@ export default function TataConsumerCaseStudy() {
               <VimeoEmbed videoId="1169007589" hash="b83e4e49fb" aspect="fill" />
             </GoldFrame>
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Time To Get Creative</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Time To Get Creative</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 After adapting their ex-agency&apos;s initial creative - we restructured the main video content into a modular format, allowing multiple SKUs to have unique deliverables under the same script. We then optimized the limited budget by: Moving production to a lower-cost locale, Leveraging existing design assets more, Using remote art directors for pre-pro, Providing on-set AD and line-producing.
               </p>
@@ -140,7 +140,7 @@ export default function TataConsumerCaseStudy() {
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
                 <span className="text-sm font-bold text-white block mb-4">MAKING THE MOST</span>
-                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
+                <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-left">
                   Wake Up and Smell the Coffee
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -167,7 +167,7 @@ export default function TataConsumerCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">
+            <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">
               Check Out More Case Studies
             </h2>
           </SectionDivider>

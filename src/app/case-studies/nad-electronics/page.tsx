@@ -54,7 +54,7 @@ export default function NADCaseStudy() {
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
           <div className="mx-auto max-w-7xl w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Feature Documentary</Link>
-            <h1 className="text-[72px] font-bold leading-[86.4px] mb-3">NAD ELECTRONICS</h1>
+            <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">NAD ELECTRONICS</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">
               Helping a passionate team of music-lovers tell their biggest story
             </p>
@@ -67,7 +67,7 @@ export default function NADCaseStudy() {
         <section className="py-20 px-6 lg:px-8">
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Turning Up the Volume</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Turning Up the Volume</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 When Lenbrook International&rsquo;s world-renowned audiophile brand NAD came up on its 50 Years Anniversary - they wanted to celebrate their story with an inspiring brand documentary. But with an internal agency built to create technical and niche audiophile content - they would need some help giving NAD&rsquo;s history the Hollywood treatment it deserved.
               </p>
@@ -100,7 +100,7 @@ export default function NADCaseStudy() {
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] mb-6">Amplifying Everyone</h2>
+              <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">Amplifying Everyone</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 A big internal challenge was agreeing on the priority of telling NAD&rsquo;s personality-rich brand story VS detailing their key technical innovations. By collaborating with marketing and engineering teams on two distinct scripts - one focused on company history, and one outlining cornerstone technologies - we helped blend both sides into a storyline that spoke to both industry and audiophile audiences.
               </p>
@@ -168,7 +168,7 @@ export default function NADCaseStudy() {
               {/* LEFT column — statement */}
               <div className="lg:w-[35%]">
                 <span className="text-sm font-bold text-white block mb-4">LOUD AND CLEAR</span>
-                <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-left">
+                <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-left">
                   An Honest Sounding Board
                 </h2>
                 <p className="text-lg text-white/90 leading-[27px] mt-6">
@@ -195,7 +195,7 @@ export default function NADCaseStudy() {
       <section className="py-24 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionDivider className="mb-12">
-            <h2 className="text-[36px] lg:text-[72px] font-bold leading-[43px] lg:leading-[86.4px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
+            <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] text-center whitespace-nowrap">Check Out More Case Studies</h2>
           </SectionDivider>
           <div className="flex justify-center gap-4">
             <Link href="/case-studies/manitowoc-ice" className="inline-block bg-gold text-dark px-[56px] py-6 rounded-[5px] font-bold border-2 border-gold hover:bg-lightning transition-colors">Pentair &rarr;</Link>
