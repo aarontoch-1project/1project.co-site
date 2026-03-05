@@ -102,9 +102,9 @@ export default function AboutPage() {
 
       {/* Mission Statement — Animated Headline style */}
       <FadeIn>
-        <section className="py-24 lg:py-32 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="text-[46px] font-bold leading-[55.2px] text-white">
+        <section style={{ padding: "8vw 4vw" }}>
+          <div className="mx-auto max-w-[1200px]">
+            <h2 className="text-[46px] font-bold leading-[55.2px] text-white" style={{ fontFamily: "var(--font-montserrat)" }}>
               Empowering great brands to take back the reins on their{" "}
               <span className="text-gold italic">Content Creation</span>
             </h2>
@@ -114,8 +114,8 @@ export default function AboutPage() {
 
       {/* Mission — Two-Column: image LEFT, text RIGHT */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px]">
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[1600px]">
             <div className="grid grid-cols-1 lg:grid-cols-[34%_50%] gap-16 items-center">
               {/* LEFT — Mission Image */}
               <div className="relative" style={{ aspectRatio: '544/472' }}>
@@ -189,8 +189,8 @@ export default function AboutPage() {
 
       {/* Partners — 3 rows of 5, client logos only */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px] text-center">
+        <section style={{ padding: "80px 32px" }}>
+          <div className="mx-auto max-w-[1600px] text-center">
             <SectionDivider className="mb-12">
               <h2 className="text-[40px] leading-[48px]">Our Partners</h2>
             </SectionDivider>

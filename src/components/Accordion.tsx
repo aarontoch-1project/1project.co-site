@@ -48,7 +48,7 @@ export function Accordion({ items, defaultOpen = 0 }: AccordionProps) {
               }}
             >
               <div className="overflow-hidden">
-                <p className="text-lg text-white/85 leading-relaxed pr-8 pb-5">
+                <p className="text-white/85 leading-relaxed pr-8 pb-5" style={{ fontFamily: "var(--font-poppins), system-ui, sans-serif", fontSize: "18px", fontWeight: 400 }}>
                   {item.content}
                 </p>
               </div>

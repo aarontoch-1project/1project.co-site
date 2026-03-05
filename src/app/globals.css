@@ -53,9 +53,16 @@ body {
   }
 }
 
-/* Prevent horizontal overflow from iframes and media */
-iframe, img, video {
+/* Prevent horizontal overflow from images and video elements.
+   NOTE: iframes excluded — hero background uses oversized iframes for cover-fill effect */
+img, video {
   max-width: 100%;
+}
+
+/* Hero section — full viewport width, no constraints */
+.hero-section {
+  width: 100%;
+  max-width: none !important;
 }
 
 /* Gold highlight text — for key phrases in body copy */

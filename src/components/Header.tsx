@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -17,7 +17,6 @@ export function Header() {
 
   useEffect(() => {
     const onScroll = () => {
-      // Only visible when at the very top of the page
       setHidden(window.scrollY > 80);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -26,11 +25,12 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 bg-transparent ${
+      className={`fixed top-0 left-0 right-0 transition-transform duration-300 bg-transparent ${
         hidden && !mobileOpen ? "-translate-y-full" : "translate-y-0"
       }`}
+      style={{ zIndex: 1000 }}
     >
-      <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
+      <div className="px-8">
         <div className="flex items-center justify-between h-[88px]">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -50,14 +50,26 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-white/80 hover:text-gold transition-colors"
+                className="text-white hover:text-gold transition-colors"
+                style={{
+                  fontFamily: "var(--font-open-sans), system-ui, sans-serif",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                }}
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact-us"
-              className="bg-gold text-white text-[21px] font-normal px-6 py-3 rounded-md hover:bg-lightning transition-colors"
+              className="bg-gold text-white hover:bg-lightning transition-colors"
+              style={{
+                fontFamily: "var(--font-open-sans), system-ui, sans-serif",
+                fontSize: "14px",
+                fontWeight: 700,
+                padding: "16px 56px",
+                borderRadius: "5px",
+              }}
             >
               Start a Project
             </Link>
@@ -96,7 +108,12 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-white/80 hover:text-gold transition-colors"
+                className="text-white hover:text-gold transition-colors"
+                style={{
+                  fontFamily: "var(--font-open-sans), system-ui, sans-serif",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                }}
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
@@ -104,7 +121,14 @@ export function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="bg-gold text-white text-[21px] font-normal px-6 py-3 rounded-md text-center hover:bg-lightning transition-colors"
+              className="bg-gold text-white text-center hover:bg-lightning transition-colors"
+              style={{
+                fontFamily: "var(--font-open-sans), system-ui, sans-serif",
+                fontSize: "14px",
+                fontWeight: 700,
+                padding: "16px 56px",
+                borderRadius: "5px",
+              }}
               onClick={() => setMobileOpen(false)}
             >
               Start a Project

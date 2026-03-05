@@ -39,7 +39,7 @@ export function CaseStudyLayout({
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative h-screen min-h-[500px]">
+      <section className="relative min-h-screen flex flex-col justify-center" style={{ padding: "80px 32px 48px 32px" }}>
         <Image
           src={heroImage}
           alt={heroAlt}
@@ -48,35 +48,28 @@ export function CaseStudyLayout({
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20" />
-        <div className="absolute bottom-0 left-0 right-0 pb-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px]">
-            {category && (
-              <Link href="/case-studies" className="text-lg text-white font-normal block mb-3 hover:text-white/80 transition-colors">{category}</Link>
-            )}
-            <h2 className="text-[46px] font-semibold leading-[55.2px] mb-4">{title}</h2>
-            <p className="text-lg text-white max-w-2xl text-left">{subtitle}</p>
-          </div>
+        <div className="relative z-10">
+          {category && (
+            <span className="text-lg text-white font-normal block mb-3">{category}</span>
+          )}
+          <h1 className="text-[72px] font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-montserrat)" }}>{title}</h1>
+          <p className="text-lg text-white max-w-2xl text-left" style={{ fontFamily: "var(--font-poppins)", fontSize: "18px", fontWeight: 400 }}>{subtitle}</p>
         </div>
       </section>
 
       {/* ── Content Sections (alternating layout) ── */}
-      <section className="py-24 px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl space-y-20">
+      <section style={{ padding: "8vw 4vw 4vw 4vw" }}>
+        <div className="mx-auto max-w-[1200px] space-y-20">
           {sections.map((sec, i) => (
             <FadeIn key={sec.heading}>
-              <div
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ${
-                  i % 2 === 1 ? "lg:direction-rtl" : ""
-                }`}
-              >
-                <div>
+              <div className={`flex flex-col lg:flex-row gap-12 items-center ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
+                <div className="flex-1">
                   <h2 className="text-[27px] lg:text-[40px] font-semibold leading-[32px] lg:leading-[48px] mb-6">{sec.heading}</h2>
-                </div>
-                <div>
-                  <p className="text-lg text-white/90 leading-[27px]">
+                  <p className="text-white/90 leading-[27px]" style={{ fontFamily: "var(--font-poppins)", fontSize: "18px", fontWeight: 400 }}>
                     {sec.body}
                   </p>
                 </div>
+                <div className="flex-1" />
               </div>
             </FadeIn>
           ))}
@@ -87,7 +80,7 @@ export function CaseStudyLayout({
                 <span className="section-label block mb-3">
                   {outputsLabel || "Outputs"}
                 </span>
-                <p className="text-lg text-white/90 leading-[27px]">
+                <p className="text-white/90 leading-[27px]" style={{ fontFamily: "var(--font-poppins)", fontSize: "18px", fontWeight: 400 }}>
                   {outputs}
                 </p>
               </div>
@@ -99,8 +92,8 @@ export function CaseStudyLayout({
       {/* ── Image Gallery ── */}
       {images && images.length > 0 && (
         <FadeIn>
-          <section className="px-6 lg:px-8 pb-24">
-            <div className="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-3 gap-2">
+          <section style={{ padding: "4vw" }}>
+            <div className="mx-auto max-w-[1600px] grid grid-cols-2 lg:grid-cols-3 gap-2">
               {images.map((img) => (
                 <div
                   key={img.src}
@@ -122,21 +115,28 @@ export function CaseStudyLayout({
 
       {/* ── Details / Results (Accordion) ── */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <Accordion
-              items={details.map((d) => ({
-                title: d.title,
-                content: d.description,
-              }))}
-              defaultOpen={0}
-            />
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[80vw] flex flex-col lg:flex-row justify-center gap-16">
+            <div className="lg:w-[432px] shrink-0">
+              <h2 className="text-[46px] font-semibold leading-tight mb-6" style={{ fontFamily: "var(--font-montserrat)" }}>
+                Results &amp; Output
+              </h2>
+            </div>
+            <div className="flex-1">
+              <Accordion
+                items={details.map((d) => ({
+                  title: d.title,
+                  content: d.description,
+                }))}
+                defaultOpen={0}
+              />
+            </div>
           </div>
         </section>
       </FadeIn>
 
       {/* ── Navigation ── */}
-      <section className="py-24 px-6 lg:px-8">
+      <section style={{ padding: "120px 32px" }}>
         <div className="mx-auto max-w-[1200px]">
           <SectionDivider className="mb-12">
             <h2 className="text-[36px] lg:text-[46px] font-semibold leading-[43px] lg:leading-[55.2px] text-center whitespace-nowrap">

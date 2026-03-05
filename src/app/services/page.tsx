@@ -175,9 +175,9 @@ export default function ServicesPage() {
 
       {/* ── 2. "Get Creative" Intro Statement ── */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="text-[46px] font-bold leading-[55.2px] text-left">
+        <section style={{ padding: "8vw 4vw" }}>
+          <div className="mx-auto max-w-[1200px]">
+            <h2 className="text-[46px] font-bold leading-[55.2px] text-left" style={{ fontFamily: "var(--font-montserrat)" }}>
               1Project is built on our versatility. Here&rsquo;s some ways we help teams{" "}
               <span className="text-gold italic">Get Creative</span>
             </h2>
@@ -186,8 +186,8 @@ export default function ServicesPage() {
       </FadeIn>
 
       {/* ── 2.5. "SEE OUR LATEST" Section ── */}
-      <section className="py-16 bg-[#1a1a1a]">
-        <div className="max-w-[1200px] mx-auto px-4">
+      <section style={{ padding: "0 4vw 8vw 4vw" }}>
+        <div className="max-w-[80vw] mx-auto">
           <div className="flex items-center justify-center gap-6 mb-8">
             <div className="h-px flex-1 max-w-[80px] bg-gold" />
             <h2
@@ -213,10 +213,10 @@ export default function ServicesPage() {
 
       {/* ── 3. Service Block: Stunning Brand Narratives (text L, image R) ── */}
       <FadeIn>
-        <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Stunning Brand Narratives</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6" style={{ color: "#E0E4E6" }}>Stunning Brand Narratives</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Short-form, long-form or free-form — there is no wrong way to
                 show off your brand as the main character. Expand on the type of
@@ -237,13 +237,13 @@ export default function ServicesPage() {
 
       {/* ── 4. Service Block: Authentic Lifestyle Imagery (image L, text R) ── */}
       <FadeIn>
-        <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame>
               <VimeoEmbed videoId="1168992239" hash="97957d8a05" aspect="fill" />
             </GoldFrame>
             <div>
-              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Authentic Lifestyle Imagery</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6" style={{ color: "#E0E4E6" }}>Authentic Lifestyle Imagery</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Crafting true-to-life content is one of our key specialties.
                 Hone-in on a unique and effortless lifestyle aesthetic for your
@@ -261,10 +261,10 @@ export default function ServicesPage() {
 
       {/* ── 5. Service Block: Specialty and Niche Production (text L, image R) ── */}
       <FadeIn>
-        <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Specialty and Niche Production</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6" style={{ color: "#E0E4E6" }}>Specialty and Niche Production</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 Make your campaigns stand out visually with{" "}
                 <span className="gold-highlight">
@@ -283,8 +283,8 @@ export default function ServicesPage() {
 
       {/* ── 6. Service Block: Engaging Docu-style Storytelling (image L, text R) ── */}
       <FadeIn>
-        <section className="py-20 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame>
               <div className="w-full h-full bg-dark-deep relative overflow-hidden">
                 <Image
@@ -296,7 +296,7 @@ export default function ServicesPage() {
               </div>
             </GoldFrame>
             <div>
-              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6">Engaging Docu-style Storytelling</h2>
+              <h2 className="text-[27px] font-semibold leading-[32.4px] mb-6" style={{ color: "#E0E4E6" }}>Engaging Docu-style Storytelling</h2>
               <p className="text-lg text-white/90 leading-[27px]">
                 We have a rich history of helping brands use real stories to
                 drive consistent and powerful engagement. Master your
@@ -312,12 +312,12 @@ export default function ServicesPage() {
 
       {/* ── 7. "Built to Fit" Accordion Section ── */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[80vw] flex flex-col lg:flex-row justify-center gap-16">
             {/* Left: label + heading + body */}
-            <div>
-              <span className="section-label block mb-4">Built to Fit</span>
-              <h2 className="text-h2 mb-6">
+            <div className="lg:w-[432px] shrink-0">
+              <span className="block mb-4 text-gold uppercase tracking-[3px]" style={{ fontFamily: "var(--font-poppins)", fontSize: "14px", fontWeight: 400 }}>Built to Fit</span>
+              <h2 className="text-[46px] font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-montserrat)" }}>
                 Nothing Less Than <em>Seamless</em> Integration
               </h2>
               <p className="text-lg text-white/90 leading-[27px]">
@@ -331,7 +331,9 @@ export default function ServicesPage() {
               </p>
             </div>
             {/* Right: accordion */}
-            <Accordion items={processItems} />
+            <div className="flex-1">
+              <Accordion items={processItems} />
+            </div>
           </div>
         </section>
       </FadeIn>
