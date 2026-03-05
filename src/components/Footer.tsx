@@ -17,13 +17,13 @@ export function Footer() {
   return (
     <footer className="bg-dark pt-20 pb-8">
       {/* Large outline-font navigation — horizontal row at desktop */}
-      <div className="mx-auto px-6 lg:px-8 mb-16">
+      <div className="mx-auto max-w-[1200px]" style={{ padding: "2vw 4vw 0 4vw" }}>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6 flex-nowrap">
           {outlineLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="outline-text text-[2rem] lg:text-[clamp(36px,3.5vw,48px)] font-bold leading-tight hover:text-white transition-all duration-400 text-center whitespace-nowrap"
+              className="outline-text text-[32px] lg:text-[40px] font-semibold leading-[48px] hover:text-white transition-all duration-400 text-center whitespace-nowrap"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               {link.label}

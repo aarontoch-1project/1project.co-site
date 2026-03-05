@@ -24,7 +24,7 @@ export function CyclingText({
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % words.length);
         setIsAnimating(false);
-      }, 400);
+      }, 800);
     }, interval);
     return () => clearInterval(timer);
   }, [words.length, interval]);
@@ -35,7 +35,7 @@ export function CyclingText({
       className={`inline-block overflow-hidden align-bottom ${className}`}
       style={{
         fontFamily: "var(--font-montserrat), system-ui, sans-serif",
-        fontSize: "78px",
+        fontSize: "85px",
         fontWeight: 700,
         color: "#C99A22",
         lineHeight: 1.15,
@@ -45,7 +45,7 @@ export function CyclingText({
       <span
         className="inline-block transition-all ease-in-out"
         style={{
-          transitionDuration: "400ms",
+          transitionDuration: "800ms",
           transform: isAnimating ? "translateY(-100%)" : "translateY(0)",
           opacity: isAnimating ? 0 : 1,
         }}

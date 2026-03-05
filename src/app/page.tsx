@@ -95,12 +95,15 @@ const testimonials = [
 export default function HomePage() {
   return (
     <>
-      {/* ===== 1. HERO — full viewport with video bg ===== */}
-      <section className="relative h-[765px] flex items-end px-6 lg:px-8">
+      {/* ===== 0. HERO — full viewport with video bg ===== */}
+      <section
+        className="hero-section relative min-h-[85vh] flex flex-col justify-end overflow-hidden"
+        style={{ padding: "4vw 4vw 3vw 10vw" }}
+      >
         {/* Hero background Vimeo video */}
         <div className="absolute inset-0 bg-dark-deep z-0 overflow-hidden">
           <iframe
-            src="https://player.vimeo.com/video/930727789?h=f691cb6fb4&background=1&autoplay=1&loop=1&muted=1&quality=1080p"
+            src="https://player.vimeo.com/video/930727789?h=f691cb6fb4&background=1&autoplay=1&loop=1&muted=1&quality=1080p#t=10s"
             frameBorder="0"
             allow="autoplay; fullscreen"
             loading="lazy"
@@ -110,46 +113,47 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent" />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-[1200px] w-full pb-28">
-          <div className="max-w-[60%]">
-            <h2 className="text-hero text-white font-semibold mb-1">
-              Content That
-            </h2>
-            <div className="mb-4">
-              <CyclingText
-                words={["Engages", "Converts", "Performs", "Adapts", "Responds", "Is Authentic"]}
-                className="text-cycling font-bold leading-tight"
-              />
-            </div>
-            <p className="text-lg text-white/90 max-w-lg">
-              Supercharging brand teams with{" "}
-              <span className="gold-highlight">their own</span> freelance
-              creative networks
-            </p>
+        <div className="relative z-10">
+          <h2
+            className="text-white font-semibold mb-1"
+            style={{ fontFamily: "var(--font-montserrat)", fontSize: "40px", fontWeight: 600 }}
+          >
+            Content That
+          </h2>
+          <div className="mb-4">
+            <CyclingText
+              words={["Engages", "Converts", "Performs", "Adapts", "Responds", "Is Authentic"]}
+              className="font-bold leading-tight"
+            />
           </div>
+          <p className="text-lg text-white max-w-lg" style={{ fontFamily: "var(--font-poppins)", fontSize: "18px", fontWeight: 400 }}>
+            Supercharging brand teams with{" "}
+            <span className="gold-highlight">their own</span> freelance
+            creative networks
+          </p>
         </div>
+      </section>
 
-        {/* Client logos — static bar at bottom of hero */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 bg-[#1a1a1a]/80 py-5 border-t border-white/5">
-          <div className="max-w-5xl mx-auto px-6 flex justify-between items-center">
-            {clientLogos.map((logo) => (
-              <Image
-                key={logo.alt}
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.w}
-                height={logo.h}
-                className="h-[101px] w-auto object-contain brightness-0 invert opacity-70"
-              />
-            ))}
+      {/* ===== 1. BRANDS — client logo bar ===== */}
+      <section className="flex justify-between items-center" style={{ padding: "1vw 3vw" }}>
+        {clientLogos.map((logo) => (
+          <div key={logo.alt} className="flex flex-col justify-center items-center w-full">
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={logo.w}
+              height={logo.h}
+              className="w-auto object-contain brightness-0 invert opacity-70"
+              style={{ maxHeight: "101px" }}
+            />
           </div>
-        </div>
+        ))}
       </section>
 
       {/* ===== 3. "POWERHOUSES" STATEMENT ===== */}
       <FadeIn>
-        <section className="pt-24 lg:pt-28 pb-10 lg:pb-14 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-left">
+        <section style={{ padding: "8vw 4vw" }}>
+          <div className="mx-auto max-w-[1200px] text-left">
             <h1 className="text-[46px] font-bold leading-[55.2px] text-white" style={{ fontWeight: 700 }}>
               1Project provides managed creative production to help brands become
               content{" "}
@@ -178,7 +182,7 @@ export default function HomePage() {
 
       {/* ===== 4. "RELIABLE ACCESS" — text left, video right ===== */}
       <FadeIn>
-        <section className="pt-10 lg:pt-14 pb-24 px-6 lg:px-8">
+        <section style={{ padding: "0 4vw 2vw 4vw" }}>
           <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-[40px] font-semibold leading-tight mb-6">
@@ -203,7 +207,7 @@ export default function HomePage() {
 
       {/* ===== 5. "WINNING STRATEGIES" — video left, text right ===== */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
+        <section style={{ padding: "2vw 4vw 2vw 4vw" }}>
           <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <GoldFrame className="order-2 lg:order-1">
               <VimeoEmbed videoId="1168992231" hash="ef53c80ff9" aspect="fill" />
@@ -226,9 +230,9 @@ export default function HomePage() {
         </section>
       </FadeIn>
 
-      {/* ===== 6. PORTFOLIO GRID — non-uniform layout ===== */}
-      <section className="px-6 lg:px-8 py-16">
-        <div className="mx-auto max-w-[1200px] flex flex-col gap-1.5">
+      {/* ===== 5. PORTFOLIO GRID — non-uniform layout, full width ===== */}
+      <section className="overflow-hidden" style={{ padding: "4vw" }}>
+        <div className="flex flex-col gap-1.5">
           {/* Row 1: Amazon — full width */}
           <FadeIn>
             <Link
@@ -326,13 +330,13 @@ export default function HomePage() {
         <SpinningCircle href="/case-studies" />
       </section>
 
-      {/* ===== 8. "IN-HOUSE ENHANCED" — text left, accordion right ===== */}
+      {/* ===== 7. "IN-HOUSE ENHANCED" — text left, accordion right ===== */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-16">
+        <section style={{ padding: "4vw" }}>
+          <div className="mx-auto max-w-[80vw] flex flex-col lg:flex-row justify-center gap-16">
             {/* Left — heading + body */}
-            <div>
-              <span className="section-label block mb-4">In-House Enhanced</span>
+            <div className="lg:w-[432px] shrink-0">
+              <span className="block mb-4 text-gold uppercase tracking-[3px] font-normal" style={{ fontFamily: "var(--font-poppins)", fontSize: "14px", fontWeight: 400 }}>In-House Enhanced</span>
               <h2 className="text-h2 leading-tight mb-6">
                 Maintain an Unmistakable Aesthetic
               </h2>
@@ -347,16 +351,16 @@ export default function HomePage() {
             </div>
 
             {/* Right — accordion */}
-            <div>
+            <div className="flex-1">
               <Accordion items={accordionItems} />
             </div>
           </div>
         </section>
       </FadeIn>
 
-      {/* ===== 9. TESTIMONIALS CAROUSEL ===== */}
+      {/* ===== 8. TESTIMONIALS CAROUSEL ===== */}
       <FadeIn>
-        <section className="py-24 px-6 lg:px-8">
+        <section style={{ padding: "1vw 4vw 0 4vw" }}>
           <div className="mx-auto max-w-[1200px]">
             <TestimonialCarousel testimonials={testimonials} />
           </div>

@@ -26,7 +26,7 @@ export function Accordion({ items, defaultOpen = 0 }: AccordionProps) {
               onClick={() => setOpenIndex(isOpen ? null : i)}
               aria-expanded={isOpen}
             >
-              <span className="text-[22px] font-semibold text-white group-hover:text-gold transition-colors">
+              <span className="text-[22px] font-semibold text-white group-hover:text-gold transition-colors" style={{ fontFamily: "var(--font-montserrat), system-ui, sans-serif" }}>
                 {item.title}
               </span>
               <svg
