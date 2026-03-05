@@ -52,7 +52,7 @@ export default function BMOCaseStudy() {
         <div className="absolute inset-0 flex items-center px-6 lg:px-8">
           <div className="mx-auto max-w-[1200px] w-full">
             <Link href="/case-studies" className="text-lg text-white font-normal block mb-2 hover:text-white/80 transition-colors">Cross-Channel Media</Link>
-            <h1 className="text-[46px] font-semibold leading-[55.2px] mb-3">BMO</h1>
+            <h1 className="text-[72px] font-bold leading-tight mb-3" style={{ fontFamily: "var(--font-montserrat)" }}>BMO</h1>
             <p className="text-lg text-white/90 max-w-2xl text-left">
               Simplifying a docu-style process to empower the agency&apos;s vision
             </p>
